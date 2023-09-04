@@ -1,0 +1,159 @@
+// main: ../style.less
+
+/*Call To Action*/
+
+.ct-callToAction{
+  display: table;
+  width: 100%;
+
+
+  .ct-callToAction-separate{
+    position: relative;
+
+    &:after{
+      content: "";
+      position: absolute;
+
+      display: block;
+
+      height: 2px;
+      width: 70%;
+
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+
+      background-color: #fff;
+      background-color: rgba(255,255,255,.7);
+    }
+  }
+
+  &.ct-callToAction--type1{
+
+    background-color: @motive;
+    min-height: 210px;
+  }
+
+  &.ct-callToAction--type2{
+    background-color: transparent;
+    min-height: 660px;
+  }
+
+  &.ct-callToAction--type3{
+    padding-bottom: 0;
+    min-height: 210px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    *, &{
+      transform: none;
+    }
+
+    &:before{
+      content: "";
+      display: block;
+      width: 100%;
+      min-height: 210px;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: @motive;
+      opacity: .8;
+      z-index: -1;
+    }
+
+    .ct-callToAction-inner{
+
+      .ct-callToAction-header{
+        letter-spacing: 3px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .ct-callToAction-inner{
+    display: table-cell;
+    vertical-align: middle;
+    padding: 40px 0;
+
+    .ct-callToAction-header{
+      line-height: 1.26923;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 32px;
+
+      span{
+        font-weight: 300;
+      }
+    }
+
+    .ct-callToAction-text{
+
+      > span{
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 1;
+        span{
+          font-size: 90px;
+          line-height: 1.24444;
+
+        }
+      }
+    }
+
+    .ct-callToAction-contact{
+      span{
+        font-size: 34px;
+        color: #fff;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1;
+
+        span{
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.browser-mozilla {
+  .ct-callToAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ct-callToAction-inner{
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: @screen-xs){
+  .ct-callToAction{
+    padding: 0 !important;
+
+    .ct-callToAction-inner{
+
+      .ct-callToAction-text{
+        > span {
+          font-size: 30px;
+
+          span{
+            font-size: 50px;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,498 @@
+// out: ../css/style.css, compress: false, strictMath: true
+
+/*------------------------------------------------------------------
+Project:	Dojo Name HTML Templare
+Version:	1.0
+Last change:	26 November 2014
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.  Variables
+3.  Mixins
+4.  Animate.css
+5.  Font Awesome
+6.  Menu
+7.  Yamm Menu
+8.  Social Icons
+9.  Media Section
+10. Typography
+11. Slider
+12. Buttons
+13. Media Object
+14. News
+15. Widgets
+16. Call To Action
+17. Testiomonials
+18. Pricing Tables
+19. Portfolio
+20. Form
+21. Breadcrumb
+22. Person Box
+23. Accordion
+24. Counters
+25. Color Box
+26. Twitter
+27. Timeline
+28. Modal
+29. Light Gallery
+30. Gray
+31. Blog
+32. Events
+33. Calendar
+34. Tables
+35. Icon Box
+36. Progress Bar
+37. Utilities
+
+-------------------------------------------------------------------*/
+
+@import "variables.less";
+
+// z-index // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@z-index-1: 1000;
+@z-index-2: 2000;
+@z-index-3: 3000;
+@z-index-4: 4000;
+@z-index-5: 5000;
+@z-index-6: 6000;
+@z-index-7: 7000;
+@z-index-8: 8000;
+@z-index-9: 9000;
+
+@import "ct/mixins.less";
+@import "animate.less";
+@import "../fonts/fontawesome/less/font-awesome.less";
+@import "ct/menu.less";
+@import "yamm.less";
+@import "ct/socialicon.less";
+@import "../js/media-section_v2/less/media-section.less";
+@import "ct/typography";
+@import "../js/slick/slick.less";
+@import "ct/sliders.less";
+@import "ct/buttons.less";
+@import "ct/mediaObject.less";
+@import "ct/news.less";
+@import "ct/widget.less";
+@import "ct/callToAction.less";
+@import "ct/testimonials.less";
+@import "ct/pricingTables.less";
+@import "ct/portfolio.less";
+@import "ct/form.less";
+@import "ct/breadcrumb.less";
+@import "ct/personbox.less";
+@import "ct/accordion.less";
+@import "ct/mb-comingsoon.less";
+@import "ct/counters.less";
+@import "ct/colorbox.less";
+@import "ct/twitter.less";
+@import "ct/timeline.less";
+@import "ct/modal.less";
+@import "../js/light-gallery/css/lightGallery.css";
+@import "../js/gray-gh-pages/css/gray.min.css";
+@import "ct/blog.less";
+@import "ct/event.less";
+@import "../js/FullCallendar/fullcalendar.min.css";
+@import "ct/calendar.less";
+@import "ct/tables.less";
+@import "ct/iconbox.less";
+@import "ct/progressBar.less";
+
+@import "ct/utilities.less";
+
+
+img, figure{
+  max-width: 100%;
+}
+
+*{
+  outline: none !important;
+}
+
+.ct-sliderTab-content{
+  figure{
+    .grayscale{
+      //height: 260px;
+    }
+  }
+}
+
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: scrollbar;
+  font-size: 62.5%;
+  background-color: #000;
+  font-family: @font1;
+}
+
+body{
+  font-size: 1.4em;
+  width: 100%;
+  background-color: #000;
+  font-family: @font1;
+}
+
+ul,ol{
+  margin-bottom: 0;
+}
+
+.progress-icons{
+  &:before{
+   display: none;
+  }
+
+}
+
+// Wrapper and Snap.js // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.ct-pageWrapper{
+  overflow: hidden;
+  z-index: 3;
+  background-color: #000;
+  .ct-m-boxShadow(0px 0px 14px 4px rgba(0, 0, 0, 0.5));
+  .ct-m-transition(all, .3s, ease);
+  .ct-m-transform(none);
+
+}
+@media(max-width: @screen-xs-max){
+  .ct-pageWrapper{
+    .ct-m-translate(0,0);
+
+    &.isOpen{
+      .ct-m-translate(-266px,0);
+    }
+  }
+}
+
+
+body.boxed, .ptn1, .ptn2, .ptn3, .ptn4, .ptn5, .ptn6, .ptn7, .ptn8, .ptn9, .ptn10, .ptn11, .ptn12, .ptn13{
+  .ct-pageWrapper{
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .ct-js-btnScrollUp{
+    right: 19%;
+  }
+}
+
+@media(max-width: @screen-xs){
+    html {
+    font-size: 43.5%;
+  }
+}
+
+
+
+.ptn1, .ptn2, .ptn3, .ptn4, .ptn5, .ptn6, .ptn7, .ptn8, .ptn9, .ptn10, .ptn11, .ptn12, .ptn13{
+  background-attachment: fixed !important;
+}
+
+.ptn1{
+  background: url("../images/bg_pattern_01.png") repeat;
+}
+
+.ptn2{
+  background: url("../images/bg_pattern_02.png") repeat;
+}
+
+.ptn3{
+  background: url("../images/bg_pattern_03.png") repeat;
+}
+
+.ptn4{
+  background: url("../images/bg_pattern_09.png") repeat;
+}
+
+.ptn5{
+  background: url("../images/bg_pattern_10.png") repeat;
+}
+
+.ptn6{
+  background: url("../images/bg_pattern_11.jpg") repeat;
+}
+
+.ptn7{
+  background: url("../images/bg_pattern_12.jpg") repeat;
+}
+
+.ptn8{
+  background: url("../images/bg_pattern_12.png") repeat;
+}
+
+
+.ct-googleMap{
+  height: 355px;
+}
+
+.gm-style *{
+  touch-action: inherit !important;
+}
+
+.ct-map--small{
+  .ct-googleMap{
+    height: 420px;
+  }
+}
+
+.ct-map-container{
+  overflow: hidden;
+  position: relative;
+
+  .ct-map-buttonContainer{
+    position: relative;
+    z-index: 9;
+  }
+}
+
+.ct-googleMap--customInfoWindow{
+  height: 100%;
+}
+
+  .ct-googleMap--InfoWindowBody{
+    padding: 20px 0 0 25px;
+    font-family: @font2;
+    color: #000;
+    text-align: left;
+    height: 100%;
+    overflow: auto;
+
+
+    .ct-googleMapInfo-header{
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .ct-googleMapInfo-adress{
+      position: relative;
+
+      span{
+        font-size: 15px;
+        display: block;
+        margin-bottom: 3px;
+        font-weight: 400;
+      }
+
+      a{
+        font-size: 15px;
+        display: block;
+        margin-bottom: 3px;
+        font-weight: 400;
+        color: @motive;
+        text-decoration: none;
+
+        &:hover{
+          color: #1c1c1c;
+        }
+      }
+    }
+  }
+
+@media (max-width: @screen-sm-max) {
+  .ct-googleMap{
+    margin-top: 100px;
+  }
+}
+
+
+
+
+.animatedDif {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animatedDif.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite
+}
+
+.animatedDif.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s
+}
+
+
+nav.navbar-scroll-top {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
+ }
+
+ //headroom styles for fixed headers and menus
+ .headroom {
+   transition: transform 200ms linear;
+   z-index: 9998;
+ }
+ .headroom--pinned {
+   transform: translateY(0%);
+   display: block;
+ }
+ .headroom--unpinned {
+   transform: translateY(-100%);
+   display: none;
+ }
+
+
+.ct-js-btnScrollUp{
+
+  position: fixed;
+  bottom: 0;
+  right: 14%;
+  
+  text-decoration: none;
+
+  text-align: center;
+
+  width: 103px;
+  height: 47px;
+
+  z-index: 999999;
+
+  opacity: 0;
+  filter: alpha(opacity=0);
+
+  padding-top: 15px;
+
+  color: #fff;
+
+  visibility: hidden;
+
+  .ct-m-transition(all, .2s, ease-in-out);
+
+  &:before{
+    position: absolute;
+    content: "";
+    text-decoration: none;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 0;
+
+    border-style: solid;
+    border-width: 0 51px 52px 51px;
+    border-color: transparent transparent @motive transparent;
+  }
+
+  &.is-active{
+    visibility: visible;
+    color: #fff;
+    color: rgba(255,255,255,.7);
+    opacity: 1;
+    filter: alpha(opacity=100);
+
+    &:hover{
+      color: #fff;
+      color: rgba(255,255,255,1);
+      opacity: 1;
+      filter: alpha(opacity=100);
+    }
+  }
+    
+  span{
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    width: 16px;
+    height: 9px;
+    text-decoration: none;
+  }
+  i{
+    font-size: 24px;
+    border-radius: 50%;
+    height: 9px;
+    width: 16px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+}
+
+
+.ct-preloader{
+  position:fixed;
+  z-index:9999998;
+  width:100vw;
+  height:100vh;
+  background: #000;
+  overflow:hidden;
+
+  .ct-preloader-content{
+    position:absolute;
+    z-index:99999;
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -50px;
+    overflow: visible;
+
+    width: 100px;
+    height: 86px;
+    background: url("../images/preloader.gif") no-repeat;
+  }
+}
+
+
+
+@media(max-width: @screen-xs-max){
+  .ct-pageWrapper{
+    overflow: hidden;
+    position: relative;
+    //padding-top: 70px;
+  }
+}
+
+@media (max-width: 1230px){
+  .ct-js-btnScrollUp{
+    right: 0;
+  }
+}
+
+
+// Animations // -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.cssAnimate .animated{
+  opacity: 0;
+  filter:alpha(opacity=0); /* For IE8 and earlier */
+}
+.cssAnimate .activate{
+  opacity: 1;
+  filter:alpha(opacity=100); /* For IE8 and earlier */
+}
+
+//@import "ct/motive.less";
+
+
+@media (max-width: @screen-xs-max){
+  body{
+    main{
+      > section{
+        padding-top: 50px !important;
+        padding-bottom: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-xs){
+  .ct-googleMap{
+    margin-top: 0;
+  }
+}

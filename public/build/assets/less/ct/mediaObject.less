@@ -1,0 +1,37 @@
+// main: ../style.less
+
+/*Media Object*/
+
+
+.ct-media{
+  margin-bottom: 50px;
+  
+  .media-left{
+    min-width: 65px;
+  }
+  
+  .ct-media-body{
+    width: 100%;
+    
+    .ct-media-heading{
+      margin-top: 10px;
+      
+      span{
+        font-size: 0.833em;
+        color: #fff;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@media(max-width: @screen-xs){
+  .ct-media{
+
+    .media-left{
+      min-width: 50px;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+// main: ../style.less
+
+/*Pricing Tables*/
+
+
+
+.ct-pricingTable{
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 40px 30px;
+  .ct-m-rounded(1px);
+  margin-top: 60px;
+
+  margin-bottom: 50px;
+
+
+  .ct-pricingTable-image{
+    margin-bottom: 25px;
+
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+  }
+
+  .ct-pricingTables-header{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    > span{
+      font-size: 0.923em;
+      font-weight: 600;
+      letter-spacing: 3px;
+      line-height: 1.3;
+
+    }
+
+    small{
+      span{
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-size: 0.800em;
+
+      }
+    }
+  }
+
+  .ct-pricingTable-price{
+    text-transform: uppercase;
+    text-align: center;
+
+    > span{
+
+      font-size: 60px;
+      font-weight: 600;
+
+      span{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.61538;
+      }
+    }
+  }
+
+  .ct-pricingTable-text{
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+
+    &:after{
+      position: absolute;
+      top: 100%;
+
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      background-color: #6e6e6e;
+    }
+  }
+
+  .ct-pricingTable-list{
+    list-style: none;
+    text-transform: uppercase;
+
+    li{
+      padding-left: 40px;
+      position: relative;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 2.57;
+
+      &:before{
+        content: "\f00c";
+        position: absolute;
+        left: 0;
+        display: block;
+        font-family: fontawesome;
+        font-size: 20px;
+        line-height: 1.65;
+
+      }
+    }
+  }
+
+  &.ct-pricingTable-primary{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0;
+    color: #000;
+    padding: 50px 60px;
+    background-color: #fff;
+
+    .ct-pricingTable-image{
+      margin-bottom: 37px;
+    }
+
+    .ct-pricingTables-header{
+
+      > span{
+        font-size: 1em;
+      }
+
+      small{
+        span{
+          font-size: 1em;
+        }
+      }
+    }
+
+    .ct-pricingTable-price{
+      margin-bottom: 10px;
+
+      > span{
+        font-size: 66px;
+      }
+    }
+
+    .ct-pricingTable-text{
+      padding-left: 25px;
+      padding-right: 25px;
+
+      &:after{
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max){
+  .ct-pricingTable{
+
+    &.ct-pricingTable-primary{
+      margin-left: 0;
+      margin-right: 0;
+      padding: 50px 30px;
+    }
+  }
+}
+
+@media (max-width: @screen-xs){
+  .ct-pricingTable{
+    .ct-pricingTable-list{
+      + div{
+        margin-top: 40px;
+      }
+    }
+  }
+}

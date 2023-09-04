@@ -1,0 +1,113 @@
+// main: ../style.less
+
+/*Social Icon*/
+
+.socialicons{
+  font-size: 2.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  li{
+    margin-left: 1em;
+
+    &.socialicons-text{
+      font-size: 14px;
+      span{
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.8;
+      }
+    }
+
+    a{
+      display: block;
+      height: 1em;
+      width: 1em;
+      text-align: center;
+      text-decoration: none;
+
+      i{
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding-top: 1px;
+        color: @socialColor;
+
+        .ct-m-transition(color, .2s, ease);
+      }
+
+      &:hover{
+        i{
+          color: @socialHoverColor;
+        }
+      }
+    }
+
+    &:first-child{
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    list-style-type: none;
+    float: left;
+  }
+
+  &.socialicon--blackHover{
+    li{
+      a{
+
+        &:hover{
+          i{
+            color: #0f0f0f;
+          }
+        }
+      }
+    }
+  }
+  
+  &.socialicons-sm{
+    li{
+      margin-left: .7em;
+      
+      &:first-child{
+        margin-left: 0;
+      }
+
+      a{
+        width: .7em;
+
+        i{
+          //font-size: 34px;
+        }
+      }
+    }
+  }
+
+  &.socialicons--big{
+    li{
+      margin-left: 1.5em;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+      a{
+        width: 2em;
+        height: 2em;
+
+        i{
+          font-size: 34px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+// main: ../style.less
+
+
+/* Color Box */
+
+.ct-colorBox{
+  position: relative;
+  height: 100%;
+  display: table;
+  width: 100%;
+  z-index: 2;
+
+  .ct-colorBox-inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  &.ct-colorBox--noCenter{
+    display: block;
+
+    .ct-colorBox-inner{
+      display: block;
+      min-height: inherit;
+    }
+  }
+
+  &:before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 9999px;
+    background-color: inherit;
+  }
+
+  &.ct-colorBox--left{    
+    padding-right: 50px;
+
+    &:before{
+      left: -9999px;
+    }
+  }
+
+  &.ct-colorBox--right{
+    margin-left: -30px;
+
+    &:before{
+      right: -9999px;
+    }
+  }
+}
+
+.browser-mozilla {
+  .ct-colorBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ct-colorBox-inner{
+      display: block;
+    }
+  }
+}
+
+
+@media (max-width: 1230px){
+  .ct-colorBox{
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &.ct-colorBox--left{
+      padding-right: 0;
+
+      &:before{
+        left: -4499px;
+      }
+    }
+
+    &.ct-colorBox--right{
+      margin-left: 0;
+
+      &:before{
+        right: -4499px;
+      }
+    }
+  }
+}

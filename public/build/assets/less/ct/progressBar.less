@@ -1,0 +1,59 @@
+// main: ../style.less
+
+/* Progress Bar */
+
+
+.ct-progressBar{
+  margin-bottom: 68px;
+
+  .ct-progressBar-content{
+    .progress{
+      height: 16px;
+      background-color: transparent;
+      overflow: visible;
+      border: 1px solid #fff;
+
+      .ct-m-boxShadow(none);
+      .ct-m-rounded(0);
+
+
+      .progress-bar{
+        position: relative;
+        background-color: lighten(@motive, 20%);
+        overflow: visible;
+        .ct-m-boxShadow(none);
+        .ct-m-rounded(0);
+
+        > span{
+          text-align: left;
+          color:  #fff;
+          text-transform: uppercase;
+          font-weight: 300;
+          letter-spacing: 3px;
+          font-size: 14px;
+
+          position: absolute;
+
+          top: -32px;
+          left: 0;
+
+        }
+
+        .ct-progressBar-percent{
+          position: absolute;
+          top: -13px;
+          right: -20px;
+
+          width: 40px;
+          height: 40px;
+
+          span{
+            line-height: 40px;
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

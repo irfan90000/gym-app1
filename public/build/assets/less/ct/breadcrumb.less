@@ -1,0 +1,46 @@
+// main: ../style.less
+
+/* Breadcrumb */
+
+.ct-bradcrumb{
+  background-color: @motive;
+  
+  ul{
+    margin-left: 0;
+    
+    li{
+      padding-left: 0;           
+      
+      &:last-child{
+        a{
+          &:after{
+            display: none;
+          }
+        }
+      }
+      
+      a{
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+        text-decoration: none;
+        padding: 9px 0;
+        display: block;
+        
+        &:after{
+          content: "\f105";
+          font-family: "fontawesome";
+          font-size: 13px;
+          margin-left: 10px;
+          
+          color: #fff !important;
+        }
+        
+        &:hover{          
+          color: #6a6a6a;       
+        }
+      }
+    }
+  }
+}

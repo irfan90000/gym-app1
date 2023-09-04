@@ -1,0 +1,307 @@
+// main: ../style.less
+
+/*Modal*/
+
+
+.modal{
+  display:block;
+  visibility:hidden;
+  opacity:0;
+  z-index:-99999;
+
+  &.in{
+    opacity:1;
+    visibility:visible;
+    z-index:10400;
+  }
+}
+
+.ct-modal{
+  .modal-backdrop{
+    position: fixed;
+    background-color: @motive;
+    background-color: rgba(57, 26, 0, .7);
+  }
+
+  .ct-modalDialog{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+    width: 486px;
+
+    .ct-modalContent{
+
+      border-radius: 0;
+
+      .ct-modalHeader{
+        border: none;
+        padding: 7px;
+        .close{
+          margin-right: 3px;
+        }
+      }
+
+      .ct-modalBody{
+
+        .ct-modalBody-header{
+          h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+            span{
+              font-size: 0.917em;
+            }
+          }
+
+          p{
+            color:  #000000;
+            font-size: 1.9rem;
+            font-weight: 400;
+            font-family: @font2;
+            padding: 0 4.5rem;
+            line-height: 1.1;
+          }
+
+          span{
+
+          }
+        }
+
+        .ct-modalBody-content{
+          padding: 0 20px;
+        }
+      }
+
+      .ct-modalFooter{
+        border: none;
+
+        > p{
+          color:  #000000;
+          font-size: 1.9rem;
+          font-weight: 400;
+          font-family: @font2;
+          line-height: 1.1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max){
+  .ct-modal{
+    .ct-modalDialog{
+
+    }
+  }
+}
+
+@media (max-width: @screen-xs-max){
+  .modal-backdrop{
+    z-index: 1;
+  }
+
+  .ct-modal{
+
+    .ct-modalDialog{
+
+      .ct-modalContent{
+
+        .ct-modalBody{
+
+        }
+
+        .ct-modalFooter{
+
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: @screen-xs){
+  .ct-modal{
+
+    .ct-modalDialog{
+
+      width: 310px;
+
+      .ct-modalContent{
+
+        .ct-modalHeader{
+          .close{
+            right: -8px;
+            top: -6px;
+          }
+        }
+
+        .ct-modalBody{
+
+        }
+
+        .ct-modalFooter{
+
+        }
+      }
+    }
+  }
+}
+
+.ct-divider{
+  position: relative;
+  width: 100%;
+
+  &:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    display: block;
+
+    height: 1px;
+    width: 18%;
+
+    background-color: #000;
+   }
+  
+  &.ct-divider--fullWidth{
+    &:after{
+      width: 100%;
+    }
+  }
+
+  &.ct-divider--left{
+    &:after{
+      width: 95%;
+      right: auto;
+    }
+  }
+
+  &.ct-divider--right{
+    &:after{
+      width: 95%;
+      left: auto;
+    }
+  }
+
+  &.ct-divider--gray{
+    &:after{
+      background-color: #B9B9B9;
+    }
+  }
+
+  &.ct-divider--darkGray{
+    &:after{
+      background-color: #414141;
+    }
+  }
+}
+
+
+
+.ct-achievementList{
+  li{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: @font2;
+    display: table;
+    margin: 0 auto;
+
+    i{
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    span{
+      vertical-align: middle;
+      display: table-cell;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.ct-classJoin{
+  overflow: hidden;
+  margin-bottom: 11px;
+
+  p{
+    display: block;
+    margin: 0;
+    font-size: 1.6rem;
+    padding: 14px 25px;
+    margin-right: 25px;
+    border: 1px solid;
+
+    .ct-m-transition(all, .3s, ease);
+  }
+
+  &:hover{
+    p{
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}
+
+
+.ct-modal-price-header{
+  text-align: center;
+  margin-bottom: 30px;
+
+  span{
+    font-size: 0.833em;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  small{
+    margin-top: 10px;
+
+    span{
+      font-weight: 400;
+      font-size: 0.800em;
+    }
+  }
+}
+
+.ct-modal-price{
+  margin-bottom: 35px;
+  text-align: center;
+
+  span{
+    color: #000;
+    font-size: 66px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    span{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+
+
+@media (max-width: @screen-xs){
+  .ct-classJoin{
+
+    p{
+      font-size: 1.6rem;
+      padding: 14px 10px;
+      margin-right: 15px;
+    }
+
+    .btn.btn-lg{
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 1.7rem;
+    }
+  }
+}

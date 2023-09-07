@@ -24,15 +24,29 @@ class ProductController extends Controller
     public function program()
     {
         $category = Category::where('name', 'program')->first();
-        $products = Product::where('category_id', $category->id)->get();
-        return response()->json($products);
+        if(!empty($category)){
+            $products = Product::where('category_id', $category->id)->get();
+            return response()->json($products);
+        }
+        else{
+            $data['massege'] = "No Record Found";
+            $data['status'] = 500;
+            return response()->json($data);
+        }
+        
     }
 
     public function subscription()
     {
-        $category = Category::where('name', 'Monthly Subscription')->first();
-        $product = Product::where('category_id', $category->id)->with('files')->first();
-        return response()->json($product);
+        $category = Category::where('name', 'monthly_subscription')->first();
+        if(!empty($category)){
+            $product = Product::where('category_id', $category->id)->with('files')->first();
+            return response()->json($product);
+        }else{
+            $data['massege'] = "No Record Found";
+            $data['status'] = 500;
+            return response()->json($data);
+        }
     }
 
     /**

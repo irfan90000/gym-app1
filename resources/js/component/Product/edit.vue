@@ -116,7 +116,6 @@ export default {
                 this.form.name = response.data.name;
                 this.form.title = response.data.title;
                 this.form.price = response.data.price;
-                this.form.status = response.data.status;
                 this.form.description = response.data.description;
             }
         },

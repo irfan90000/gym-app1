@@ -58,7 +58,6 @@ export default {
             };
             const response = await axios.get('/edit/category/'+this.$route.params.id,{headers});
             this.form.name = response.data.name;
-            this.form.status = response.data.status ;
         },
         async submit(e){
             this.errors = [];

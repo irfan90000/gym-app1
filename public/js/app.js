@@ -18609,16 +18609,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             case 4:
               response = _context2.sent;
               if (response.data) {
-<<<<<<< HEAD
-                _this2.form.name = response.data.name;
-                _this2.form.title = response.data.title;
-                _this2.form.price = response.data.price;
-                _this2.form.status = response.data.status;
-                _this2.form.description = response.data.description;
-                _this2.form.category_id = response.data.category_id;
-=======
                 _this2.categories = response.data;
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
               }
             case 6:
             case "end":
@@ -18627,56 +18618,13 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         }, _callee2);
       }))();
     },
-<<<<<<< HEAD
-    submit: function submit(e) {
-=======
     edit: function edit() {
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
       var _this3 = this;
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
         var token, headers, response;
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-<<<<<<< HEAD
-              _this3.errors = [];
-              console.log(_this3.form, 'dd');
-              if (_this3.form.name) {
-                _context3.next = 5;
-                break;
-              }
-              _this3.errors.push('Name required');
-              return _context3.abrupt("return");
-            case 5:
-              if (_this3.form.title) {
-                _context3.next = 8;
-                break;
-              }
-              _this3.errors.push('Title required');
-              return _context3.abrupt("return");
-            case 8:
-              if (_this3.form.price) {
-                _context3.next = 11;
-                break;
-              }
-              _this3.errors.push('Price required');
-              return _context3.abrupt("return");
-            case 11:
-              if (_this3.form.category_id) {
-                _context3.next = 14;
-                break;
-              }
-              _this3.errors.push('Category required');
-              return _context3.abrupt("return");
-            case 14:
-              if (_this3.form.description) {
-                _context3.next = 17;
-                break;
-              }
-              _this3.errors.push('Description required');
-              return _context3.abrupt("return");
-            case 17:
-=======
               token = localStorage.getItem('token'); // Replace with your actual authentication token
               headers = {
                 'Authorization': "Bearer ".concat(token)
@@ -18692,6 +18640,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this3.form.title = response.data.title;
                 _this3.form.price = response.data.price;
                 _this3.form.description = response.data.description;
+                _this3.form.category_id = response.data.category_id;
               }
             case 6:
             case "end":
@@ -18703,74 +18652,63 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     submit: function submit(e) {
       var _this4 = this;
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-        var token, config, response;
+        var token, headers, response;
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
               _this4.errors = [];
+              console.log(_this4.form, 'dd');
               if (_this4.form.name) {
-                _context4.next = 4;
+                _context4.next = 5;
                 break;
               }
               _this4.errors.push('Name required');
               return _context4.abrupt("return");
-            case 4:
+            case 5:
               if (_this4.form.title) {
-                _context4.next = 7;
+                _context4.next = 8;
                 break;
               }
               _this4.errors.push('Title required');
               return _context4.abrupt("return");
-            case 7:
+            case 8:
               if (_this4.form.price) {
-                _context4.next = 10;
+                _context4.next = 11;
                 break;
               }
               _this4.errors.push('Price required');
               return _context4.abrupt("return");
-            case 10:
+            case 11:
               if (_this4.selectedCategory) {
-                _context4.next = 13;
+                _context4.next = 14;
                 break;
               }
               _this4.errors.push('Category required');
               return _context4.abrupt("return");
-            case 13:
+            case 14:
               if (_this4.form.description) {
-                _context4.next = 16;
+                _context4.next = 17;
                 break;
               }
               _this4.errors.push('Description required');
               return _context4.abrupt("return");
-            case 16:
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
+            case 17:
               e.preventDefault();
               token = localStorage.getItem('token'); // Replace with your actual authentication token
               console.log(token);
               headers = {
                 'Authorization': "Bearer ".concat(token)
               };
-<<<<<<< HEAD
-              _context3.next = 23;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].post('update/product/' + _this3.$route.params.id, _this3.form, {
+              _context4.next = 23;
+              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].post('update/product/' + _this4.$route.params.id, _this4.form, {
                 headers: headers
               });
             case 23:
-              response = _context3.sent;
-=======
-              _context4.next = 21;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].post('update/product/' + _this4.$route.params.id, _this4.form, config);
-            case 21:
               response = _context4.sent;
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
               if (response.data.status == 200) {
                 _this4.$router.push('/product');
               }
-<<<<<<< HEAD
             case 25:
-=======
-            case 23:
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
             case "end":
               return _context4.stop();
           }
@@ -24456,13 +24394,9 @@ var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
   "class": "card-title"
 }, "Edit Product", -1 /* HOISTED */);
 var _hoisted_8 = {
-<<<<<<< HEAD
-  "class": "text-danger"
-=======
   style: {
     "color": "white"
   }
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
 };
 var _hoisted_9 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "for": "",
@@ -24508,11 +24442,7 @@ var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "for": "exampleInputUsername1"
 }, "Description", -1 /* HOISTED */);
 var _hoisted_24 = {
-<<<<<<< HEAD
-  "class": "form-check mb-5"
-=======
   "class": "form-check d-flex"
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
 };
 var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
   "class": "label",
@@ -24538,17 +24468,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, ["prevent"]))
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.errors, function (error) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(error), 1 /* TEXT */);
-<<<<<<< HEAD
-  }), 256 /* UNKEYED_FRAGMENT */))]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
-    "class": "form-select",
-    "aria-label": "Default select example",
-    "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
-      return $data.form.category_id = $event;
-    }),
-    style: {
-      "background": "#191C24 !important"
-    }
-=======
   }), 256 /* UNKEYED_FRAGMENT */))]), _hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
     "class": "form-select",
     style: {
@@ -24557,16 +24476,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onChange: _cache[0] || (_cache[0] = function () {
       return $options.updateSelectedCategory && $options.updateSelectedCategory.apply($options, arguments);
     })
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
   }, [_hoisted_10, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.name), 9 /* TEXT, PROPS */, _hoisted_11);
-<<<<<<< HEAD
-  }), 256 /* UNKEYED_FRAGMENT */))], 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $data.form.category_id]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
-=======
   }), 256 /* UNKEYED_FRAGMENT */))], 32 /* HYDRATE_EVENTS */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
->>>>>>> 36a3784e3cf883fd315e1ffe298b8103630c7335
     type: "text",
     name: "name",
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {

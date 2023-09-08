@@ -13,7 +13,7 @@
                                     <li v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id">
+                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id" style="height: 40px !important;">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -37,7 +37,7 @@
                                 </div> -->
                                 <div class="upload__box">
                                     <label for="exampleInputUsername1" class="lable">Image</label>
-                                    <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
+                                    <input type="file" class="form-control" multiple="multiple" style="background: repeating-linear-gradient(45deg, black, transparent 100px);" @change="handleFileChange"
                                         :data-max_length="maxImages">
                                     <div class="upload__img-wrap">
                                         <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">File</label>
-                                    <input type="file" name="file" @change="uploadFile($event)" multiple="multiple"
+                                    <input type="file" name="file" @change="uploadFile($event)" style="background: repeating-linear-gradient(45deg, black, transparent 100px);" multiple="multiple"
                                         data-max_length="2" class="form-control" id="exampleInputUsername1"
                                         placeholder="File">
                                 </div>
@@ -301,7 +301,7 @@ select.form-control{
     /* color: #4b5564; */
     background-color: #191C24;
 }
-input, textarea, select{
+input, textarea, select, file{
     color:white !important;
 }
 .form-control {

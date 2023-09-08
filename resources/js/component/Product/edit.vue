@@ -10,10 +10,10 @@
                             <h4 class="card-title">Edit Product</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
-                                    <li v-for="error in errors">{{ error }}</li>
+                                    <li v-for="error in errors"  class="text-danger">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select class="form-select" aria-label="Default select example"  v-model="form.category_id" style="background: #191C24 !important;">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -49,7 +49,7 @@
                                     <textarea type="number" name="description" v-model="form.description" class="form-control"
                                         id="exampleInputUsername1" row="5" placeholder="Description"></textarea>
                                 </div>
-                                <div class="form-check">
+                                <div class="form-check mb-5">
                                     <label class="label"> Status </label>
                                     <input type="checkbox" v-model="form.status" class="form-check-input" style="margin-left: 5px;">
                                 </div>
@@ -80,7 +80,8 @@ export default {
                 title: '',
                 price: '',
                 status: '',
-                description:''
+                description:'',
+                category_id: '',
             },
             categories:''
 
@@ -114,10 +115,13 @@ export default {
                 this.form.price = response.data.price;
                 this.form.status = response.data.status;
                 this.form.description = response.data.description;
+                this.form.category_id = response.data.category_id;
             }
         },
-       async submit() {
+       async submit(e) {
         this.errors = [];
+
+        console.log(this.form,'dd');
             if (!this.form.name) {
                 this.errors.push('Name required');
                 return;
@@ -134,27 +138,25 @@ export default {
                 this.errors.push('Category required');
                 return;
             }
-            if (!this.form.files) {
-                this.errors.push('Files required');
-                return;
-            }
-            if (!this.form.images) {
-                this.errors.push('Images required');
-                return;
-            }
+            // if (!this.form.files) {
+            //     this.errors.push('Files required');
+            //     return;
+            // }
+            // if (!this.form.images) {
+            //     this.errors.push('Images required');
+            //     return;
+            // }
             if (!this.form.description) {
                 this.errors.push('Description required');
                 return;
             }
             e.preventDefault();
-            const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const config = {
-                headers: {
-                    'content-type': 'multipart/form-data',
-                    'Authorization': `Bearer ${token}`
-                }
-            }
-            const response = await axios.post('update/product/'+this.$route.params.id,this.form,config);
+           const token = localStorage.getItem('token'); // Replace with your actual authentication token
+           console.log(token);
+           const headers = {
+               'Authorization': `Bearer ${token}`
+           };
+            const response = await axios.post('update/product/'+this.$route.params.id,this.form,{ headers });
             if(response.data.status == 200){
                 this.$router.push('/product')
             }
@@ -202,24 +204,126 @@ export default {
 }
 </script>
 <style scope>
-.form-group mt-5 {
-    border-bottom: 1px solid #2c2e33;
-    padding-bottom: 0.8rem;
-    margin-bottom: 0.8rem;
+p {
+    margin: 0;
 }
 .card-design{
     background: #191c24 !important;
+}
+
+
+.form-check-input {
+    width: 1.5em !important;
+    height: 1em !important;
+    margin-top: 0.25em;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.upload__btn {
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    min-width: 116px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid;
+    background-color: #4045ba;
+    border-color: #4045ba;
+    border-radius: 10px;
+    line-height: 26px;
+    font-size: 14px;
+}
+
+.upload__btn:hover {
+    background-color: unset;
+    color: #4045ba;
+    transition: all 0.3s ease;
+}
+
+.upload__btn-box {
+    margin-bottom: 10px;
+}
+
+.upload__img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.upload__img-box {
+    width: 200px;
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+.upload__img-close {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.upload__img-close:after {
+    content: '\2716';
+    font-size: 14px;
+    color: white;
+}
+
+.img-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100%;
+}
+.form-group mt-5 {
+    border-bottom:0;
+
 }
 form label{
     margin-top: -28px;
     margin-left: -16px;
 }
 form input {
-    height: 32px;
+    height: 43px !important;
 }
-form .lable{
-    color: white;
-    font-size: 17px;
-    margin-left: 1px;
+form-check{
+    height: 10px !important;
+}
+
+select.form-control{
+    padding: 0.4375rem 0.75rem;
+    border: 0;
+    /* color: #4b5564; */
+    background-color: #191C24;
+}
+input, textarea, select, file{
+    color:white !important;
+}
+.form-control {
+    display: block  !important;
+    width: 100% !important;
+    padding: 0.469rem 0.735rem !important;
+    font-size: 0.9375rem !important;
+    font-weight: 400 !important;
+    line-height: 2.4 !important;
+    color: #a1b0cb !important;
+    background-clip: padding-box !important;
+    border: 1px solid #546990 !important;
+    border-radius: 0.25rem !important;
+
 }
 </style>

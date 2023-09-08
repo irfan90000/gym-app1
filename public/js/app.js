@@ -20664,7 +20664,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -20871,7 +20871,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -20887,7 +20887,10 @@ var _hoisted_9 = {
   "class": "table-responsive"
 };
 var _hoisted_10 = {
-  "class": "table"
+  "class": "table",
+  style: {
+    "margin": "10px 0 40px 0"
+  }
 };
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   style: {
@@ -23598,7 +23601,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -23844,7 +23847,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -23860,7 +23863,10 @@ var _hoisted_9 = {
   "class": "table-responsive"
 };
 var _hoisted_10 = {
-  "class": "table"
+  "class": "table",
+  style: {
+    "margin": "10px 0 40px 0"
+  }
 };
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   style: {
@@ -24166,7 +24172,7 @@ var _hoisted_5 = {
   "class": "card mt-5 card-design"
 };
 var _hoisted_6 = {
-  "class": "card-body"
+  "class": "card-body custom-card"
 };
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "card-title"
@@ -24253,7 +24259,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "aria-label": "Default select example",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $data.form.category_id = $event;
-    })
+    }),
+    style: {
+      "background": "#36445d"
+    }
   }, [_hoisted_9, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id
@@ -24283,7 +24292,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onChange: _cache[3] || (_cache[3] = function () {
       return $options.handleFileChange && $options.handleFileChange.apply($options, arguments);
     }),
-    "data-max_length": $data.maxImages
+    "data-max_length": $data.maxImages,
+    style: {
+      "background": "#36445d"
+    }
   }, null, 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_17), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.imageArray, function (img, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: index,
@@ -24566,19 +24578,25 @@ var _hoisted_5 = {
   "class": "card mt-5 card-design"
 };
 var _hoisted_6 = {
-  "class": "card-body"
+  "class": "card-body",
+  style: {
+    "background-color": "#36445d"
+  }
 };
 var _hoisted_7 = {
   "class": "row"
 };
 var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-  "class": "card-title col-10"
+  "class": "card-title col-11"
 }, "Product", -1 /* HOISTED */);
 var _hoisted_9 = {
   "class": "table-responsive"
 };
 var _hoisted_10 = {
-  "class": "table"
+  "class": "table",
+  style: {
+    "margin": "10px 0 40px 0"
+  }
 };
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   style: {
@@ -24793,7 +24811,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -25018,7 +25036,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -25027,14 +25045,17 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   "class": "row"
 };
-var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h6", {
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
   "class": "card-title col-11"
 }, "Settings", -1 /* HOISTED */);
 var _hoisted_9 = {
   "class": "table-responsive"
 };
 var _hoisted_10 = {
-  "class": "table"
+  "class": "table",
+  style: {
+    "margin": "10px 0 40px 0"
+  }
 };
 var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("thead", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("th", {
   style: {
@@ -25345,10 +25366,7 @@ var _hoisted_2 = {
   "class": "container-fluid page-body-wrapper"
 };
 var _hoisted_3 = {
-  "class": "row col-12 mt-5",
-  style: {
-    "background": "#191c24"
-  }
+  "class": "row col-12 mt-5"
 };
 var _hoisted_4 = {
   "class": "col-12 grid-margin stretch-card mt-5"
@@ -25356,7 +25374,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -25540,7 +25558,7 @@ var _hoisted_4 = {
 var _hoisted_5 = {
   "class": "card mt-5",
   style: {
-    "background": "#191c24"
+    "background": "#36445d"
   }
 };
 var _hoisted_6 = {
@@ -27745,7 +27763,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/* .button{\r\n    margin-left: 200px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color:#9a0606;\r\n} */\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/* .button{\n    margin-left: 200px;\n    font-size: 13px;\n    font-family: auto;\n    background-color:#9a0606;\n} */\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27769,7 +27787,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".button {\r\n    /* margin-left: 230px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color: #9a0606; */\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".button {\n    /* margin-left: 230px;\n    font-size: 13px;\n    font-family: auto;\n    background-color: #9a0606; */\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27793,7 +27811,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.button {\r\n    margin-left: 200px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color: #9a0606;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.button {\n    margin-left: 200px;\n    font-size: 13px;\n    font-family: auto;\n    background-color: #9a0606;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27865,7 +27883,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27961,7 +27979,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28009,7 +28027,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np {\n    margin: 0;\n}\n.card-design{\n    background: #191c24 !important;\n}\n.upload__btn {\n    display: inline-block;\n    font-weight: 600;\n    color: #fff;\n    text-align: center;\n    min-width: 116px;\n    padding: 5px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    border: 2px solid;\n    background-color: #4045ba;\n    border-color: #4045ba;\n    border-radius: 10px;\n    line-height: 26px;\n    font-size: 14px;\n}\n.upload__btn:hover {\n    background-color: unset;\n    color: #4045ba;\n    transition: all 0.3s ease;\n}\n.upload__btn-box {\n    margin-bottom: 10px;\n}\n.upload__img-wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n}\n.upload__img-box {\n    width: 200px;\n    padding: 0 10px;\n    margin-bottom: 12px;\n}\n.upload__img-close {\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.5);\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    text-align: center;\n    line-height: 24px;\n    z-index: 1;\n    cursor: pointer;\n}\n.upload__img-close:after {\n    content: '\\2716';\n    font-size: 14px;\n    color: white;\n}\n.img-bg {\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    position: relative;\n    padding-bottom: 100%;\n}\n.form-group mt-5 {\n    border-bottom:0;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 43px !important;\n}\nform .lable{\n    color: white;\n    font-size: 17px;\n    margin-left: 1px;\n}\nselect.form-control{\n    padding: 0.4375rem 0.75rem;\n    border: 0;\n    /* color: #4b5564; */\n    background-color: #191C24;\n}\ninput, textarea, select{\n    color:white !important;\n}\n.form-control {\n    display: block  !important;\n    width: 100% !important;\n    padding: 0.469rem 0.735rem !important;\n    font-size: 0.9375rem !important;\n    font-weight: 400 !important;\n    line-height: 2.4 !important;\n    color: #a1b0cb !important;\n    background-clip: padding-box !important;\n    border: 1px solid #546990 !important;\n    border-radius: 0.25rem !important;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np {\n    margin: 0;\n}\n.card-design{\n    background: #191c24 !important;\n}\n.custom-card{\n    background: #36445d;\n    border-radius: 5px;\n}\n.upload__btn {\n    display: inline-block;\n    font-weight: 600;\n    color: #fff;\n    text-align: center;\n    min-width: 116px;\n    padding: 5px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    border: 2px solid;\n    background-color: #4045ba;\n    border-color: #4045ba;\n    border-radius: 10px;\n    line-height: 26px;\n    font-size: 14px;\n}\n.upload__btn:hover {\n    background-color: unset;\n    color: #4045ba;\n    transition: all 0.3s ease;\n}\n.upload__btn-box {\n    margin-bottom: 10px;\n}\n.upload__img-wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n}\n.upload__img-box {\n    width: 200px;\n    padding: 0 10px;\n    margin-bottom: 12px;\n}\n.upload__img-close {\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.5);\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    text-align: center;\n    line-height: 24px;\n    z-index: 1;\n    cursor: pointer;\n}\n.upload__img-close:after {\n    content: '\\2716';\n    font-size: 14px;\n    color: white;\n}\n.img-bg {\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    position: relative;\n    padding-bottom: 100%;\n}\n.form-group mt-5 {\n    border-bottom:0;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 43px !important;\n}\nform .lable{\n    color: white;\n    font-size: 17px;\n    margin-left: 1px;\n}\nselect.form-control{\n    padding: 0.4375rem 0.75rem;\n    border: 0;\n    /* color: #4b5564; */\n    background-color: #191C24;\n}\ninput, textarea, select{\n    color:white !important;\n}\n.form-control {\n    display: block  !important;\n    width: 100% !important;\n    padding: 0.469rem 0.735rem !important;\n    font-size: 0.9375rem !important;\n    font-weight: 400 !important;\n    line-height: 2.4 !important;\n    color: #a1b0cb !important;\n    background-clip: padding-box !important;\n    border: 1px solid #546990 !important;\n    border-radius: 0.25rem !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28153,7 +28171,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28177,7 +28195,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\r\n    margin-top: -28px;\r\n    margin-left: -16px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28225,7 +28243,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

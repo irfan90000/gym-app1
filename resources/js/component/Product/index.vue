@@ -6,14 +6,14 @@
             <div class="row col-12 mt-5" style="background-color: #191C24;">
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: #36445d;">
                             <div class="row">
-                                <h2 class="card-title col-10">Product</h2>
+                                <h2 class="card-title col-11">Product</h2>
                                 <router-link to="add/product" class="nav-link btn btn-primary col-1">Add</router-link>
                             </div>
 
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table" style="margin:10px 0 40px 0">
                                     <thead>
                                         <tr>
                                             <th  style="text-align: inherit; font-size: 18px;">Name</th>

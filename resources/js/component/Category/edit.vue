@@ -17,9 +17,9 @@
                                     <input type="text" name="name" v-model="form.name" class="form-control" id=""
                                         placeholder="Name" style="height: 36px;">
                                 </div>
-                                <div class="form-check">
-                                    <label class="label"> Status </label>
-                                    <input type="checkbox" v-model="form.status" class="form-check-input" style=" margin-left: 6px; margin-top: 3px;">
+                                <div class="form-check d-flex">
+                                    <label class="label" style="margin-top: -6px;"> Status </label>
+                                    <input type="checkbox" v-model="form.status" class="" style=" margin-left: 6px; margin-top: -17px;">
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>
                                 <button class="btn btn-dark">Cancel</button>
@@ -58,7 +58,6 @@ export default {
             };
             const response = await axios.get('/edit/category/'+this.$route.params.id,{headers});
             this.form.name = response.data.name;
-            this.form.status = response.data.status ;
         },
         async submit(e){
             this.errors = [];

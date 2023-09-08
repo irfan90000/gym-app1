@@ -3,17 +3,18 @@
         <sidebar />
         <div class="container-fluid page-body-wrapper">
             <navbar />
-            <div class="row col-12 mt-5">
+            <div class="row col-12 mt-5" style="background-color: #191C24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
                         <div class="card-body">
                             <h4 class="card-title">Edit Product</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
-                                    <li v-for="error in errors"  class="text-danger">{{ error }}</li>
+
+                                    <li style="color: white;" v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select" aria-label="Default select example"  v-model="form.category_id" style="background: #191C24 !important;">
+                                <select class="form-select" style="background-color: #191C24" @change="updateSelectedCategory">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -49,9 +50,10 @@
                                     <textarea type="number" name="description" v-model="form.description" class="form-control"
                                         id="exampleInputUsername1" row="5" placeholder="Description"></textarea>
                                 </div>
-                                <div class="form-check mb-5">
-                                    <label class="label"> Status </label>
-                                    <input type="checkbox" v-model="form.status" class="form-check-input" style="margin-left: 5px;">
+
+                                <div class="form-check d-flex">
+                                    <label class="label" style="margin-top: -10px;"> Status </label>
+                                    <input type="checkbox" v-model="form.status" class="" style="margin-left: 13px;margin-top: -20px;">
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>
                                 <button class="btn btn-dark">Cancel</button>
@@ -75,6 +77,7 @@ export default {
             imageArray: [],
             pdfArray: [],
             maxImages: 5,
+            selectedCategory:'',
             form: {
                 name: '',
                 title: '',
@@ -92,6 +95,9 @@ export default {
         sidebar
     },
     methods: {
+        async updateSelectedCategory(event){
+            this.selectedCategory = event.target.value;
+        },
         async getCategory() {
             const token = localStorage.getItem('token'); // Replace with your actual authentication token
             const headers = {
@@ -113,12 +119,12 @@ export default {
                 this.form.name = response.data.name;
                 this.form.title = response.data.title;
                 this.form.price = response.data.price;
-                this.form.status = response.data.status;
                 this.form.description = response.data.description;
                 this.form.category_id = response.data.category_id;
             }
         },
        async submit(e) {
+
         this.errors = [];
 
         console.log(this.form,'dd');
@@ -134,7 +140,7 @@ export default {
                 this.errors.push('Price required');
                 return;
             }
-            if (!this.form.category_id) {
+            if (!this.selectedCategory) {
                 this.errors.push('Category required');
                 return;
             }

@@ -240,7 +240,8 @@
                     </div>
 
                     <div class="hero__card">
-                      <p class="hero__text" style="color:white">Take the FREE Body Type quiz to find out exactly what diet and exercises will
+                      <p class="hero__text" style="color:white">Take the FREE Body Type quiz to find out exactly what diet
+                        and exercises will
                         get you the
                         best results! </p>
                       <div class="hero__cta-container d-flex">
@@ -251,7 +252,7 @@
                           </div>
                         </a>
                         <!-- href="/b1" -->
-<!-- href="/b1" -->
+                        <!-- href="/b1" -->
                         <a @click="firstroute()" class="btn btn-primary" style="color:white">
                           <div class="hero__ct  a female">
                             <span class="hero__cta-label">FEMALE</span>
@@ -935,8 +936,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1181,8 +1182,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1427,8 +1428,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1673,8 +1674,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1919,8 +1920,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -2545,7 +2546,7 @@
                   {{ Program_Products.description }}
                 </p>
 
-                <div class="text-center ct-u-marginTop80">
+                <div class="text-center ct-u-marginTop80"  v-if="token != null">
                   <a class="btn ct-btn--o btn-default" @click="download(Program_Products.id)"><span>Download</span></a>
                 </div>
 
@@ -2568,7 +2569,7 @@
                   {{ Subs_Products.description }}
                 </p>
 
-                <div class="text-center ct-u-marginTop60">
+                <div class="text-center ct-u-marginTop60" v-if="token != null">
                   <a class="btn ct-btn--c btn-default" @click="download(Subs_Products.id)"><span>Download</span></a>
                 </div>
               </article>
@@ -2666,7 +2667,8 @@
           <div class="ct-portfolio lightGallery ct-portfolio--col4 ct-portfolio-container is-loaded"
             style="position: relative; height: 494.4px;">
 
-            <article class="ct-portfolio-item gym" data-src="./../../public/assets/images/content/pexels-pixabay-260447.jpg"
+            <article class="ct-portfolio-item gym"
+              data-src="./../../public/assets/images/content/pexels-pixabay-260447.jpg"
               style="position: absolute; left: 0px; top: 0px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-pixabay-260447.jpg" alt="">
@@ -2684,7 +2686,8 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item facility" data-src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg"
+            <article class="ct-portfolio-item facility"
+              data-src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg"
               style="position: absolute; left: 372px; top: 0px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg" alt="">
@@ -2701,10 +2704,12 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="ct-portfolio-item cage" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
+            <article class="ct-portfolio-item cage"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
               style="position: absolute; left: 744px; top: 0px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2718,10 +2723,12 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="ct-portfolio-item dojo" data-src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+            <article class="ct-portfolio-item dojo"
+              data-src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
               style="position: absolute; left: 1116px; top: 0px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2739,7 +2746,8 @@
             <article class="ct-portfolio-item gym" data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8"
               style="position: absolute; left: 0px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+                  alt="">
 
                 <figcaption>
                   <div class="ct-item-hover">
@@ -2756,10 +2764,12 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item facility" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
+            <article class="ct-portfolio-item facility"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
               style="position: absolute; left: 372px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2774,10 +2784,12 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item dojo" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
+            <article class="ct-portfolio-item dojo"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
               style="position: absolute; left: 744px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2792,7 +2804,8 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item gym" data-src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg"
+            <article class="ct-portfolio-item gym"
+              data-src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg"
               style="position: absolute; left: 1116px; top: 247px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg" alt="">
@@ -3702,6 +3715,7 @@ export default {
     return {
       Program_Products: [],
       Subs_Products: [],
+      token:null
     }
   },
   components: {
@@ -3711,36 +3725,37 @@ export default {
   methods: {
     async getProductSubs() {
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
-      const response = await axios.get('/product/subscription',{headers});
+      const headers = {
+        'Authorization': `Bearer ${token}`
+      };
+      const response = await axios.get('/product/subscription', { headers });
       this.Subs_Products = response.data;
     },
-    async firstroute(){
-      var user_id  = localStorage.getItem('user_id');
-      if(user_id){
+    async firstroute() {
+      var user_id = localStorage.getItem('user_id');
+      if (user_id) {
         this.$router.push('/b1')
-      }else{
+      } else {
         alert('Please Login First')
       }
     },
     async getProductProgram() {
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
-      const response = await axios.get('/product/program',{headers});
+      const headers = {
+        'Authorization': `Bearer ${token}`
+      };
+      const response = await axios.get('/product/program', { headers });
       this.Program_Products = response.data;
     },
     async download(id) {
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
+      const headers = {
+        'Authorization': `Bearer ${token}`
+      };
       const response = await axios.get('/download/product/all/file/' + id, {
         responseType: 'blob',
-      },{headers});
+        headers :headers 
+      });
       var fileURL = window.URL.createObjectURL(new Blob([response.data]));
       var fileLink = document.createElement('a');
 
@@ -3755,6 +3770,7 @@ export default {
   mounted() {
     this.getProductProgram();
     this.getProductSubs();
+    this.token = localStorage.getItem('token');
   },
 }
 </script>
@@ -3777,5 +3793,4 @@ li {
 
 a {
   color: #42b983;
-}
-</style>
+}</style>

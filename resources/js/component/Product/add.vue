@@ -3,7 +3,7 @@
         <sidebar />
         <div class="container-fluid page-body-wrapper">
             <navbar />
-            <div class="row col-12 mt-5">
+            <div class="row col-12 mt-5" style="background: #191c24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
                         <div class="card-body">
@@ -66,8 +66,8 @@
                                 </div>
                                 <div class="form-group mt-5">
                                 <div class="form-check">
-                                    <label class="lable"> Status </label>
-                                    <input type="checkbox" v-model="form.status" class="form-check-input" style="margin-left: 5px;">
+                                    <label class=""> Status </label>
+                                    <input type="checkbox" v-model="form.status" class="" style="margin-left: 56px;margin-top: -30px;">
                                 </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>

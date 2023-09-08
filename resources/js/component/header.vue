@@ -1,7 +1,7 @@
 <template>
   <header class="ct-mainHeader">
     <div class="ct-topBar ct-topBar--type1">
-      <div class="navbar navbar-default" style="margin-left: -380px;">
+      <div class="navbar navbar-default info-dojo">
         <div class="container">
           <div class="navbar-block navbar-left">
             <div class="navbar-block-inner">
@@ -51,7 +51,7 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-default navbar--type1 yamm navbar-logo--left" style="margin-left: -500px;">
+    <nav class="navbar navbar-default navbar--type1 yamm navbar-logo--left sec-nav-set">
       <div class="container ct-navbar-container">
 
         <div class="navbar-header navbar-left">
@@ -60,7 +60,7 @@
           </a>
         </div>
 
-        <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right" style="display: contents;">
+        <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right sec-nav-flow">
           <li class="onepage active"><a href="#home">Home</a></li>
           <li class="onepage"><a href="#testimonials">Testimonials</a></li>
           <li class="onepage"><a href="#trainers">Trainers</a></li>
@@ -95,3 +95,14 @@ export default {
 }
 </script>
 
+<style scoped>
+.sec-nav-flow{
+  display: contents;
+  }
+/* media query to reponsiveness  */
+@media only screen and (min-width: 768px) {
+  .info-dojo{margin-left: -380px}
+  .sec-nav-set{margin-left: -500px}
+}
+
+</style>

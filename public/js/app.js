@@ -17703,7 +17703,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'HelloWorld',
+  name: "HelloWorld",
   data: function data() {
     return {
       Program_Products: [],
@@ -17722,12 +17722,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              token = localStorage.getItem('token'); // Replace with your actual authentication token
+              token = localStorage.getItem("token"); // Replace with your actual authentication token
               headers = {
-                'Authorization': "Bearer ".concat(token)
+                Authorization: "Bearer ".concat(token)
               };
               _context.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/product/subscription', {
+              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get("/product/subscription", {
                 headers: headers
               });
             case 4:
@@ -17747,11 +17747,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee2$(_context2) {
           while (1) switch (_context2.prev = _context2.next) {
             case 0:
-              user_id = localStorage.getItem('user_id');
+              user_id = localStorage.getItem("user_id");
               if (user_id) {
-                _this2.$router.push('/b1');
+                _this2.$router.push("/b1");
               } else {
-                alert('Please Login First');
+                alert("Please Login First");
               }
             case 2:
             case "end":
@@ -17767,12 +17767,12 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee3$(_context3) {
           while (1) switch (_context3.prev = _context3.next) {
             case 0:
-              token = localStorage.getItem('token'); // Replace with your actual authentication token
+              token = localStorage.getItem("token"); // Replace with your actual authentication token
               headers = {
-                'Authorization': "Bearer ".concat(token)
+                Authorization: "Bearer ".concat(token)
               };
               _context3.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/product/program', {
+              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get("/product/program", {
                 headers: headers
               });
             case 4:
@@ -17791,22 +17791,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
-              token = localStorage.getItem('token'); // Replace with your actual authentication token
+              token = localStorage.getItem("token"); // Replace with your actual authentication token
               headers = {
-                'Authorization': "Bearer ".concat(token)
+                Authorization: "Bearer ".concat(token)
               };
               _context4.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/download/product/all/file/' + id, {
-                responseType: 'blob'
+              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get("/download/product/all/file/" + id, {
+                responseType: "blob"
               }, {
                 headers: headers
               });
             case 4:
               response = _context4.sent;
               fileURL = window.URL.createObjectURL(new Blob([response.data]));
-              fileLink = document.createElement('a');
+              fileLink = document.createElement("a");
               fileLink.href = fileURL;
-              fileLink.setAttribute('download', 'file.pdf');
+              fileLink.setAttribute("download", "file.pdf");
               document.body.appendChild(fileLink);
               fileLink.click();
             case 11:
@@ -20940,40 +20940,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _public_assets_images_content_iconBox01_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox01.png */ "./resources/public/assets/images/content/iconBox01.png");
+/* harmony import */ var _public_assets_images_content_images001_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../public/assets/images/content/images001.jpg */ "./resources/public/assets/images/content/images001.jpg");
 /* harmony import */ var _public_assets_images_content_galleryItem01_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../public/assets/images/content/galleryItem01.jpg */ "./resources/public/assets/images/content/galleryItem01.jpg");
 /* harmony import */ var _public_assets_images_content_galleryItem02_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../public/assets/images/content/galleryItem02.jpg */ "./resources/public/assets/images/content/galleryItem02.jpg");
 /* harmony import */ var _public_assets_images_content_galleryItem03_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../public/assets/images/content/galleryItem03.jpg */ "./resources/public/assets/images/content/galleryItem03.jpg");
 /* harmony import */ var _public_assets_images_content_galleryItem04_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../public/assets/images/content/galleryItem04.jpg */ "./resources/public/assets/images/content/galleryItem04.jpg");
 /* harmony import */ var _public_assets_images_content_galleryItem05_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../public/assets/images/content/galleryItem05.jpg */ "./resources/public/assets/images/content/galleryItem05.jpg");
-/* harmony import */ var _public_assets_images_content_rosterImg01_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../public/assets/images/content/rosterImg01.png */ "./resources/public/assets/images/content/rosterImg01.png");
-/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4761668.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_ivan_samkov_4164640_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-ivan-samkov-4164640.jpg */ "./resources/public/assets/images/content/pexels-ivan-samkov-4164640.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_jonathan_borba_13896072_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-jonathan-borba-13896072.jpg */ "./resources/public/assets/images/content/pexels-jonathan-borba-13896072.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_leon_ardho_2468339_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-leon-ardho-2468339.jpg */ "./resources/public/assets/images/content/pexels-leon-ardho-2468339.jpg");
-/* harmony import */ var _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./../../public/assets/images/content/personDetailImg01.png */ "./resources/public/assets/images/content/personDetailImg01.png");
-/* harmony import */ var _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg */ "./resources/public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg");
-/* harmony import */ var _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./../../public/assets/images/playButton.png */ "./resources/public/assets/images/playButton.png");
-/* harmony import */ var _public_assets_images_content_personDetailImg03_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./../../public/assets/images/content/personDetailImg03.png */ "./resources/public/assets/images/content/personDetailImg03.png");
-/* harmony import */ var _public_assets_images_content_iconBox02_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox02.png */ "./resources/public/assets/images/content/iconBox02.png");
-/* harmony import */ var _public_assets_images_content_iconBox03_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox03.png */ "./resources/public/assets/images/content/iconBox03.png");
-/* harmony import */ var _public_assets_images_content_iconBox04_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox04.png */ "./resources/public/assets/images/content/iconBox04.png");
-/* harmony import */ var _public_assets_images_content_iconBox05_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox05.png */ "./resources/public/assets/images/content/iconBox05.png");
-/* harmony import */ var _public_assets_images_content_iconBox06_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox06.png */ "./resources/public/assets/images/content/iconBox06.png");
-/* harmony import */ var _public_assets_images_content_iconBox07_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox07.png */ "./resources/public/assets/images/content/iconBox07.png");
-/* harmony import */ var _public_assets_images_content_pexels_pixabay_260447_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-pixabay-260447.jpg */ "./resources/public/assets/images/content/pexels-pixabay-260447.jpg");
-/* harmony import */ var _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./../../public/assets/images/eyeButton.png */ "./resources/public/assets/images/eyeButton.png");
-/* harmony import */ var _public_assets_images_content_pexels_victor_freitas_703016_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-victor-freitas-703016.jpg */ "./resources/public/assets/images/content/pexels-victor-freitas-703016.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4761665_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4761665.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4753898_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4753898.jpg");
-/* harmony import */ var _public_assets_images_content_pexels_leon_ardho_1552103_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg */ "./resources/public/assets/images/content/pexels-leon-ardho-1552103.jpg");
-/* harmony import */ var _public_assets_images_content_iconBox08_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox08.png */ "./resources/public/assets/images/content/iconBox08.png");
-/* harmony import */ var _public_assets_images_content_logo01_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./../../public/assets/images/content/logo01.png */ "./resources/public/assets/images/content/logo01.png");
-/* harmony import */ var _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./../../public/assets/images/content/logo02.png */ "./resources/public/assets/images/content/logo02.png");
-/* harmony import */ var _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./../../public/assets/images/content/logo03.png */ "./resources/public/assets/images/content/logo03.png");
-/* harmony import */ var _public_assets_images_content_iconBox15_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./../../public/assets/images/content/iconBox15.png */ "./resources/public/assets/images/content/iconBox15.png");
-/* harmony import */ var _public_assets_images_marker_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./../../public/assets/images/marker.png */ "./resources/public/assets/images/marker.png");
-/* harmony import */ var _public_assets_images_content_formLogo_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./../../public/assets/images/content/formLogo.png */ "./resources/public/assets/images/content/formLogo.png");
+/* harmony import */ var _public_assets_images_content_ifyouwanttobebest_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../public/assets/images/content/ifyouwanttobebest.jpg */ "./resources/public/assets/images/content/ifyouwanttobebest.jpg");
+/* harmony import */ var _public_assets_images_content_rosterImg01_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./../../public/assets/images/content/rosterImg01.png */ "./resources/public/assets/images/content/rosterImg01.png");
+/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4761668.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_ivan_samkov_4164640_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-ivan-samkov-4164640.jpg */ "./resources/public/assets/images/content/pexels-ivan-samkov-4164640.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_jonathan_borba_13896072_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-jonathan-borba-13896072.jpg */ "./resources/public/assets/images/content/pexels-jonathan-borba-13896072.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_leon_ardho_2468339_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-leon-ardho-2468339.jpg */ "./resources/public/assets/images/content/pexels-leon-ardho-2468339.jpg");
+/* harmony import */ var _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./../../public/assets/images/content/personDetailImg01.png */ "./resources/public/assets/images/content/personDetailImg01.png");
+/* harmony import */ var _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg */ "./resources/public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg");
+/* harmony import */ var _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./../../public/assets/images/playButton.png */ "./resources/public/assets/images/playButton.png");
+/* harmony import */ var _public_assets_images_content_personDetailImg03_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./../../public/assets/images/content/personDetailImg03.png */ "./resources/public/assets/images/content/personDetailImg03.png");
+/* harmony import */ var _public_assets_images_content_events_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./../../public/assets/images/content/events.jpg */ "./resources/public/assets/images/content/events.jpg");
+/* harmony import */ var _public_assets_images_content_gym_membr_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./../../public/assets/images/content/gym-membr.jpg */ "./resources/public/assets/images/content/gym-membr.jpg");
+/* harmony import */ var _public_assets_images_content_yellow_belt_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./../../public/assets/images/content/yellow-belt.jpg */ "./resources/public/assets/images/content/yellow-belt.jpg");
+/* harmony import */ var _public_assets_images_content_black_belt001_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./../../public/assets/images/content/black-belt001.jpg */ "./resources/public/assets/images/content/black-belt001.jpg");
+/* harmony import */ var _public_assets_images_content_online_gym_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./../../public/assets/images/content/online-gym.jpg */ "./resources/public/assets/images/content/online-gym.jpg");
+/* harmony import */ var _public_assets_images_content_impression_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./../../public/assets/images/content/impression.jpg */ "./resources/public/assets/images/content/impression.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_pixabay_260447_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-pixabay-260447.jpg */ "./resources/public/assets/images/content/pexels-pixabay-260447.jpg");
+/* harmony import */ var _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./../../public/assets/images/eyeButton.png */ "./resources/public/assets/images/eyeButton.png");
+/* harmony import */ var _public_assets_images_content_pexels_victor_freitas_703016_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-victor-freitas-703016.jpg */ "./resources/public/assets/images/content/pexels-victor-freitas-703016.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4761665_jpg__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4761665.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_cottonbro_studio_4753898_jpg__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg */ "./resources/public/assets/images/content/pexels-cottonbro-studio-4753898.jpg");
+/* harmony import */ var _public_assets_images_content_pexels_leon_ardho_1552103_jpg__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg */ "./resources/public/assets/images/content/pexels-leon-ardho-1552103.jpg");
+/* harmony import */ var _public_assets_images_content_best001_jpg__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./../../public/assets/images/content/best001.jpg */ "./resources/public/assets/images/content/best001.jpg");
+/* harmony import */ var _public_assets_images_content_abc001_jpg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./../../public/assets/images/content/abc001.jpg */ "./resources/public/assets/images/content/abc001.jpg");
+/* harmony import */ var _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./../../public/assets/images/content/abc002.jpg */ "./resources/public/assets/images/content/abc002.jpg");
+/* harmony import */ var _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./../../public/assets/images/content/logo03.png */ "./resources/public/assets/images/content/logo03.png");
+/* harmony import */ var _public_assets_images_content_gym_contact_jpg__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./../../public/assets/images/content/gym-contact.jpg */ "./resources/public/assets/images/content/gym-contact.jpg");
+/* harmony import */ var _public_assets_images_marker_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./../../public/assets/images/marker.png */ "./resources/public/assets/images/marker.png");
+/* harmony import */ var _public_assets_images_content_muscle_header_jpg__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./../../public/assets/images/content/muscle-header.jpg */ "./resources/public/assets/images/content/muscle-header.jpg");
+
 
 
 
@@ -21148,15 +21150,15 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
     name: "field[]"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: ""
-  }, "KICK BOXING"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, " KICK BOXING "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: "BOXING"
-  }, "BOXING"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, " BOXING "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: "DOJO"
-  }, "DOJO"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, " DOJO "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: "JUI-JITSU"
-  }, "JUI-JITSU"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  }, " JUI-JITSU "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
     value: "KUNG-FU"
-  }, "KUNG-FU")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+  }, " KUNG-FU ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
     "class": "sr-only",
     "for": "modalCategories"
   }, "Categories")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -21170,7 +21172,7 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
     "class": "modal-footer ct-modalFooter"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-center ct-u-marginBottom0"
-  }, " or "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
+  }, "or"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
     "class": "text-center ct-u-marginBottom30"
   }, " contact Laura via "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-divider"
@@ -21183,10 +21185,13 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
     "data-toggle": "tooltip",
     "data-placement": "bottom",
     title: "",
-    "data-original-title": "Facebook"
+    "data-original-title": "Facebook",
+    target: "_SEJ",
+    rel: "noreferrer"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-facebook"
   })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    target: "_blank",
     href: "https://twitter.com/createitpl",
     "data-toggle": "tooltip",
     "data-placement": "bottom",
@@ -21195,7 +21200,8 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-twitter"
   })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
+    target: "_blank",
+    href: "https://www.linkedin.com/login",
     "data-toggle": "tooltip",
     "data-placement": "bottom",
     title: "",
@@ -21203,7 +21209,8 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-linkedin"
   })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
+    target: "_blank",
+    href: "https://dashboard.rss.com/auth/sign-in/",
     "data-toggle": "tooltip",
     "data-placement": "bottom",
     title: "",
@@ -21211,7 +21218,8 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-rss"
   })])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "#",
+    target: "_blank",
+    href: "https://vimeo.com/log_in",
     "data-toggle": "tooltip",
     "data-placement": "bottom",
     title: "",
@@ -21220,7 +21228,7 @@ var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
     "class": "fa fa-vimeo-square"
   })])])])])])])])], -1 /* HOISTED */);
 });
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div id=\"home\" class=\"section section_1\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"ct-mediaSection\" data-height=\"865\" data-type=\"video\" data-background-mobile=\"./../../public/assets/images/content/stopYellingBG01.jpg\" style=\"background-image:url(&quot;&quot;);min-height:865px;\" data-v-045c4260><div class=\"ct-mediaSection-video\" data-v-045c4260><video muted=\"\" loop=\"\" autoplay=\"autoplay\" preload=\"auto\" data-v-045c4260><source src=\"http://127.0.0.1:8000/video.mp4\" type=\"video/mp4\" data-v-045c4260><!-- &lt;source src=&quot;http://dojo.html.themeforest.createit.pl/assets/videos/video.webm&quot; type=&quot;video/webm&quot;&gt; --></video></div><div class=\"ct-mediaSection-inner\" data-v-045c4260><!--            &lt;div class=&quot;container&quot;&gt;--><!--            &lt;div class=&quot;row&quot;&gt;--><!--            &lt;div class=&quot;col-lg-7 col-lg-offset-5&quot;&gt;--><!--            &lt;section class=&quot;ct-js-slick ct-slick ct-u-marginBottom30 ct-slick-arrow&amp;#45;&amp;#45;type1 ct-slick-dots&amp;#45;&amp;#45;type1&quot; data-autoplay=&quot;false&quot; data-arrows=&quot;true&quot; data-dots=&quot;true&quot; data-items=&quot;1&quot; data-height=&quot;865&quot;&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/section&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--></div></div></div>", 1);
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div id=\"home\" class=\"section section_1\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"ct-mediaSection\" data-height=\"865\" data-type=\"video\" data-background-mobile=\"./../../public/assets/images/content/stopYellingBG01.jpg\" style=\"background-image:url(&#39;&#39;);min-height:865px;\" data-v-045c4260><div class=\"ct-mediaSection-video\" data-v-045c4260><video muted=\"\" loop=\"\" autoplay=\"autoplay\" preload=\"auto\" data-v-045c4260><source src=\"http://127.0.0.1:8000/video.mp4\" type=\"video/mp4\" data-v-045c4260><!-- &lt;source src=&quot;http://dojo.html.themeforest.createit.pl/assets/videos/video.webm&quot; type=&quot;video/webm&quot;&gt; --></video></div><div class=\"ct-mediaSection-inner\" data-v-045c4260><!--            &lt;div class=&quot;container&quot;&gt;--><!--            &lt;div class=&quot;row&quot;&gt;--><!--            &lt;div class=&quot;col-lg-7 col-lg-offset-5&quot;&gt;--><!--            &lt;section class=&quot;ct-js-slick ct-slick ct-u-marginBottom30 ct-slick-arrow&amp;#45;&amp;#45;type1 ct-slick-dots&amp;#45;&amp;#45;type1&quot; data-autoplay=&quot;false&quot; data-arrows=&quot;true&quot; data-dots=&quot;true&quot; data-items=&quot;1&quot; data-height=&quot;865&quot;&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;div class=&quot;item ct-u-colorWhite text-uppercase text-center ct-fw-700&quot;&gt;--><!--            &lt;div class=&quot;item-inner&quot;&gt;--><!--            &lt;span class=&quot;h2&quot;&gt;Stop&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;Yelling &lt;/span&gt;&lt;span class=&quot;h2&quot;&gt;start&lt;/span&gt;&lt;br /&gt;--><!--            &lt;span class=&quot;h1&quot;&gt;fighting&lt;/span&gt;--><!--            &lt;div class=&quot;text-center ct-u-marginTop70&quot;&gt;--><!--            &lt;a href=&quot;single-classes.html&quot; class=&quot;btn ct-btn&amp;#45;&amp;#45;o btn-default&quot;&gt;&lt;span&gt;join dojo&lt;/span&gt;&lt;/a&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/section&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--><!--            &lt;/div&gt;--></div></div></div>", 1);
 var _hoisted_6 = {
   "class": "ct-js-news-container",
   "data-height": "325",
@@ -21267,7 +21275,7 @@ var _hoisted_15 = /*#__PURE__*/_withScopeId(function () {
     style: {
       "color": "white"
     }
-  }, "Take the FREE Body Type quiz to find out exactly what diet and exercises will get you the best results! ", -1 /* HOISTED */);
+  }, " Take the FREE Body Type quiz to find out exactly what diet and exercises will get you the best results! ", -1 /* HOISTED */);
 });
 var _hoisted_16 = {
   "class": "hero__cta-container d-flex"
@@ -21292,20 +21300,20 @@ var _hoisted_19 = /*#__PURE__*/_withScopeId(function () {
   }, "➔")], -1 /* HOISTED */);
 });
 var _hoisted_20 = [_hoisted_19];
-var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6\" data-v-045c4260><article class=\"ct-news-item ct-news-item--type2\" style=\"height:342px;\" data-v-045c4260><div class=\"ct-news-item-header\" data-v-045c4260><h4 class=\"ct-news-item-headerText text-uppercase\" data-v-045c4260><span data-v-045c4260>Recent News</span></h4><p data-v-045c4260><a href=\"blog-list.html\" data-v-045c4260>See All News</a></p></div><div class=\"ct-news-item-body\" data-v-045c4260><section class=\"ct-js-slick ct-slick ct-u-marginBottom30 ct-slick-arrow--type2 slick-initialized slick-slider\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"2\" data-mditems=\"1\" data-lgitems=\"2\" data-snap-ignore=\"true\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:1645px;transform:translate3d(-470px, 0px, 0px);\" data-v-045c4260><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"-2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>Sparring Session</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"-1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>MMA Workshop</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-active\" style=\"width:235px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>MMA Workshop</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-active\" style=\"width:235px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>Sparring Session</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide\" style=\"width:235px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>MMA Workshop</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>MMA Workshop</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260>Sparring Session</h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></article></div>", 1);
-var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"ct-callToAction ct-callToAction--type1\" data-v-045c4260><div class=\"ct-callToAction-inner\" data-v-045c4260><div class=\"container\" data-v-045c4260><h3 class=\"ct-callToAction-header text-uppercase text-center\" data-v-045c4260><span data-v-045c4260>Want to buy? </span> Click The Button</h3><div class=\"text-center\" data-v-045c4260><a href=\"http://optimus-prime.createit.pl/dojo-html/buy\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>PURCHASE NOW</span></a></div></div></div></div><section id=\"testimonials\" class=\"section ct-u-paddingTop100 ct-u-paddingBottom150 section_2\" data-background=\"./../../public/assets/images/content/galleryBG.jpg\" style=\"background-image:url(&quot;assets/images/content/galleryBG.jpg&quot;);display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox01_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>NO MORE EXCUSES, JOIN A CLASS TODAY</span> <small data-v-045c4260><span data-v-045c4260>COME TO THE DOJO TODAY</span></small></h3></div></div><div class=\"ct-testimonial ct-js-testimonial\" data-v-045c4260><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--large skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:337px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem01_jpg__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>Mixed Martial Arts</span><small data-v-045c4260><span data-v-045c4260>Anthony B. Laura James</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas. </p></div></a></article></div><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:355px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem02_jpg__WEBPACK_IMPORTED_MODULE_3__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>MUAH THAI BOXING</span><small data-v-045c4260><span data-v-045c4260>Telian Tek</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"right: -140%;\" data-bottom=\"right: 0;\" style=\"height:355px;right:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem03_jpg__WEBPACK_IMPORTED_MODULE_4__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>BRAZILIAN JUI-JITSU</span><small data-v-045c4260><span data-v-045c4260>FABRICIO DA SILVA</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article></div><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:320px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media pull-right\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem04_jpg__WEBPACK_IMPORTED_MODULE_5__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>PRAYING MANTIS KUNG-FU</span><small data-v-045c4260><span data-v-045c4260>JET LEE, BRUCE LEE</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"right: -140%;\" data-bottom=\"right: 0;\" style=\"height:320px;right:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media pull-right\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem05_jpg__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>KICK BOXING MEN &amp; WOMAN</span><small data-v-045c4260><span data-v-045c4260>LAURA JAMES</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article></div></div></div></section><section id=\"trainers\" class=\"section ct-u-paddingTop100 section_3\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox01_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>IF YOU WANT TO BE THE BEST</span> <small data-v-045c4260><span data-v-045c4260>YOU GOTTA LEARN FROM THE BEST</span></small></h3></div></div></div><div class=\"ct-js-sliderTab\" data-v-045c4260><div class=\"ct-sliderTab-slider\" data-v-045c4260><div class=\"container\" data-v-045c4260><section class=\"ct-js-slick ct-slickTab ct-js-slickTab ct-slick ct-slick-arrow--type3 slick-initialized slick-slider\" data-initialslide=\"1\" data-infinite=\"false\" data-centermode=\"false\" data-centerpadding=\"0\" data-swipetoslide=\"true\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"3\" data-mditems=\"4\" data-lgitems=\"5\" data-height=\"355\" data-snap-ignore=\"true\" style=\"min-height:355px;height:355px;\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:1404px;transform:translate3d(-234px, 0px, 0px);\" data-v-045c4260><div class=\"item slick-slide\" data-for=\"buakaw\" style=\"height:355px;width:234px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_rosterImg01_png__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"BUAKAW P.P.\" data-v-045c4260>BUAKAW P.P.</span></p></div></div></div></div><div class=\"item active slick-slide slick-active\" data-for=\"antohny\" style=\"height:355px;width:234px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"ANTOHNY B.\" data-v-045c4260>ANTOHNY B.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"fabricio\" style=\"height:355px;width:234px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_ivan_samkov_4164640_jpg__WEBPACK_IMPORTED_MODULE_9__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"FABRICIO D.S.\" data-v-045c4260>FABRICIO D.S.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"laura\" style=\"height:355px;width:234px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_jonathan_borba_13896072_jpg__WEBPACK_IMPORTED_MODULE_10__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"LAURA J.\" data-v-045c4260>LAURA J.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"floyd\" style=\"height:355px;width:234px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_leon_ardho_2468339_jpg__WEBPACK_IMPORTED_MODULE_11__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"FLOYD G.\" data-v-045c4260>FLOYD G.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"none\" style=\"height:355px;width:234px;\" data-slick-index=\"5\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><div class=\"ct-sliderTab-join\" data-toggle=\"modal\" data-target=\"#modal1\" data-v-045c4260><span class=\"text-center\" data-v-045c4260><i class=\"fa fa-plus\" data-v-045c4260></i></span><span class=\"text-left\" data-v-045c4260>Join The Team Now!</span></div></figure><div class=\"text-center ct-joinItem\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-toggle=\"modal\" data-target=\"#modal1\" data-v-045c4260><span data-v-045c4260>join us</span></a></div></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next slick-disabled\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></div><div class=\"ct-js-sliderTab-content ct-sliderTab-content\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"targetItem buakaw\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_12__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>BUAKAW PRO PRAMUK</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>MUAY THAI BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260> Black Belt MMA </li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Stamina:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Strength:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem antohny active\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Anthony Burns</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260> Black Belt MMA </li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Stamina:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Strength:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem fabricio\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg03_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Fabricio Da Silva</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>Brazilian Jui-Jitsu</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260> Black Belt MMA </li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Stamina:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Strength:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem laura\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_12__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>LAURA JAMES</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260> Black Belt MMA </li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Stamina:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Strength:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem floyd\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_12__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Floyd Grow</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260> Black Belt MMA </li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Stamina:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Strength:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div></div></div></div></section><section id=\"calendars\" class=\"section ct-u-paddingTop150 ct-u-paddingBottom200 section_4\" data-background=\"./../../public/assets/images/content/filterBG.jpg\" style=\"background-image:url(&quot;assets/images/content/filterBG.jpg&quot;);display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox02_png__WEBPACK_IMPORTED_MODULE_16__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>UPCOMING EVENTS</span></h3></div></div></div><div data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"row\" data-v-045c4260><div class=\"col-sm-12\" data-v-045c4260><div id=\"calendar\" data-snap-ignore=\"true\" class=\"fc fc-ltr fc-unthemed\" data-v-045c4260><div class=\"fc-toolbar\" data-v-045c4260><div class=\"fc-left\" data-v-045c4260><div class=\"fc-button-group\" data-v-045c4260><button type=\"button\" class=\"fc-prev-button fc-button fc-state-default fc-corner-left\" data-v-045c4260><span class=\"fc-icon fc-icon-left-single-arrow\" data-v-045c4260></span></button><button type=\"button\" class=\"fc-next-button fc-button fc-state-default fc-corner-right\" data-v-045c4260><span class=\"fc-icon fc-icon-right-single-arrow\" data-v-045c4260></span></button></div><button type=\"button\" class=\"fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right\" data-v-045c4260>today</button></div><div class=\"fc-right\" data-v-045c4260><div class=\"fc-button-group\" data-v-045c4260><button type=\"button\" class=\"fc-month-button fc-button fc-state-default fc-corner-left fc-state-active\" data-v-045c4260>month</button><button type=\"button\" class=\"fc-basicWeek-button fc-button fc-state-default\" data-v-045c4260>week</button><button type=\"button\" class=\"fc-basicDay-button fc-button fc-state-default fc-corner-right\" data-v-045c4260>day</button></div></div><div class=\"fc-center\" data-v-045c4260><h2 data-v-045c4260>February 2015</h2></div><div class=\"fc-clear\" data-v-045c4260></div></div><div class=\"fc-view-container\" style=\"\" data-v-045c4260><div class=\"fc-view fc-month-view fc-basic-view\" style=\"\" data-v-045c4260><table data-v-045c4260><thead class=\"fc-head\" data-v-045c4260><tr data-v-045c4260><td class=\"fc-widget-header\" data-v-045c4260><div class=\"fc-row fc-widget-header\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><th class=\"fc-day-header fc-widget-header fc-sun\" data-v-045c4260>Sun</th><th class=\"fc-day-header fc-widget-header fc-mon\" data-v-045c4260>Mon</th><th class=\"fc-day-header fc-widget-header fc-tue\" data-v-045c4260>Tue</th><th class=\"fc-day-header fc-widget-header fc-wed\" data-v-045c4260>Wed</th><th class=\"fc-day-header fc-widget-header fc-thu\" data-v-045c4260>Thu</th><th class=\"fc-day-header fc-widget-header fc-fri\" data-v-045c4260>Fri</th><th class=\"fc-day-header fc-widget-header fc-sat\" data-v-045c4260>Sat</th></tr></thead></table></div></td></tr></thead><tbody class=\"fc-body\" data-v-045c4260><tr data-v-045c4260><td class=\"fc-widget-content\" data-v-045c4260><div class=\"fc-day-grid-container\" style=\"\" data-v-045c4260><div class=\"fc-day-grid\" data-v-045c4260><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-01\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-02\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-03\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-04\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-05\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-06\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-07\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-01\" data-v-045c4260>1</td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-02\" data-v-045c4260>2</td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-03\" data-v-045c4260>3</td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-04\" data-v-045c4260>4</td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-05\" data-v-045c4260>5</td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-06\" data-v-045c4260>6</td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-07\" data-v-045c4260>7</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>All Day Event</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-not-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Long Event</span></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-08\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-09\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-10\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-11\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-12\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-13\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-14\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-08\" data-v-045c4260>8</td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-09\" data-v-045c4260>9</td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-10\" data-v-045c4260>10</td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-11\" data-v-045c4260>11</td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-12\" data-v-045c4260>12</td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-13\" data-v-045c4260>13</td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-14\" data-v-045c4260>14</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-event-container\" colspan=\"2\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-not-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Long Event</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td rowspan=\"6\" data-v-045c4260></td><td class=\"fc-event-container\" colspan=\"2\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Conference</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td class=\"fc-event-container\" rowspan=\"6\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>7a</span> <span class=\"fc-title\" data-v-045c4260>Birthday Party</span></div></a></td><td rowspan=\"6\" data-v-045c4260></td></tr><tr class=\"\" data-v-045c4260><td rowspan=\"5\" data-v-045c4260></td><td class=\"fc-event-container\" rowspan=\"5\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>4p</span> <span class=\"fc-title\" data-v-045c4260>Repeating Event</span></div></a></td><td rowspan=\"5\" data-v-045c4260></td><td class=\"fc-event-container fc-limited\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>10:30a</span> <span class=\"fc-title\" data-v-045c4260>Meeting</span></div></a></td><td class=\"fc-more-cell\" rowspan=\"1\" data-v-045c4260><div data-v-045c4260><a class=\"fc-more\" data-v-045c4260>+5 more</a></div></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>12p</span> <span class=\"fc-title\" data-v-045c4260>Lunch</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>2:30p</span> <span class=\"fc-title\" data-v-045c4260>Meeting</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>5:30p</span> <span class=\"fc-title\" data-v-045c4260>Happy Hour</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>8p</span> <span class=\"fc-title\" data-v-045c4260>Dinner</span></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-15\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-16\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-17\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-18\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-19\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-20\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-21\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-15\" data-v-045c4260>15</td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-16\" data-v-045c4260>16</td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-17\" data-v-045c4260>17</td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-18\" data-v-045c4260>18</td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-19\" data-v-045c4260>19</td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-20\" data-v-045c4260>20</td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-21\" data-v-045c4260>21</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>4p</span> <span class=\"fc-title\" data-v-045c4260>Repeating Event</span></div></a></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-22\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-23\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-24\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-25\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-26\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-27\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-28\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-22\" data-v-045c4260>22</td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-23\" data-v-045c4260>23</td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-24\" data-v-045c4260>24</td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-25\" data-v-045c4260>25</td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-26\" data-v-045c4260>26</td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-27\" data-v-045c4260>27</td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-28\" data-v-045c4260>28</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Click for Google</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-other-month fc-past\" data-date=\"2015-03-01\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-other-month fc-past\" data-date=\"2015-03-02\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-other-month fc-past\" data-date=\"2015-03-03\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-other-month fc-past\" data-date=\"2015-03-04\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-other-month fc-past\" data-date=\"2015-03-05\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-other-month fc-past\" data-date=\"2015-03-06\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-other-month fc-past\" data-date=\"2015-03-07\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-other-month fc-past\" data-date=\"2015-03-01\" data-v-045c4260>1</td><td class=\"fc-day-number fc-mon fc-other-month fc-past\" data-date=\"2015-03-02\" data-v-045c4260>2</td><td class=\"fc-day-number fc-tue fc-other-month fc-past\" data-date=\"2015-03-03\" data-v-045c4260>3</td><td class=\"fc-day-number fc-wed fc-other-month fc-past\" data-date=\"2015-03-04\" data-v-045c4260>4</td><td class=\"fc-day-number fc-thu fc-other-month fc-past\" data-date=\"2015-03-05\" data-v-045c4260>5</td><td class=\"fc-day-number fc-fri fc-other-month fc-past\" data-date=\"2015-03-06\" data-v-045c4260>6</td><td class=\"fc-day-number fc-sat fc-other-month fc-past\" data-date=\"2015-03-07\" data-v-045c4260>7</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:119px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-other-month fc-past\" data-date=\"2015-03-08\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-other-month fc-past\" data-date=\"2015-03-09\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-other-month fc-past\" data-date=\"2015-03-10\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-other-month fc-past\" data-date=\"2015-03-11\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-other-month fc-past\" data-date=\"2015-03-12\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-other-month fc-past\" data-date=\"2015-03-13\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-other-month fc-past\" data-date=\"2015-03-14\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-other-month fc-past\" data-date=\"2015-03-08\" data-v-045c4260>8</td><td class=\"fc-day-number fc-mon fc-other-month fc-past\" data-date=\"2015-03-09\" data-v-045c4260>9</td><td class=\"fc-day-number fc-tue fc-other-month fc-past\" data-date=\"2015-03-10\" data-v-045c4260>10</td><td class=\"fc-day-number fc-wed fc-other-month fc-past\" data-date=\"2015-03-11\" data-v-045c4260>11</td><td class=\"fc-day-number fc-thu fc-other-month fc-past\" data-date=\"2015-03-12\" data-v-045c4260>12</td><td class=\"fc-day-number fc-fri fc-other-month fc-past\" data-date=\"2015-03-13\" data-v-045c4260>13</td><td class=\"fc-day-number fc-sat fc-other-month fc-past\" data-date=\"2015-03-14\" data-v-045c4260>14</td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div></div></div></div></div></section><section id=\"callToAction\" class=\"section section_5\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><section class=\"ct-mediaSection\" data-type=\"parallax\" data-height=\"660\" data-background=\"./../../public/assets/images/content/callToActionBG.jpg\" data-stellar-background-ratio=\"0.5\" style=\"background-image:url(&quot;assets/images/content/callToActionBG.jpg&quot;);min-height:660px;background-position:0% 0%;\" data-v-045c4260><div class=\"ct-mediaSection-inner\" data-v-045c4260><section class=\"ct-callToAction ct-callToAction--type2\" data-v-045c4260><div class=\"ct-callToAction-inner text-center\" data-v-045c4260><div class=\"container\" data-v-045c4260><p class=\"ct-callToAction-text ct-u-marginBottom0\" data-v-045c4260><span data-v-045c4260>if you want</span></p><p class=\"ct-callToAction-text ct-u-marginBottom30\" data-v-045c4260><span data-v-045c4260>to be <span data-v-045c4260>the best</span></span></p><p class=\"ct-callToAction-text ct-u-marginBottom0\" data-v-045c4260><span data-v-045c4260>you gotta learn</span></p><p class=\"ct-callToAction-text ct-u-marginBottom90\" data-v-045c4260><span data-v-045c4260>from <span data-v-045c4260>the best!</span></span></p><div class=\"text-center\" data-v-045c4260><a href=\"single-classes.html\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>join dojo now!</span></a></div></div></div></section></div></section></section>", 5);
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6\" data-v-045c4260><article class=\"ct-news-item ct-news-item--type2\" style=\"height:342px;\" data-v-045c4260><div class=\"ct-news-item-header\" data-v-045c4260><h4 class=\"ct-news-item-headerText text-uppercase\" data-v-045c4260><span data-v-045c4260>Recent News</span></h4><p data-v-045c4260><a href=\"blog-list.html\" data-v-045c4260>See All News</a></p></div><div class=\"ct-news-item-body\" data-v-045c4260><section class=\"ct-js-slick ct-slick ct-u-marginBottom30 ct-slick-arrow--type2 slick-initialized slick-slider\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"2\" data-mditems=\"1\" data-lgitems=\"2\" data-snap-ignore=\"true\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:1645px;transform:translate3d(\n                                                                -470px,\n                                                                0px,\n                                                                0px\n                                                            );\" data-v-045c4260><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"-2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> Sparring Session </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"-1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> MMA Workshop </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-active\" style=\"width:235px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> MMA Workshop </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-active\" style=\"width:235px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> Sparring Session </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide\" style=\"width:235px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> MMA Workshop </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-06-23\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>23</span><span data-v-045c4260>Jun</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> MMA Workshop </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div><div class=\"item slick-slide slick-cloned\" style=\"width:235px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><div class=\"widget ct-widget-recentNews\" data-v-045c4260><div class=\"widget-inner\" data-v-045c4260><div class=\"media ct-media\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><time datetime=\"2015-07-12\" data-v-045c4260><span data-v-045c4260><span data-v-045c4260>12</span><span data-v-045c4260>Jul</span></span></time></div><div class=\"media-body ct-media-body\" data-v-045c4260><h6 class=\"media-heading ct-media-heading text-uppercase\" data-v-045c4260> Sparring Session </h6><p class=\"ct-media-body-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada. </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\" data-v-045c4260><span data-v-045c4260>Read more</span></a></div></div></div></div></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></article></div>", 1);
+var _hoisted_22 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"ct-callToAction ct-callToAction--type1\" data-v-045c4260><div class=\"ct-callToAction-inner\" data-v-045c4260><div class=\"container\" data-v-045c4260><h3 class=\"ct-callToAction-header text-uppercase text-center\" data-v-045c4260><span data-v-045c4260>Want to buy? </span> Click The Button </h3><div class=\"text-center\" data-v-045c4260><a href=\"http://optimus-prime.createit.pl/dojo-html/buy\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>PURCHASE NOW</span></a></div></div></div></div><section id=\"testimonials\" class=\"section ct-u-paddingTop100 ct-u-paddingBottom150 section_2\" data-background=\"./../../public/assets/images/content/galleryBG.jpg\" style=\"background-image:url(&#39;assets/images/content/galleryBG.jpg&#39;);display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_images001_jpg__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>NO MORE EXCUSES, JOIN A CLASS TODAY</span><small data-v-045c4260><span data-v-045c4260>COME TO THE DOJO TODAY</span></small></h3></div></div><div class=\"ct-testimonial ct-js-testimonial\" data-v-045c4260><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--large skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:337px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem01_jpg__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>Mixed Martial Arts</span><small data-v-045c4260><span data-v-045c4260>Anthony B. Laura James</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas. </p></div></a></article></div><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:355px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem02_jpg__WEBPACK_IMPORTED_MODULE_3__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>MUAH THAI BOXING</span><small data-v-045c4260><span data-v-045c4260>Telian Tek</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"right: -140%;\" data-bottom=\"right: 0;\" style=\"height:355px;right:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem03_jpg__WEBPACK_IMPORTED_MODULE_4__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>BRAZILIAN JUI-JITSU</span><small data-v-045c4260><span data-v-045c4260>FABRICIO DA SILVA</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article></div><div class=\"ct-js-testimonial-row ct-testimonial-row\" data-v-045c4260><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"left: -140%;\" data-bottom=\"left: 0;\" style=\"height:320px;left:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media pull-right\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem04_jpg__WEBPACK_IMPORTED_MODULE_5__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>PRAYING MANTIS KUNG-FU</span><small data-v-045c4260><span data-v-045c4260>JET LEE, BRUCE LEE</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article><article class=\"ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before\" data-bottom-top=\"right: -140%;\" data-bottom=\"right: 0;\" style=\"height:320px;right:-140%;\" data-v-045c4260><a href=\"trainer-single.html\" data-v-045c4260><div class=\"ct-testimonial-item-media pull-right\" data-v-045c4260><figure data-v-045c4260><img class=\"grayscale grayscale-fade\" src=\"" + _public_assets_images_content_galleryItem05_jpg__WEBPACK_IMPORTED_MODULE_6__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"ct-testimonial-item-content\" data-v-045c4260><h4 class=\"text-uppercase text-center ct-testimonial-item-header\" data-v-045c4260><span data-v-045c4260>KICK BOXING MEN &amp; WOMAN</span><small data-v-045c4260><span data-v-045c4260>LAURA JAMES</span></small></h4><p class=\"ct-testimonial-item-text text-center\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor. </p></div></a></article></div></div></div></section><section id=\"trainers\" class=\"section ct-u-paddingTop100 section_3\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_ifyouwanttobebest_jpg__WEBPACK_IMPORTED_MODULE_7__["default"] + "\" alt=\"icon\" style=\"width:100%;\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>IF YOU WANT TO BE THE BEST</span><small data-v-045c4260><span data-v-045c4260>YOU GOTTA LEARN FROM THE BEST</span></small></h3></div></div></div><div class=\"ct-js-sliderTab\" data-v-045c4260><div class=\"ct-sliderTab-slider\" data-v-045c4260><div class=\"container\" data-v-045c4260><section class=\"ct-js-slick ct-slickTab ct-js-slickTab ct-slick ct-slick-arrow--type3 slick-initialized slick-slider\" data-initialslide=\"1\" data-infinite=\"false\" data-centermode=\"false\" data-centerpadding=\"0\" data-swipetoslide=\"true\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"3\" data-mditems=\"4\" data-lgitems=\"5\" data-height=\"355\" data-snap-ignore=\"true\" style=\"min-height:355px;height:355px;\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:1404px;transform:translate3d(\n                                                -234px,\n                                                0px,\n                                                0px\n                                            );\" data-v-045c4260><div class=\"item slick-slide\" data-for=\"buakaw\" style=\"height:355px;width:234px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_rosterImg01_png__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"BUAKAW P.P.\" data-v-045c4260>BUAKAW P.P.</span></p></div></div></div></div><div class=\"item active slick-slide slick-active\" data-for=\"antohny\" style=\"height:355px;width:234px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_9__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"ANTOHNY B.\" data-v-045c4260>ANTOHNY B.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"fabricio\" style=\"height:355px;width:234px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_ivan_samkov_4164640_jpg__WEBPACK_IMPORTED_MODULE_10__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"FABRICIO D.S.\" data-v-045c4260>FABRICIO D.S.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"laura\" style=\"height:355px;width:234px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_jonathan_borba_13896072_jpg__WEBPACK_IMPORTED_MODULE_11__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"LAURA J.\" data-v-045c4260>LAURA J.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"floyd\" style=\"height:355px;width:234px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_leon_ardho_2468339_jpg__WEBPACK_IMPORTED_MODULE_12__["default"] + "\" alt=\"\" data-v-045c4260></figure><div class=\"ct-item-footer\" data-v-045c4260><div data-v-045c4260><p data-v-045c4260><span data-content=\"FLOYD G.\" data-v-045c4260>FLOYD G.</span></p></div></div></div></div><div class=\"item slick-slide slick-active\" data-for=\"none\" style=\"height:355px;width:234px;\" data-slick-index=\"5\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><div class=\"ct-sliderTab-join\" data-toggle=\"modal\" data-target=\"#modal1\" data-v-045c4260><span class=\"text-center\" data-v-045c4260><i class=\"fa fa-plus\" data-v-045c4260></i></span><span class=\"text-left\" data-v-045c4260>Join The Team Now!</span></div></figure><div class=\"text-center ct-joinItem\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-toggle=\"modal\" data-target=\"#modal1\" data-v-045c4260><span data-v-045c4260>join us</span></a></div></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next slick-disabled\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></div><div class=\"ct-js-sliderTab-content ct-sliderTab-content\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"targetItem buakaw\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>BUAKAW PRO PRAMUK</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>MUAY THAI BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260>Black Belt MMA</li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Stamina: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Strength: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260> VIDEO </p><p data-v-045c4260> MUAY THAI TRAINING </p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem antohny active\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Anthony Burns</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260>Black Belt MMA</li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Stamina: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Strength: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260> VIDEO </p><p data-v-045c4260> MUAY THAI TRAINING </p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem fabricio\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg03_png__WEBPACK_IMPORTED_MODULE_16__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Fabricio Da Silva</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>Brazilian Jui-Jitsu</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260>Black Belt MMA</li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Stamina: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Strength: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260> VIDEO </p><p data-v-045c4260> MUAY THAI TRAINING </p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem laura\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>LAURA JAMES</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260>Black Belt MMA</li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Stamina: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Strength: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260> VIDEO </p><p data-v-045c4260> MUAY THAI TRAINING </p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div><div class=\"targetItem floyd\" data-v-045c4260><div class=\"media ct-media ct-u-paddingBoth100\" data-v-045c4260><div class=\"media-left\" data-v-045c4260><figure data-v-045c4260><img src=\"" + _public_assets_images_content_personDetailImg01_png__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260></figure></div><div class=\"media-body ct-media-body\" data-v-045c4260><h4 class=\"media-heading ct-media-heading ct-personDetail-name text-uppercase\" data-v-045c4260><span data-v-045c4260>Floyd Grow</span></h4><h6 class=\"ct-personDetail-discipline\" data-v-045c4260><span data-v-045c4260>KICK BOXING, FIT BOXING</span></h6><p class=\"ct-personDetail-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </p><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personStats\" data-v-045c4260><h5 class=\"ct-personStats-header\" data-v-045c4260><span data-v-045c4260>Stats</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> Specialty: <span data-v-045c4260>Kick Boxing, Fit Boxing</span></li><li data-v-045c4260> Age: <span data-v-045c4260>19</span></li><li data-v-045c4260> Weight: <span data-v-045c4260>62Kg</span></li><li data-v-045c4260> Height: <span data-v-045c4260>175cm</span></li><li data-v-045c4260> Wins / Loss / Draws: <span data-v-045c4260>9 / 0 / 0</span></li></ul></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personArchievements\" data-v-045c4260><h5 class=\"ct-personArchievements-header\" data-v-045c4260><span data-v-045c4260>ARCHIEVEMENTS</span></h5><ul class=\"list-unstyled\" data-v-045c4260><li data-v-045c4260> MMA Instuctor Master </li><li data-v-045c4260>Black Belt MMA</li><li data-v-045c4260> 1.st Ong Bak Tournamant 2014 </li><li data-v-045c4260> 2nd Black Belt Brazilian Jui Jitsu </li><li data-v-045c4260> Black Belt Muay Thai Boxing </li></ul></article></div></div><div class=\"row\" data-v-045c4260><div class=\"col-lg-6\" data-v-045c4260><article class=\"ct-personAbilities\" data-v-045c4260><h5 class=\"ct-personAbilities-header\" data-v-045c4260><span data-v-045c4260>Abilitys</span></h5><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260>Stand:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Ground:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Clinch:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Stamina: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260> Strength: </td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr><tr data-v-045c4260><td data-v-045c4260>Speed:</td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td><td data-v-045c4260><div class=\"ct-personAbilities-checked\" data-v-045c4260></div></td></tr></tbody></table></article></div><div class=\"col-lg-6\" data-v-045c4260><article class=\"lightGalleryVideo\" data-v-045c4260><div data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260> VIDEO </p><p data-v-045c4260> MUAY THAI TRAINING </p></div></div></figcaption></figure></div></article></div></div><div class=\"ct-u-border--darkGrey ct-u-marginTop40 ct-u-marginBottom20\" data-v-045c4260></div><ul class=\"socialicons\" data-v-045c4260><li data-v-045c4260><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-045c4260><i class=\"fa fa-facebook\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-045c4260><i class=\"fa fa-twitter\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-045c4260><i class=\"fa fa-linkedin\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-045c4260><i class=\"fa fa-rss\" data-v-045c4260></i></a></li><li data-v-045c4260><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-045c4260><i class=\"fa fa-vimeo-square\" data-v-045c4260></i></a></li></ul></div></div></div></div></div></div></section><section id=\"calendars\" class=\"section ct-u-paddingTop150 ct-u-paddingBottom200 section_4\" data-background=\"./../../public/assets/images/content/filterBG.jpg\" style=\"background-image:url(&#39;assets/images/content/filterBG.jpg&#39;);display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_events_jpg__WEBPACK_IMPORTED_MODULE_17__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>UPCOMING EVENTS</span></h3></div></div></div><div data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"row\" data-v-045c4260><div class=\"col-sm-12\" data-v-045c4260><div id=\"calendar\" data-snap-ignore=\"true\" class=\"fc fc-ltr fc-unthemed\" data-v-045c4260><div class=\"fc-toolbar\" data-v-045c4260><div class=\"fc-left\" data-v-045c4260><div class=\"fc-button-group\" data-v-045c4260><button type=\"button\" class=\"fc-prev-button fc-button fc-state-default fc-corner-left\" data-v-045c4260><span class=\"fc-icon fc-icon-left-single-arrow\" data-v-045c4260></span></button><button type=\"button\" class=\"fc-next-button fc-button fc-state-default fc-corner-right\" data-v-045c4260><span class=\"fc-icon fc-icon-right-single-arrow\" data-v-045c4260></span></button></div><button type=\"button\" class=\"fc-today-button fc-button fc-state-default fc-corner-left fc-corner-right\" data-v-045c4260> today </button></div><div class=\"fc-right\" data-v-045c4260><div class=\"fc-button-group\" data-v-045c4260><button type=\"button\" class=\"fc-month-button fc-button fc-state-default fc-corner-left fc-state-active\" data-v-045c4260> month</button><button type=\"button\" class=\"fc-basicWeek-button fc-button fc-state-default\" data-v-045c4260> week</button><button type=\"button\" class=\"fc-basicDay-button fc-button fc-state-default fc-corner-right\" data-v-045c4260> day </button></div></div><div class=\"fc-center\" data-v-045c4260><h2 data-v-045c4260>February 2015</h2></div><div class=\"fc-clear\" data-v-045c4260></div></div><div class=\"fc-view-container\" style=\"\" data-v-045c4260><div class=\"fc-view fc-month-view fc-basic-view\" style=\"\" data-v-045c4260><table data-v-045c4260><thead class=\"fc-head\" data-v-045c4260><tr data-v-045c4260><td class=\"fc-widget-header\" data-v-045c4260><div class=\"fc-row fc-widget-header\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><th class=\"fc-day-header fc-widget-header fc-sun\" data-v-045c4260> Sun </th><th class=\"fc-day-header fc-widget-header fc-mon\" data-v-045c4260> Mon </th><th class=\"fc-day-header fc-widget-header fc-tue\" data-v-045c4260> Tue </th><th class=\"fc-day-header fc-widget-header fc-wed\" data-v-045c4260> Wed </th><th class=\"fc-day-header fc-widget-header fc-thu\" data-v-045c4260> Thu </th><th class=\"fc-day-header fc-widget-header fc-fri\" data-v-045c4260> Fri </th><th class=\"fc-day-header fc-widget-header fc-sat\" data-v-045c4260> Sat </th></tr></thead></table></div></td></tr></thead><tbody class=\"fc-body\" data-v-045c4260><tr data-v-045c4260><td class=\"fc-widget-content\" data-v-045c4260><div class=\"fc-day-grid-container\" style=\"\" data-v-045c4260><div class=\"fc-day-grid\" data-v-045c4260><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-01\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-02\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-03\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-04\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-05\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-06\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-07\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-01\" data-v-045c4260> 1 </td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-02\" data-v-045c4260> 2 </td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-03\" data-v-045c4260> 3 </td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-04\" data-v-045c4260> 4 </td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-05\" data-v-045c4260> 5 </td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-06\" data-v-045c4260> 6 </td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-07\" data-v-045c4260> 7 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>All Day Event</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-not-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Long Event</span></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-08\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-09\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-10\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-11\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-12\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-13\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-14\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-08\" data-v-045c4260> 8 </td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-09\" data-v-045c4260> 9 </td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-10\" data-v-045c4260> 10 </td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-11\" data-v-045c4260> 11 </td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-12\" data-v-045c4260> 12 </td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-13\" data-v-045c4260> 13 </td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-14\" data-v-045c4260> 14 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-event-container\" colspan=\"2\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-not-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Long Event</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td rowspan=\"6\" data-v-045c4260></td><td class=\"fc-event-container\" colspan=\"2\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Conference</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td><td class=\"fc-event-container\" rowspan=\"6\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>7a</span><span class=\"fc-title\" data-v-045c4260>Birthday Party</span></div></a></td><td rowspan=\"6\" data-v-045c4260></td></tr><tr class=\"\" data-v-045c4260><td rowspan=\"5\" data-v-045c4260></td><td class=\"fc-event-container\" rowspan=\"5\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>4p</span><span class=\"fc-title\" data-v-045c4260>Repeating Event</span></div></a></td><td rowspan=\"5\" data-v-045c4260></td><td class=\"fc-event-container fc-limited\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>10:30a</span><span class=\"fc-title\" data-v-045c4260>Meeting</span></div></a></td><td class=\"fc-more-cell\" rowspan=\"1\" data-v-045c4260><div data-v-045c4260><a class=\"fc-more\" data-v-045c4260>+5 more</a></div></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>12p</span><span class=\"fc-title\" data-v-045c4260>Lunch</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>2:30p</span><span class=\"fc-title\" data-v-045c4260>Meeting</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>5:30p</span><span class=\"fc-title\" data-v-045c4260>Happy Hour</span></div></a></td></tr><tr class=\"fc-limited\" data-v-045c4260><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>8p</span><span class=\"fc-title\" data-v-045c4260>Dinner</span></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-15\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-16\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-17\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-18\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-19\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-20\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-21\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-15\" data-v-045c4260> 15 </td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-16\" data-v-045c4260> 16 </td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-17\" data-v-045c4260> 17 </td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-18\" data-v-045c4260> 18 </td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-19\" data-v-045c4260> 19 </td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-20\" data-v-045c4260> 20 </td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-21\" data-v-045c4260> 21 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-time\" data-v-045c4260>4p</span><span class=\"fc-title\" data-v-045c4260>Repeating Event</span></div></a></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-past\" data-date=\"2015-02-22\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-past\" data-date=\"2015-02-23\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-past\" data-date=\"2015-02-24\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-past\" data-date=\"2015-02-25\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-past\" data-date=\"2015-02-26\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-past\" data-date=\"2015-02-27\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-past\" data-date=\"2015-02-28\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-past\" data-date=\"2015-02-22\" data-v-045c4260> 22 </td><td class=\"fc-day-number fc-mon fc-past\" data-date=\"2015-02-23\" data-v-045c4260> 23 </td><td class=\"fc-day-number fc-tue fc-past\" data-date=\"2015-02-24\" data-v-045c4260> 24 </td><td class=\"fc-day-number fc-wed fc-past\" data-date=\"2015-02-25\" data-v-045c4260> 25 </td><td class=\"fc-day-number fc-thu fc-past\" data-date=\"2015-02-26\" data-v-045c4260> 26 </td><td class=\"fc-day-number fc-fri fc-past\" data-date=\"2015-02-27\" data-v-045c4260> 27 </td><td class=\"fc-day-number fc-sat fc-past\" data-date=\"2015-02-28\" data-v-045c4260> 28 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td class=\"fc-event-container\" data-v-045c4260><a class=\"fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable fc-resizable\" href=\"http://themeforest.net/item/dojo-martial-arts-html-template-/12839291?s_rank=2\" data-v-045c4260><div class=\"fc-content\" data-v-045c4260><span class=\"fc-title\" data-v-045c4260>Click for Google</span></div><div class=\"fc-resizer fc-end-resizer\" data-v-045c4260></div></a></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:114px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-other-month fc-past\" data-date=\"2015-03-01\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-other-month fc-past\" data-date=\"2015-03-02\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-other-month fc-past\" data-date=\"2015-03-03\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-other-month fc-past\" data-date=\"2015-03-04\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-other-month fc-past\" data-date=\"2015-03-05\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-other-month fc-past\" data-date=\"2015-03-06\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-other-month fc-past\" data-date=\"2015-03-07\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-other-month fc-past\" data-date=\"2015-03-01\" data-v-045c4260> 1 </td><td class=\"fc-day-number fc-mon fc-other-month fc-past\" data-date=\"2015-03-02\" data-v-045c4260> 2 </td><td class=\"fc-day-number fc-tue fc-other-month fc-past\" data-date=\"2015-03-03\" data-v-045c4260> 3 </td><td class=\"fc-day-number fc-wed fc-other-month fc-past\" data-date=\"2015-03-04\" data-v-045c4260> 4 </td><td class=\"fc-day-number fc-thu fc-other-month fc-past\" data-date=\"2015-03-05\" data-v-045c4260> 5 </td><td class=\"fc-day-number fc-fri fc-other-month fc-past\" data-date=\"2015-03-06\" data-v-045c4260> 6 </td><td class=\"fc-day-number fc-sat fc-other-month fc-past\" data-date=\"2015-03-07\" data-v-045c4260> 7 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div><div class=\"fc-row fc-week fc-widget-content fc-rigid\" style=\"height:119px;\" data-v-045c4260><div class=\"fc-bg\" data-v-045c4260><table data-v-045c4260><tbody data-v-045c4260><tr data-v-045c4260><td class=\"fc-day fc-widget-content fc-sun fc-other-month fc-past\" data-date=\"2015-03-08\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-mon fc-other-month fc-past\" data-date=\"2015-03-09\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-tue fc-other-month fc-past\" data-date=\"2015-03-10\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-wed fc-other-month fc-past\" data-date=\"2015-03-11\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-thu fc-other-month fc-past\" data-date=\"2015-03-12\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-fri fc-other-month fc-past\" data-date=\"2015-03-13\" data-v-045c4260></td><td class=\"fc-day fc-widget-content fc-sat fc-other-month fc-past\" data-date=\"2015-03-14\" data-v-045c4260></td></tr></tbody></table></div><div class=\"fc-content-skeleton\" data-v-045c4260><table data-v-045c4260><thead data-v-045c4260><tr data-v-045c4260><td class=\"fc-day-number fc-sun fc-other-month fc-past\" data-date=\"2015-03-08\" data-v-045c4260> 8 </td><td class=\"fc-day-number fc-mon fc-other-month fc-past\" data-date=\"2015-03-09\" data-v-045c4260> 9 </td><td class=\"fc-day-number fc-tue fc-other-month fc-past\" data-date=\"2015-03-10\" data-v-045c4260> 10 </td><td class=\"fc-day-number fc-wed fc-other-month fc-past\" data-date=\"2015-03-11\" data-v-045c4260> 11 </td><td class=\"fc-day-number fc-thu fc-other-month fc-past\" data-date=\"2015-03-12\" data-v-045c4260> 12 </td><td class=\"fc-day-number fc-fri fc-other-month fc-past\" data-date=\"2015-03-13\" data-v-045c4260> 13 </td><td class=\"fc-day-number fc-sat fc-other-month fc-past\" data-date=\"2015-03-14\" data-v-045c4260> 14 </td></tr></thead><tbody data-v-045c4260><tr data-v-045c4260><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td><td data-v-045c4260></td></tr></tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div></div></div></div></div></section><section id=\"callToAction\" class=\"section section_5\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><section class=\"ct-mediaSection\" data-type=\"parallax\" data-height=\"660\" data-background=\"./../../public/assets/images/content/callToActionBG.jpg\" data-stellar-background-ratio=\"0.5\" style=\"background-image:url(&#39;assets/images/content/callToActionBG.jpg&#39;);min-height:660px;background-position:0% 0%;\" data-v-045c4260><div class=\"ct-mediaSection-inner\" data-v-045c4260><section class=\"ct-callToAction ct-callToAction--type2\" data-v-045c4260><div class=\"ct-callToAction-inner text-center\" data-v-045c4260><div class=\"container\" data-v-045c4260><p class=\"ct-callToAction-text ct-u-marginBottom0\" data-v-045c4260><span data-v-045c4260>if you want</span></p><p class=\"ct-callToAction-text ct-u-marginBottom30\" data-v-045c4260><span data-v-045c4260>to be <span data-v-045c4260>the best</span></span></p><p class=\"ct-callToAction-text ct-u-marginBottom0\" data-v-045c4260><span data-v-045c4260>you gotta learn</span></p><p class=\"ct-callToAction-text ct-u-marginBottom90\" data-v-045c4260><span data-v-045c4260>from <span data-v-045c4260>the best!</span></span></p><div class=\"text-center\" data-v-045c4260><a href=\"single-classes.html\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>join dojo now!</span></a></div></div></div></section></div></section></section>", 5);
 var _hoisted_27 = {
   id: "services",
   "class": "section ct-u-paddingTop200 section_6",
   "data-background": "./../../public/assets/images/content/BG01.png",
   style: {
-    "background-image": "url(\"assets/images/content/BG01.png\")",
+    "background-image": "url('assets/images/content/BG01.png')",
     "display": "block",
     "position": "relative",
     "float": "none"
   }
 };
-var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox03_png__WEBPACK_IMPORTED_MODULE_17__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>CHOOSE YOUR MEMBERSHIP</span><small data-v-045c4260><span data-v-045c4260></span>FLEXIBLE AS POSSIBLE</small></h3></div></div></div>", 1);
+var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_gym_membr_jpg__WEBPACK_IMPORTED_MODULE_18__["default"] + "\" alt=\"icon\" style=\"width:100%;\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>CHOOSE YOUR MEMBERSHIP</span><small data-v-045c4260><span data-v-045c4260></span>FLEXIBLE AS POSSIBLE</small></h3></div></div></div>", 1);
 var _hoisted_29 = {
   "class": "container"
 };
@@ -21322,62 +21330,73 @@ var _hoisted_33 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-pricingTable-image"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: _public_assets_images_content_iconBox04_png__WEBPACK_IMPORTED_MODULE_18__["default"],
+    src: _public_assets_images_content_yellow_belt_jpg__WEBPACK_IMPORTED_MODULE_19__["default"],
     alt: "icon"
   })], -1 /* HOISTED */);
 });
-var _hoisted_34 = {
+var _hoisted_34 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "ct-pricingTables-header"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Yellow Belt"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Casual visit")])], -1 /* HOISTED */);
+});
+var _hoisted_35 = {
   "class": "ct-pricingTable-price"
 };
-var _hoisted_35 = {
+var _hoisted_36 = {
   "class": "ct-pricingTable-text"
 };
-var _hoisted_36 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_37 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", null, null, -1 /* HOISTED */);
 });
-var _hoisted_37 = {
-  "class": "ct-pricingTable-text"
-};
 var _hoisted_38 = {
+  "class": "ct-pricingTable-list"
+};
+var _hoisted_39 = {
   "class": "text-center ct-u-marginTop80"
 };
-var _hoisted_39 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_40 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Download", -1 /* HOISTED */);
 });
-var _hoisted_40 = [_hoisted_39];
-var _hoisted_41 = {
+var _hoisted_41 = [_hoisted_40];
+var _hoisted_42 = {
   "class": "col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2"
 };
-var _hoisted_42 = {
+var _hoisted_43 = {
   "class": "ct-pricingTable ct-pricingTable-primary"
 };
-var _hoisted_43 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_44 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-pricingTable-image"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: _public_assets_images_content_iconBox05_png__WEBPACK_IMPORTED_MODULE_19__["default"],
+    src: _public_assets_images_content_black_belt001_jpg__WEBPACK_IMPORTED_MODULE_20__["default"],
     alt: "icon"
   })], -1 /* HOISTED */);
 });
-var _hoisted_44 = {
+var _hoisted_45 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
+    "class": "ct-pricingTables-header"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Black Belt"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "The Ultimate Choise")])], -1 /* HOISTED */);
+});
+var _hoisted_46 = {
   "class": "ct-pricingTable-price"
 };
-var _hoisted_45 = {
-  "class": "ct-pricingTable-text"
-};
-var _hoisted_46 = {
-  "class": "ct-pricingTable-text"
-};
 var _hoisted_47 = {
+  "class": "ct-pricingTable-text"
+};
+var _hoisted_48 = {
+  "class": "ct-pricingTable-list"
+};
+var _hoisted_49 = {
   "class": "text-center ct-u-marginTop60"
 };
-var _hoisted_48 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_50 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Download", -1 /* HOISTED */);
 });
-var _hoisted_49 = [_hoisted_48];
-var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2\" data-v-045c4260><article class=\"ct-pricingTable\" data-v-045c4260><div class=\"ct-pricingTable-image\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox06_png__WEBPACK_IMPORTED_MODULE_20__["default"] + "\" alt=\"icon\" data-v-045c4260></div><h3 class=\"ct-pricingTables-header\" data-v-045c4260><span data-v-045c4260>gym only</span><small data-v-045c4260><span data-v-045c4260>access to the gym</span></small></h3><div class=\"ct-pricingTable-price\" data-v-045c4260><span data-v-045c4260>$12<span data-v-045c4260>/ month</span></span></div><p class=\"ct-pricingTable-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><ul class=\"ct-pricingTable-list\" data-v-045c4260><li data-v-045c4260> Fifo - Fly in / fly out </li><li data-v-045c4260> train 24hrs/day </li><li data-v-045c4260> 1 isotonic drink free </li></ul><div class=\"text-center ct-u-marginTop40\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>choose</span></a></div></article></div>", 1);
-var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"gallery\" class=\"section ct-u-paddingTop100 section_7\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox07_png__WEBPACK_IMPORTED_MODULE_21__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>IMPRESSIONS FROM THE DOJO</span><small data-v-045c4260><span data-v-045c4260>FEEL FREE TO BROWSE OUR GALLERY</span></small></h3></div></div></div><div class=\"container\" data-v-045c4260><div class=\"ct-portfolio-filters\" data-v-045c4260><ul class=\"ct-portfolio-filters-list list-unstyled list-inline\" data-v-045c4260><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton active\" data-filter=\"*\" data-v-045c4260><span data-content=\"all\" data-v-045c4260>all</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".facility\" data-v-045c4260><span data-content=\"facility\" data-v-045c4260>facility</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".dojo\" data-v-045c4260><span data-content=\"dojo\" data-v-045c4260>dojo</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".cage\" data-v-045c4260><span data-content=\"cage\" data-v-045c4260>cage</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".gym\" data-v-045c4260><span data-content=\"gym\" data-v-045c4260>gym</span></a></li></ul></div></div><div class=\"container-fluid\" data-v-045c4260><div class=\"ct-portfolio lightGallery ct-portfolio--col4 ct-portfolio-container is-loaded\" style=\"position:relative;height:494.4px;\" data-v-045c4260><article class=\"ct-portfolio-item gym\" data-src=\"./../../public/assets/images/content/pexels-pixabay-260447.jpg\" style=\"position:absolute;left:0px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_pixabay_260447_jpg__WEBPACK_IMPORTED_MODULE_22__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item facility\" data-src=\"./../../public/assets/images/content/pexels-victor-freitas-703016.jpg\" style=\"position:absolute;left:372px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_victor_freitas_703016_jpg__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item cage\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg\" style=\"position:absolute;left:744px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761665_jpg__WEBPACK_IMPORTED_MODULE_25__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item dojo\" data-src=\"./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg\" style=\"position:absolute;left:1116px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item gym\" data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" style=\"position:absolute;left:0px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_13__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item facility\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg\" style=\"position:absolute;left:372px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_8__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item dojo\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg\" style=\"position:absolute;left:744px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4753898_jpg__WEBPACK_IMPORTED_MODULE_26__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item gym\" data-src=\"./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg\" style=\"position:absolute;left:1116px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_leon_ardho_1552103_jpg__WEBPACK_IMPORTED_MODULE_27__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article></div></div></section><section class=\"ct-u-paddingTop100\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_iconBox08_png__WEBPACK_IMPORTED_MODULE_28__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>WE ONLY RELY ON THE BEST</span><small data-v-045c4260><span data-v-045c4260></span>THATS WHY WE LIKE TO WORK WITH THESE GUYS</small></h3></div></div></div><div class=\"container\" data-v-045c4260><div class=\"row\" data-v-045c4260><div class=\"col-lg-10 col-lg-offset-1\" data-v-045c4260><section class=\"ct-js-slick ct-slick ct-slick-arrow--type4 slick-initialized slick-slider\" data-height=\"156\" data-centerpadding=\"50\" data-centermode=\"true\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"3\" data-snap-ignore=\"true\" style=\"min-height:156px;height:156px;\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:3888px;transform:translate3d(-972px, 0px, 0px);\" data-v-045c4260><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo01_png__WEBPACK_IMPORTED_MODULE_29__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned slick-active\" style=\"height:156px;width:324px;\" data-slick-index=\"-1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-active slick-center\" style=\"height:156px;width:324px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo01_png__WEBPACK_IMPORTED_MODULE_29__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-active\" style=\"height:156px;width:324px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide\" style=\"height:156px;width:324px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide\" style=\"height:156px;width:324px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned slick-center\" style=\"height:156px;width:324px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo01_png__WEBPACK_IMPORTED_MODULE_29__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"5\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"6\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"7\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo02_png__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></div></div></section>", 2);
-var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_51 = [_hoisted_50];
+var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2\" data-v-045c4260><article class=\"ct-pricingTable\" data-v-045c4260><div class=\"ct-pricingTable-image\" data-v-045c4260><img src=\"" + _public_assets_images_content_online_gym_jpg__WEBPACK_IMPORTED_MODULE_21__["default"] + "\" alt=\"icon\" data-v-045c4260></div><h3 class=\"ct-pricingTables-header\" data-v-045c4260><span data-v-045c4260>gym only</span><small data-v-045c4260><span data-v-045c4260>access to the gym</span></small></h3><div class=\"ct-pricingTable-price\" data-v-045c4260><span data-v-045c4260>$12<span data-v-045c4260>/ month</span></span></div><p class=\"ct-pricingTable-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><ul class=\"ct-pricingTable-list\" data-v-045c4260><li data-v-045c4260>Fifo - Fly in / fly out</li><li data-v-045c4260>train 24hrs/day</li><li data-v-045c4260>1 isotonic drink free</li></ul><div class=\"text-center ct-u-marginTop40\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>choose</span></a></div></article></div>", 1);
+var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"services\" class=\"section ct-u-paddingTop200\" data-background=\"assets/images/content/BG01.png\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_gym_membr_jpg__WEBPACK_IMPORTED_MODULE_18__["default"] + "\" alt=\"icon\" style=\"width:100%;\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>CHOOSE YOUR MEMBERSHIP</span><small data-v-045c4260><span data-v-045c4260></span>FLEXIBLE AS POSSIBLE</small></h3></div></div></div><div class=\"container\" data-v-045c4260><div class=\"row\" data-v-045c4260><div class=\"col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2\" data-v-045c4260><article class=\"ct-pricingTable\" data-v-045c4260><div class=\"ct-pricingTable-image\" data-v-045c4260><img src=\"" + _public_assets_images_content_yellow_belt_jpg__WEBPACK_IMPORTED_MODULE_19__["default"] + "\" alt=\"icon\" data-v-045c4260></div><h3 class=\"ct-pricingTables-header\" data-v-045c4260><span data-v-045c4260>Yellow Belt</span><small data-v-045c4260><span data-v-045c4260>Casual visit</span></small></h3><div class=\"ct-pricingTable-price\" data-v-045c4260><span data-v-045c4260>$25<span data-v-045c4260>/ each</span></span></div><p class=\"ct-pricingTable-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><ul class=\"ct-pricingTable-list\" data-v-045c4260><li data-v-045c4260>Fifo - Fly in / fly out</li><li data-v-045c4260>no contract</li></ul><div class=\"text-center ct-u-marginTop80\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>choose</span></a></div></article></div><div class=\"col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2\" data-v-045c4260><article class=\"ct-pricingTable ct-pricingTable-primary\" data-v-045c4260><div class=\"ct-pricingTable-image\" data-v-045c4260><img src=\"" + _public_assets_images_content_black_belt001_jpg__WEBPACK_IMPORTED_MODULE_20__["default"] + "\" alt=\"icon\" data-v-045c4260></div><h3 class=\"ct-pricingTables-header\" data-v-045c4260><span data-v-045c4260>Black Belt</span><small data-v-045c4260><span data-v-045c4260>The Ultimate Choise</span></small></h3><div class=\"ct-pricingTable-price\" data-v-045c4260><span data-v-045c4260>$99<span data-v-045c4260>/ month</span></span></div><p class=\"ct-pricingTable-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas Vestibulum. </p><ul class=\"ct-pricingTable-list\" data-v-045c4260><li data-v-045c4260>membership</li><li data-v-045c4260>unlimited training</li><li data-v-045c4260>Acces to all classes</li><li data-v-045c4260>shirt &amp; pants</li><li data-v-045c4260>gloves &amp; fightgear</li></ul><div class=\"text-center ct-u-marginTop60\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--c btn-default\" data-v-045c4260><span data-v-045c4260>choose</span></a></div></article></div><div class=\"col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2\" data-v-045c4260><article class=\"ct-pricingTable\" data-v-045c4260><div class=\"ct-pricingTable-image\" data-v-045c4260><img src=\"" + _public_assets_images_content_online_gym_jpg__WEBPACK_IMPORTED_MODULE_21__["default"] + "\" alt=\"icon\" data-v-045c4260></div><h3 class=\"ct-pricingTables-header\" data-v-045c4260><span data-v-045c4260>gym only</span><small data-v-045c4260><span data-v-045c4260>access to the gym</span></small></h3><div class=\"ct-pricingTable-price\" data-v-045c4260><span data-v-045c4260>$12<span data-v-045c4260>/ month</span></span></div><p class=\"ct-pricingTable-text\" data-v-045c4260> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><ul class=\"ct-pricingTable-list\" data-v-045c4260><li data-v-045c4260>Fifo - Fly in / fly out</li><li data-v-045c4260>train 24hrs/day</li><li data-v-045c4260>1 isotonic drink free</li></ul><div class=\"text-center ct-u-marginTop40\" data-v-045c4260><a href=\"#\" class=\"btn ct-btn--o btn-default\" data-v-045c4260><span data-v-045c4260>choose</span></a></div></article></div></div></div></section>", 1);
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"gallery\" class=\"section ct-u-paddingTop100 section_7\" style=\"display:block;position:relative;float:none;\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_impression_jpg__WEBPACK_IMPORTED_MODULE_22__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>IMPRESSIONS FROM THE DOJO</span><small data-v-045c4260><span data-v-045c4260>FEEL FREE TO BROWSE OUR GALLERY</span></small></h3></div></div></div><div class=\"container\" data-v-045c4260><div class=\"ct-portfolio-filters\" data-v-045c4260><ul class=\"ct-portfolio-filters-list list-unstyled list-inline\" data-v-045c4260><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton active\" data-filter=\"*\" data-v-045c4260><span data-content=\"all\" data-v-045c4260>all</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".facility\" data-v-045c4260><span data-content=\"facility\" data-v-045c4260>facility</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".dojo\" data-v-045c4260><span data-content=\"dojo\" data-v-045c4260>dojo</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".cage\" data-v-045c4260><span data-content=\"cage\" data-v-045c4260>cage</span></a></li><li data-v-045c4260><a href=\"#\" class=\"ct-portfolio-filtersButton\" data-filter=\".gym\" data-v-045c4260><span data-content=\"gym\" data-v-045c4260>gym</span></a></li></ul></div></div><div class=\"container-fluid\" data-v-045c4260><div class=\"ct-portfolio lightGallery ct-portfolio--col4 ct-portfolio-container is-loaded\" style=\"position:relative;height:494.4px;\" data-v-045c4260><article class=\"ct-portfolio-item gym\" data-src=\"./../../public/assets/images/content/pexels-pixabay-260447.jpg\" style=\"position:absolute;left:0px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_pixabay_260447_jpg__WEBPACK_IMPORTED_MODULE_23__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item facility\" data-src=\"./../../public/assets/images/content/pexels-victor-freitas-703016.jpg\" style=\"position:absolute;left:372px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_victor_freitas_703016_jpg__WEBPACK_IMPORTED_MODULE_25__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item cage\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg\" style=\"position:absolute;left:744px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761665_jpg__WEBPACK_IMPORTED_MODULE_26__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item dojo\" data-src=\"./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg\" style=\"position:absolute;left:1116px;top:0px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item gym\" data-src=\"https://www.youtube.com/watch?v=EaE66cI4Bz8\" style=\"position:absolute;left:0px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_zakaria_boumliha_2827400_jpg__WEBPACK_IMPORTED_MODULE_14__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_playButton_png__WEBPACK_IMPORTED_MODULE_15__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>VIDEO</p><p data-v-045c4260>MUAY THAI TRAINING</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item facility\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg\" style=\"position:absolute;left:372px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4761668_jpg__WEBPACK_IMPORTED_MODULE_9__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item dojo\" data-src=\"./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg\" style=\"position:absolute;left:744px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_cottonbro_studio_4753898_jpg__WEBPACK_IMPORTED_MODULE_27__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article><article class=\"ct-portfolio-item gym\" data-src=\"./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg\" style=\"position:absolute;left:1116px;top:247px;\" data-v-045c4260><figure class=\"ct-hover-effect\" data-v-045c4260><img class=\"grayscale\" src=\"" + _public_assets_images_content_pexels_leon_ardho_1552103_jpg__WEBPACK_IMPORTED_MODULE_28__["default"] + "\" alt=\"\" data-v-045c4260><figcaption data-v-045c4260><div class=\"ct-item-hover\" data-v-045c4260><div class=\"ct-hover-container\" data-v-045c4260><div class=\"ct-hoverButton\" data-v-045c4260><img src=\"" + _public_assets_images_eyeButton_png__WEBPACK_IMPORTED_MODULE_24__["default"] + "\" alt=\"img\" data-v-045c4260></div><p data-v-045c4260>Cardio &amp; Gym Area</p></div></div></figcaption></figure></article></div></div></section><section class=\"ct-u-paddingTop100\" data-v-045c4260><div class=\"container\" data-v-045c4260><div class=\"ct-headerBox ct-headerBox--type2\" data-v-045c4260><div class=\"ct-headerBox-media\" data-v-045c4260><img src=\"" + _public_assets_images_content_best001_jpg__WEBPACK_IMPORTED_MODULE_29__["default"] + "\" alt=\"icon\" data-v-045c4260></div><div class=\"ct-headerBox-body\" data-v-045c4260><h3 data-v-045c4260><span data-v-045c4260>WE ONLY RELY ON THE BEST</span><small data-v-045c4260><span data-v-045c4260></span>THATS WHY WE LIKE TO WORK WITH THESE GUYS</small></h3></div></div></div><div class=\"container\" data-v-045c4260><div class=\"row\" data-v-045c4260><div class=\"col-lg-10 col-lg-offset-1\" data-v-045c4260><section class=\"ct-js-slick ct-slick ct-slick-arrow--type4 slick-initialized slick-slider\" data-height=\"156\" data-centerpadding=\"50\" data-centermode=\"true\" data-autoplay=\"false\" data-arrows=\"true\" data-dots=\"false\" data-items=\"1\" data-smitems=\"3\" data-snap-ignore=\"true\" style=\"min-height:156px;height:156px;\" data-v-045c4260><div class=\"slick-list draggable\" tabindex=\"0\" data-v-045c4260><div class=\"slick-track\" style=\"opacity:1;width:3888px;transform:translate3d(\n                                                -972px,\n                                                0px,\n                                                0px\n                                            );\" data-v-045c4260><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc001_jpg__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"-2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_32__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned slick-active\" style=\"height:156px;width:324px;\" data-slick-index=\"-1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-active slick-center\" style=\"height:156px;width:324px;\" data-slick-index=\"0\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc001_jpg__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-active\" style=\"height:156px;width:324px;\" data-slick-index=\"1\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide\" style=\"height:156px;width:324px;\" data-slick-index=\"2\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_32__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide\" style=\"height:156px;width:324px;\" data-slick-index=\"3\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned slick-center\" style=\"height:156px;width:324px;\" data-slick-index=\"4\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc001_jpg__WEBPACK_IMPORTED_MODULE_30__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"5\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"6\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_logo03_png__WEBPACK_IMPORTED_MODULE_32__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div><div class=\"item ct-company-logo slick-slide slick-cloned\" style=\"height:156px;width:324px;\" data-slick-index=\"7\" data-v-045c4260><div class=\"item-inner\" data-v-045c4260><figure data-v-045c4260><a href=\"#\" data-v-045c4260><img src=\"" + _public_assets_images_content_abc002_jpg__WEBPACK_IMPORTED_MODULE_31__["default"] + "\" alt=\"\" data-v-045c4260></a></figure></div></div></div></div><button type=\"button\" class=\"slick-prev\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-left\" data-v-045c4260></i></button><button type=\"button\" class=\"slick-next\" style=\"display:block;\" data-v-045c4260><i class=\"fa fa-angle-right\" data-v-045c4260></i></button></section></div></div></div></section>", 2);
+var _hoisted_56 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
     id: "map",
     "class": "section ct-u-paddingTop100 section_8",
@@ -21391,11 +21410,11 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-headerBox-media"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: _public_assets_images_content_iconBox15_png__WEBPACK_IMPORTED_MODULE_32__["default"],
+    src: _public_assets_images_content_gym_contact_jpg__WEBPACK_IMPORTED_MODULE_33__["default"],
     alt: "icon"
   })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-headerBox-body"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "LETS GET IN CONTACT"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "WE ARE HAPPY TO HEAR SOMETHING FROM YOU")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "LETS GET IN CONTACT"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "WE ARE HAPPY TO HEAR SOMETHING FROM YOU")])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-map-container"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-map lollipop",
@@ -21469,7 +21488,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding": "0px",
       "border-width": "0px",
       "margin": "0px",
-      "cursor": "url(\"https://maps.gstatic.com/mapfiles/openhand_8_8.cur\"), default",
+      "cursor": "url('https://maps.gstatic.com/mapfiles/openhand_8_8.cur'),\n                                                default",
       "touch-action": "pan-x pan-y"
     },
     "aria-describedby": "7B6D0269-2057-4ADA-B834-43FD62A5FE17"
@@ -21502,7 +21521,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     style: {
       "position": "absolute",
       "z-index": "984",
-      "transform": "matrix(1, 0, 0, 1, -41, -113)"
+      "transform": "matrix(\n                                                                1,\n                                                                0,\n                                                                0,\n                                                                1,\n                                                                -41,\n                                                                -113\n                                                            )"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
@@ -21813,7 +21832,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     alt: "",
-    src: _public_assets_images_marker_png__WEBPACK_IMPORTED_MODULE_33__["default"],
+    src: _public_assets_images_marker_png__WEBPACK_IMPORTED_MODULE_34__["default"],
     draggable: "false",
     style: {
       "position": "absolute",
@@ -21838,7 +21857,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     style: {
       "position": "absolute",
       "z-index": "984",
-      "transform": "matrix(1, 0, 0, 1, -41, -113)"
+      "transform": "matrix(\n                                                                1,\n                                                                0,\n                                                                0,\n                                                                1,\n                                                                -41,\n                                                                -113\n                                                            )"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
@@ -22040,7 +22059,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     style: {
       "position": "absolute",
       "z-index": "984",
-      "transform": "matrix(1, 0, 0, 1, -41, -113)"
+      "transform": "matrix(\n                                                            1,\n                                                            0,\n                                                            0,\n                                                            1,\n                                                            -41,\n                                                            -113\n                                                        )"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
@@ -22049,7 +22068,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22072,7 +22091,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22095,7 +22114,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22118,7 +22137,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22141,7 +22160,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22164,7 +22183,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22187,7 +22206,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22210,7 +22229,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22233,7 +22252,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22256,7 +22275,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22279,7 +22298,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22302,7 +22321,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22325,7 +22344,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22348,7 +22367,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22371,7 +22390,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22394,7 +22413,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22417,7 +22436,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22440,7 +22459,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22463,7 +22482,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "-256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22486,7 +22505,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "0px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22509,7 +22528,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "256px",
       "width": "256px",
       "height": "256px",
-      "transition": "opacity 200ms linear 0s"
+      "transition": "opacity\n                                                                200ms linear 0s"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
     draggable: "false",
@@ -22546,7 +22565,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "top": "50%",
       "width": "100%",
       "will-change": "transform",
-      "transform": "translate(0px, 0px)"
+      "transform": "translate(\n                                                        0px,\n                                                        0px\n                                                    )"
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
@@ -22646,7 +22665,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "aria-label": "Left arrow"
   }, "←")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Move left."
-  }, "Move left")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Move left ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22655,7 +22674,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "aria-label": "Right arrow"
   }, "→")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Move right."
-  }, "Move right")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Move right ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22664,7 +22683,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "aria-label": "Up arrow"
   }, "↑")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Move up."
-  }, "Move up")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Move up ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22673,7 +22692,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "aria-label": "Down arrow"
   }, "↓")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Move down."
-  }, "Move down")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Move down ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22681,7 +22700,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "+")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Zoom in."
-  }, "Zoom in")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Zoom in ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22689,7 +22708,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "-")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Zoom out."
-  }, "Zoom out")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Zoom out ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22697,7 +22716,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "Home")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Jump left by 75%."
-  }, "Jump left by 75%")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Jump left by 75% ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22705,7 +22724,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "End")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Jump right by 75%."
-  }, "Jump right by 75%")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Jump right by 75% ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22713,7 +22732,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "Page Up")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Jump up by 75%."
-  }, "Jump up by 75%")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
+  }, " Jump up by 75% ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("tr", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     style: {
       "text-align": "right"
     }
@@ -22721,7 +22740,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "class": "VdnQmO-keyboard-shortcuts-view--shortcut-key"
   }, "Page Down")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", {
     "aria-label": "Jump down by 75%."
-  }, "Jump down by 75%")])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
+  }, " Jump down by 75% ")])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
     "aria-hidden": "true",
     frameborder: "0",
     tabindex: "-1",
@@ -22753,7 +22772,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     "aria-pressed": "false",
     "class": "gm-control-active gm-fullscreen-control",
     style: {
-      "background": "none rgb(255, 255, 255)",
+      "background": "none\n                                                    rgb(255, 255, 255)",
       "border": "0px",
       "margin": "10px",
       "padding": "0px",
@@ -22765,7 +22784,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "border-radius": "2px",
       "height": "40px",
       "width": "40px",
-      "box-shadow": "rgba(0, 0, 0, 0.3) 0px 1px 4px -1px",
+      "box-shadow": "rgba(0, 0, 0, 0.3)\n                                                    0px 1px 4px -1px",
       "overflow": "hidden",
       "display": "none",
       "top": "0px",
@@ -22863,7 +22882,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "background-color": "rgb(245, 245, 245)",
+      "background-color": "rgb(\n                                                                    245,\n                                                                    245,\n                                                                    245\n                                                                )",
       "width": "auto",
       "height": "100%",
       "margin-left": "1px"
@@ -22874,7 +22893,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding-right": "6px",
       "padding-left": "6px",
       "box-sizing": "border-box",
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                                Arial,\n                                                                sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "white-space": "nowrap",
@@ -22899,11 +22918,11 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "position": "relative",
       "cursor": "pointer",
       "user-select": "none",
-      "color": "rgb(0, 0, 0)",
+      "color": "rgb(\n                                                                    0,\n                                                                    0,\n                                                                    0\n                                                                )",
       "font-family": "inherit",
       "line-height": "inherit"
     }
-  }, "Keyboard shortcuts")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, " Keyboard shortcuts ")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "gmnoprint",
     style: {
       "z-index": "1000001"
@@ -22930,7 +22949,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "background-color": "rgb(245, 245, 245)",
+      "background-color": "rgb(\n                                                                    245,\n                                                                    245,\n                                                                    245\n                                                                )",
       "width": "auto",
       "height": "100%",
       "margin-left": "1px"
@@ -22941,7 +22960,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding-right": "6px",
       "padding-left": "6px",
       "box-sizing": "border-box",
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                                Arial,\n                                                                sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "white-space": "nowrap",
@@ -22965,25 +22984,25 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "position": "relative",
       "cursor": "pointer",
       "user-select": "none",
-      "color": "rgb(0, 0, 0)",
+      "color": "rgb(\n                                                                    0,\n                                                                    0,\n                                                                    0\n                                                                )",
       "font-family": "inherit",
       "line-height": "inherit",
       "display": "none"
     }
-  }, "Map Data"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+  }, " Map Data"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
     style: {}
   }, "Map data ©2023 Google")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "gmnoscreen"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                            Arial, sans-serif",
       "font-size": "11px",
       "color": "rgb(0, 0, 0)",
       "direction": "ltr",
       "text-align": "right",
-      "background-color": "rgb(245, 245, 245)"
+      "background-color": "rgb(\n                                                            245,\n                                                            245,\n                                                            245\n                                                        )"
     }
-  }, " Map data ©2023 Google")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }, " Map data ©2023 Google ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     draggable: "false",
     "aria-label": "Map Scale: 100 m per 68 pixels",
     title: "Map Scale: 100 m per 68 pixels",
@@ -23017,7 +23036,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "background-color": "rgb(245, 245, 245)",
+      "background-color": "rgb(\n                                                                245,\n                                                                245,\n                                                                245\n                                                            )",
       "width": "auto",
       "height": "100%",
       "margin-left": "1px"
@@ -23028,7 +23047,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding-right": "6px",
       "padding-left": "6px",
       "box-sizing": "border-box",
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                            Arial, sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "white-space": "nowrap",
@@ -23059,21 +23078,21 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "height": "8px",
       "left": "0px",
       "top": "0px",
-      "background-color": "rgb(255, 255, 255)"
+      "background-color": "rgb(\n                                                                    255,\n                                                                    255,\n                                                                    255\n                                                                )"
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
       "width": "4px",
       "height": "8px",
       "position": "absolute",
-      "background-color": "rgb(255, 255, 255)",
+      "background-color": "rgb(\n                                                                    255,\n                                                                    255,\n                                                                    255\n                                                                )",
       "right": "0px",
       "bottom": "0px"
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
       "position": "absolute",
-      "background-color": "rgb(102, 102, 102)",
+      "background-color": "rgb(\n                                                                    102,\n                                                                    102,\n                                                                    102\n                                                                )",
       "height": "2px",
       "left": "1px",
       "bottom": "1px",
@@ -23086,14 +23105,14 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "height": "6px",
       "left": "1px",
       "top": "1px",
-      "background-color": "rgb(102, 102, 102)"
+      "background-color": "rgb(\n                                                                    102,\n                                                                    102,\n                                                                    102\n                                                                )"
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
       "width": "2px",
       "height": "6px",
       "position": "absolute",
-      "background-color": "rgb(102, 102, 102)",
+      "background-color": "rgb(\n                                                                    102,\n                                                                    102,\n                                                                    102\n                                                                )",
       "bottom": "1px",
       "right": "1px"
     }
@@ -23125,7 +23144,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "background-color": "rgb(245, 245, 245)",
+      "background-color": "rgb(\n                                                                245,\n                                                                245,\n                                                                245\n                                                            )",
       "width": "auto",
       "height": "100%",
       "margin-left": "1px"
@@ -23136,7 +23155,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding-right": "6px",
       "padding-left": "6px",
       "box-sizing": "border-box",
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                            Arial, sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "white-space": "nowrap",
@@ -23176,7 +23195,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     style: {
-      "background-color": "rgb(245, 245, 245)",
+      "background-color": "rgb(\n                                                                245,\n                                                                245,\n                                                                245\n                                                            )",
       "width": "auto",
       "height": "100%",
       "margin-left": "1px"
@@ -23187,7 +23206,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
       "padding-right": "6px",
       "padding-left": "6px",
       "box-sizing": "border-box",
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                            Arial, sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "white-space": "nowrap",
@@ -23203,7 +23222,7 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     dir: "ltr",
     href: "https://www.google.com/maps/@52.229676,21.012229,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3",
     style: {
-      "font-family": "Roboto, Arial, sans-serif",
+      "font-family": "Roboto,\n                                                                Arial,\n                                                                sans-serif",
       "font-size": "10px",
       "color": "rgb(0, 0, 0)",
       "text-decoration": "none",
@@ -23272,9 +23291,9 @@ var _hoisted_53 = /*#__PURE__*/_withScopeId(function () {
     }
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     "class": "dismissButton"
-  }, "OK")])])])])])])])], -1 /* HOISTED */);
+  }, " OK ")])])])])])])])], -1 /* HOISTED */);
 });
-var _hoisted_54 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_57 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
     "class": "ct-u-paddingTop150"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -23314,7 +23333,7 @@ var _hoisted_54 = /*#__PURE__*/_withScopeId(function () {
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "ct-form-header ct-u-marginBottom30"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: _public_assets_images_content_formLogo_png__WEBPACK_IMPORTED_MODULE_34__["default"],
+    src: _public_assets_images_content_muscle_header_jpg__WEBPACK_IMPORTED_MODULE_35__["default"],
     alt: ""
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Dojo")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi ")])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "col-md-6"
@@ -23324,7 +23343,7 @@ var _hoisted_54 = /*#__PURE__*/_withScopeId(function () {
     "class": "list-unstyled"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-mobile"
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "tel:123-456-7890"
   }, "123-456-7890"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("/"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "tel:123-456-789-1"
@@ -23332,7 +23351,7 @@ var _hoisted_54 = /*#__PURE__*/_withScopeId(function () {
     "class": "fa fa-map-marker"
   }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 666 Broadway, Ground Fl. New York City, NY 10017 ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
     "class": "fa fa-envelope-o"
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "www.dojo-template.com"
   }, "www.dojo-template.com"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" /"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "www.dojo-alternative-page.com"
@@ -23426,7 +23445,7 @@ var _hoisted_54 = /*#__PURE__*/_withScopeId(function () {
     "class": "btn btn-block ct-btn--o btn-default"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Submit")])])])])])])])])])], -1 /* HOISTED */);
 });
-var _hoisted_55 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_58 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
     "class": "ct-callToAction ct-callToAction--type1"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -23435,7 +23454,7 @@ var _hoisted_55 = /*#__PURE__*/_withScopeId(function () {
     "class": "container"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", {
     "class": "ct-callToAction-header text-uppercase text-center"
-  }, "Subscribe to our Newsletter for latest news"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  }, " Subscribe to our Newsletter for latest news "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "successMessage alert alert-success alert-dismissible",
     role: "alert"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
@@ -23490,7 +23509,7 @@ var _hoisted_55 = /*#__PURE__*/_withScopeId(function () {
     "class": "btn btn-block ct-btn--o btn-default ct-u-ls-2"
   }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", null, "Subscribe")])])])])])])])])], -1 /* HOISTED */);
 });
-var _hoisted_56 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_59 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     href: "#",
     "class": "ct-js-btnScrollUp"
@@ -23518,17 +23537,17 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     style: {
       "color": "white"
     }
-  }, _hoisted_20)])])])]), _hoisted_21])])])])]), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", _hoisted_32, [_hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.Title), 1 /* TEXT */), _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.description), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }, _hoisted_20)])])])]), _hoisted_21])])])])]), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_27, [_hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", _hoisted_32, [_hoisted_33, _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.Title), 1 /* TEXT */), _hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Program_Products.description), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     "class": "btn ct-btn--o btn-default",
     onClick: _cache[2] || (_cache[2] = function ($event) {
       return $options.download($data.Program_Products.id);
     })
-  }, _hoisted_40)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", _hoisted_42, [_hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.Title), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.description), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  }, _hoisted_41)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("article", _hoisted_43, [_hoisted_44, _hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.Title), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_48, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($data.Subs_Products.description), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
     "class": "btn ct-btn--c btn-default",
     onClick: _cache[3] || (_cache[3] = function ($event) {
       return $options.download($data.Subs_Products.id);
     })
-  }, _hoisted_49)])])]), _hoisted_50])])]), _hoisted_51, _hoisted_53, _hoisted_54, _hoisted_55]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FooterComponent)]), _hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" JavaScripts "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" JavaScripts ")], 64 /* STABLE_FRAGMENT */);
+  }, _hoisted_51)])])]), _hoisted_52])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testing  "), _hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" testing ended here  "), _hoisted_54, _hoisted_56, _hoisted_57, _hoisted_58]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_FooterComponent)]), _hoisted_59, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" JavaScripts "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" JavaScripts ")], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -24023,12 +24042,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   render: () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _public_assets_images_content_widgetChinseSymbol_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../public/assets/images/content/widgetChinseSymbol.png */ "./resources/public/assets/images/content/widgetChinseSymbol.png");
+/* harmony import */ var _public_assets_images_content_onemore_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../public/assets/images/content/onemore.jpg */ "./resources/public/assets/images/content/onemore.jpg");
 /* harmony import */ var _public_logo_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../public/logo.jpeg */ "./resources/public/logo.jpeg");
 
 
 
-var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"ct-prefooter ct-u-paddingTop80 ct-u-paddingBottom20 ct-u-backgroundDarkGray\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-shortMessage\"><h6 class=\"ct-widget-header\"><span> ABOUT DOJO </span></h6><div class=\"widget-inner\"><img src=\"" + _public_assets_images_content_widgetChinseSymbol_png__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"\"><p> Pellentesque habitant morbi tristique senectus et netus et </p><p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit </p></div></div></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-openHours\"><h6 class=\"ct-widget-header\"><span> HOURS </span></h6><div class=\"widget-inner\"><ul class=\"list-unstyled\"><li> Monday - Friday 8:00am - 10:00pm </li><li> Saturday 10:00am - 3:00pm </li><li> Sunday closed, sorry! </li></ul></div></div></div><div class=\"clearfix visible-sm\"></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-recentNews\"><h6 class=\"ct-widget-header\"><span> RECENT BLOG POSTS </span></h6><div class=\"widget-inner\"><div class=\"media ct-media\"><div class=\"media-left\"><time datetime=\"2015-06-23\"><span><span>14</span><span>Apr</span></span></time></div><div class=\"media-body ct-media-body\"><h6 class=\"media-heading ct-media-heading text-uppercase\"><span>CLASH OF THE TITANS</span></h6><p class=\"ct-media-body-text\"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\"><span>Read more</span></a></div></div></div></div></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-contact\"><h6 class=\"ct-widget-header\"><span> Contact </span></h6><div class=\"widget-inner\"><ul class=\"list-unstyled\"><li>666 Broadway, Ground Fl.</li><li>New York City, NY 10017</li><li><a href=\"tel:123-456-7890\">123-456-7890</a></li></ul><ul class=\"list-unstyled\"><li>Phone: <a href=\"tel:004923456678\">0049 + 23 456 678</a></li><li>Web: <a target=\"_blank\" href=\"http://www.dojo-martialarts.com\">www.dojo-martialarts.com</a></li><li>Mail: <a href=\"mailto:hello@dojo-martialarts.com\">hello@dojo-martialarts.com</a></li></ul><div class=\"ct-u-marginTop20\"><ul class=\"socialicons\"><li><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\"><i class=\"fa fa-facebook\"></i></a></li><li><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\"><i class=\"fa fa-twitter\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\"><i class=\"fa fa-linkedin\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\"><i class=\"fa fa-rss\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\"><i class=\"fa fa-vimeo-square\"></i></a></li></ul></div></div></div></div><div class=\"clearfix visible-sm\"></div></div></div></section><section class=\"ct-postfooter ct-u-backgroundMotive ct-u-paddingBoth20\"><div class=\"container\"><a href=\"index.html\"><img alt=\"Brand\" src=\"" + _public_logo_jpeg__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" style=\"width:85px;\"></a><ul class=\"list-unstyled list-inline\" style=\"display:contents;\"><li><a href=\"index.html\">Home</a></li><li><a href=\"./../Pages/about-us.vue\">About Us</a></li><li><a href=\"our-classes01.html\">Classes</a></li><li><a href=\"our-trainer01.html\">Trainers</a></li><li><a href=\"event-list.html\">Events</a></li><li><a href=\"gallery-4col.html\">Gallery</a></li><li><a href=\"feature-grid.html\">Feature</a></li><li><a href=\"blog-list.html\">Blog</a></li><li><a href=\"contact.html\">Contact</a></li></ul></div></section>", 2);
+var _hoisted_1 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section class=\"ct-prefooter ct-u-paddingTop80 ct-u-paddingBottom20 ct-u-backgroundDarkGray\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-shortMessage\"><h6 class=\"ct-widget-header\"><span> ABOUT DOJO </span></h6><div class=\"widget-inner\"><img src=\"" + _public_assets_images_content_onemore_jpg__WEBPACK_IMPORTED_MODULE_1__["default"] + "\" alt=\"\"><p> Pellentesque habitant morbi tristique senectus et netus et </p><p> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit </p></div></div></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-openHours\"><h6 class=\"ct-widget-header\"><span> HOURS </span></h6><div class=\"widget-inner\"><ul class=\"list-unstyled\"><li> Monday - Friday 8:00am - 10:00pm </li><li> Saturday 10:00am - 3:00pm </li><li> Sunday closed, sorry! </li></ul></div></div></div><div class=\"clearfix visible-sm\"></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-recentNews\"><h6 class=\"ct-widget-header\"><span> RECENT BLOG POSTS </span></h6><div class=\"widget-inner\"><div class=\"media ct-media\"><div class=\"media-left\"><time datetime=\"2015-06-23\"><span><span>14</span><span>Apr</span></span></time></div><div class=\"media-body ct-media-body\"><h6 class=\"media-heading ct-media-heading text-uppercase\"><span>CLASH OF THE TITANS</span></h6><p class=\"ct-media-body-text\"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p><a href=\"blog-single.html\" class=\"btn ct-btn--link btn-default\"><span>Read more</span></a></div></div></div></div></div><div class=\"col-md-3 col-sm-6\"><div class=\"widget ct-widget-contact\"><h6 class=\"ct-widget-header\"><span> Contact </span></h6><div class=\"widget-inner\"><ul class=\"list-unstyled\"><li>666 Broadway, Ground Fl.</li><li>New York City, NY 10017</li><li><a href=\"tel:123-456-7890\">123-456-7890</a></li></ul><ul class=\"list-unstyled\"><li>Phone: <a href=\"tel:004923456678\">0049 + 23 456 678</a></li><li>Web: <a target=\"_blank\" href=\"http://www.dojo-martialarts.com\">www.dojo-martialarts.com</a></li><li>Mail: <a href=\"mailto:hello@dojo-martialarts.com\">hello@dojo-martialarts.com</a></li></ul><div class=\"ct-u-marginTop20\"><ul class=\"socialicons\"><li><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\"><i class=\"fa fa-facebook\"></i></a></li><li><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\"><i class=\"fa fa-twitter\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\"><i class=\"fa fa-linkedin\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\"><i class=\"fa fa-rss\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\"><i class=\"fa fa-vimeo-square\"></i></a></li></ul></div></div></div></div><div class=\"clearfix visible-sm\"></div></div></div></section><section class=\"ct-postfooter ct-u-backgroundMotive ct-u-paddingBoth20\"><div class=\"container\"><a href=\"index.html\"><img alt=\"Brand\" src=\"" + _public_logo_jpeg__WEBPACK_IMPORTED_MODULE_2__["default"] + "\" style=\"width:85px;\"></a><ul class=\"list-unstyled list-inline\" style=\"display:contents;\"><li><a href=\"index.html\">Home</a></li><li><a href=\"./../Pages/about-us.vue\">About Us</a></li><li><a href=\"our-classes01.html\">Classes</a></li><li><a href=\"our-trainer01.html\">Trainers</a></li><li><a href=\"event-list.html\">Events</a></li><li><a href=\"gallery-4col.html\">Gallery</a></li><li><a href=\"feature-grid.html\">Feature</a></li><li><a href=\"blog-list.html\">Blog</a></li><li><a href=\"contact.html\">Contact</a></li></ul></div></section>", 2);
 var _hoisted_3 = [_hoisted_1];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("footer", null, _hoisted_3);
@@ -24036,10 +24055,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd":
-/*!***************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true":
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24049,32 +24068,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
+var _withScopeId = function _withScopeId(n) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.pushScopeId)("data-v-6a87ecdd"), n = n(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)(), n;
+};
 var _hoisted_1 = {
   "class": "ct-mainHeader"
 };
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"ct-topBar ct-topBar--type1\"><div class=\"navbar navbar-default\" style=\"margin-left:-380px;\"><div class=\"container\"><div class=\"navbar-block navbar-left\"><div class=\"navbar-block-inner\"><ul class=\"list-unstyled list-inline\"><li><span>Call Us Now <a href=\"tel:1234567890\">123 456 789 - 0</a></span></li><li><span><a href=\"mailto:info@dojo.com\">info@dojo.com</a></span></li></ul></div></div><div class=\"navbar-block navbar-right\"><div class=\"navbar-block-inner\"><ul class=\"socialicons\"><li><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\"><i class=\"fa fa-facebook\"></i></a></li><li><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\"><i class=\"fa fa-twitter\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\"><i class=\"fa fa-linkedin\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\"><i class=\"fa fa-rss\"></i></a></li><li><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\"><i class=\"fa fa-vimeo-square\"></i></a></li></ul></div></div></div></div></div>", 1);
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"ct-topBar ct-topBar--type1\" data-v-6a87ecdd><div class=\"navbar navbar-default info-dojo\" data-v-6a87ecdd><div class=\"container\" data-v-6a87ecdd><div class=\"navbar-block navbar-left\" data-v-6a87ecdd><div class=\"navbar-block-inner\" data-v-6a87ecdd><ul class=\"list-unstyled list-inline\" data-v-6a87ecdd><li data-v-6a87ecdd><span data-v-6a87ecdd>Call Us Now <a href=\"tel:1234567890\" data-v-6a87ecdd>123 456 789 - 0</a></span></li><li data-v-6a87ecdd><span data-v-6a87ecdd><a href=\"mailto:info@dojo.com\" data-v-6a87ecdd>info@dojo.com</a></span></li></ul></div></div><div class=\"navbar-block navbar-right\" data-v-6a87ecdd><div class=\"navbar-block-inner\" data-v-6a87ecdd><ul class=\"socialicons\" data-v-6a87ecdd><li data-v-6a87ecdd><a href=\"https://www.facebook.com/createITpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Facebook\" data-v-6a87ecdd><i class=\"fa fa-facebook\" data-v-6a87ecdd></i></a></li><li data-v-6a87ecdd><a href=\"https://twitter.com/createitpl\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Twitter\" data-v-6a87ecdd><i class=\"fa fa-twitter\" data-v-6a87ecdd></i></a></li><li data-v-6a87ecdd><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"LinkedIn\" data-v-6a87ecdd><i class=\"fa fa-linkedin\" data-v-6a87ecdd></i></a></li><li data-v-6a87ecdd><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"RSS\" data-v-6a87ecdd><i class=\"fa fa-rss\" data-v-6a87ecdd></i></a></li><li data-v-6a87ecdd><a href=\"#\" data-toggle=\"tooltip\" data-placement=\"bottom\" title=\"\" data-original-title=\"Vimeo\" data-v-6a87ecdd><i class=\"fa fa-vimeo-square\" data-v-6a87ecdd></i></a></li></ul></div></div></div></div></div>", 1);
 var _hoisted_3 = {
-  "class": "navbar navbar-default navbar--type1 yamm navbar-logo--left",
-  style: {
-    "margin-left": "-500px"
-  }
+  "class": "navbar navbar-default navbar--type1 yamm navbar-logo--left sec-nav-set"
 };
 var _hoisted_4 = {
   "class": "container ct-navbar-container"
 };
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "navbar-header navbar-left"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  "class": "navbar-brand",
-  href: "index.html"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img alt=\"Brand\" src=\"./../../public/assets/images/content/logo.png\"> ")])], -1 /* HOISTED */);
+var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "navbar-header navbar-left"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+    "class": "navbar-brand",
+    href: "index.html"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <img alt=\"Brand\" src=\"./../../public/assets/images/content/logo.png\"> ")])], -1 /* HOISTED */);
+});
 var _hoisted_6 = {
-  "class": "nav navbar-nav ct-navbar--fadeIn navbar-right",
-  style: {
-    "display": "contents"
-  }
+  "class": "nav navbar-nav ct-navbar--fadeIn navbar-right sec-nav-flow"
 };
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"onepage active\"><a href=\"#home\">Home</a></li><li class=\"onepage\"><a href=\"#testimonials\">Testimonials</a></li><li class=\"onepage\"><a href=\"#trainers\">Trainers</a></li><li class=\"onepage\"><a href=\"#calendars\">Calendar</a></li><li class=\"onepage\"><a href=\"#callToAction\">Call To Action</a></li><li class=\"onepage\"><a href=\"#services\">Services</a></li><li class=\"onepage\"><a href=\"#gallery\">Gallery</a></li><li class=\"onepage\"><a href=\"#map\">Map</a></li>", 8);
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<li class=\"onepage active\" data-v-6a87ecdd><a href=\"#home\" data-v-6a87ecdd>Home</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#testimonials\" data-v-6a87ecdd>Testimonials</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#trainers\" data-v-6a87ecdd>Trainers</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#calendars\" data-v-6a87ecdd>Calendar</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#callToAction\" data-v-6a87ecdd>Call To Action</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#services\" data-v-6a87ecdd>Services</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#gallery\" data-v-6a87ecdd>Gallery</a></li><li class=\"onepage\" data-v-6a87ecdd><a href=\"#map\" data-v-6a87ecdd>Map</a></li>", 8);
 var _hoisted_15 = {
   "class": "onepage"
 };
@@ -27666,7 +27684,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/* .button{\r\n    margin-left: 200px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color:#9a0606;\r\n} */\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n/* .button{\n    margin-left: 200px;\n    font-size: 13px;\n    font-family: auto;\n    background-color:#9a0606;\n} */\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27690,7 +27708,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".button {\r\n    /* margin-left: 230px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color: #9a0606; */\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".button {\n    /* margin-left: 230px;\n    font-size: 13px;\n    font-family: auto;\n    background-color: #9a0606; */\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27714,7 +27732,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.button {\r\n    margin-left: 200px;\r\n    font-size: 13px;\r\n    font-family: auto;\r\n    background-color: #9a0606;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.button {\n    margin-left: 200px;\n    font-size: 13px;\n    font-family: auto;\n    background-color: #9a0606;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27786,7 +27804,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27810,7 +27828,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n  margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-045c4260] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-045c4260] {\n  color: #42b983;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n    margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n    list-style-type: none;\n    padding: 0;\n}\nli[data-v-045c4260] {\n    display: inline-block;\n    margin: 0 10px;\n}\na[data-v-045c4260] {\n    color: #42b983;\n}\n\n/* media query to set or responsive content  */\n@media only screen and (max-width: 768px) {\n.media[data-v-045c4260]{\n        flex-direction: column;\n        justify-content: center;\n}\n.ct-headerBox .ct-headerBox-media[data-v-045c4260] {\n    margin-top: 40px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27882,7 +27900,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -27907,6 +27925,30 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\nth{\n    font-size : 20px\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "\n.sec-nav-flow[data-v-6a87ecdd]{\n  display: contents;\n}\n/* media query to reponsiveness  */\n@media only screen and (min-width: 768px) {\n.info-dojo[data-v-6a87ecdd]{margin-left: -380px}\n.sec-nav-set[data-v-6a87ecdd]{margin-left: -500px}\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28074,7 +28116,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\n.table-responsive {\r\n    overflow-x: 0 !important;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28098,7 +28140,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\r\n    margin-top: -28px;\r\n    margin-left: -16px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28146,7 +28188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\r\n    background-color: #191c24;\n}\nth{\r\n    font-size : 20px\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\nth{\n    font-size : 20px\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28229,10 +28271,10 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 
-/***/ "./resources/public/assets/images/content/formLogo.png":
-/*!*************************************************************!*\
-  !*** ./resources/public/assets/images/content/formLogo.png ***!
-  \*************************************************************/
+/***/ "./resources/public/assets/images/content/abc001.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/public/assets/images/content/abc001.jpg ***!
+  \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28240,7 +28282,67 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/formLogo.png?26f17cc25b13e4ba130eda05bfa57152");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/abc001.jpg?fe890e47df2b9a03cd4489832d05882d");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/abc002.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/public/assets/images/content/abc002.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/abc002.jpg?70649bdc368f33c937ecb412ee877f34");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/best001.jpg":
+/*!************************************************************!*\
+  !*** ./resources/public/assets/images/content/best001.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/best001.jpg?5e4e6fbb084535248551a09675821e20");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/black-belt001.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/public/assets/images/content/black-belt001.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/black-belt001.jpg?b87840963c36494a370e56b4a619356b");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/events.jpg":
+/*!***********************************************************!*\
+  !*** ./resources/public/assets/images/content/events.jpg ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/events.jpg?cf6beb9888956d77ea5431846f1be521");
 
 /***/ }),
 
@@ -28319,9 +28421,24 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/public/assets/images/content/iconBox01.png":
+/***/ "./resources/public/assets/images/content/gym-contact.jpg":
+/*!****************************************************************!*\
+  !*** ./resources/public/assets/images/content/gym-contact.jpg ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/gym-contact.jpg?1b45e0d2d082ce105f653d3a6d86f642");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/gym-membr.jpg":
 /*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox01.png ***!
+  !*** ./resources/public/assets/images/content/gym-membr.jpg ***!
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -28330,13 +28447,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox01.png?7d53ce9ef0542eb050d5fc4119937db0");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/gym-membr.jpg?12163644399905c77719b6607d2ed60c");
 
 /***/ }),
 
-/***/ "./resources/public/assets/images/content/iconBox02.png":
+/***/ "./resources/public/assets/images/content/ifyouwanttobebest.jpg":
+/*!**********************************************************************!*\
+  !*** ./resources/public/assets/images/content/ifyouwanttobebest.jpg ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/ifyouwanttobebest.jpg?e3d5c07184315e341c05996eaec0567d");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/images001.jpg":
 /*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox02.png ***!
+  !*** ./resources/public/assets/images/content/images001.jpg ***!
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -28345,14 +28477,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox02.png?7d53ce9ef0542eb050d5fc4119937db0");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/images001.jpg?051b6dea83ac3651e734c628d28f9fa0");
 
 /***/ }),
 
-/***/ "./resources/public/assets/images/content/iconBox03.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox03.png ***!
-  \**************************************************************/
+/***/ "./resources/public/assets/images/content/impression.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/public/assets/images/content/impression.jpg ***!
+  \***************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28360,127 +28492,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox03.png?7d53ce9ef0542eb050d5fc4119937db0");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox04.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox04.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox04.png?f035d1ba6f6cb6c7b7a4e1062a6c0cdc");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox05.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox05.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox05.png?f035d1ba6f6cb6c7b7a4e1062a6c0cdc");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox06.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox06.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox06.png?12ae9697f70fe60da932bd6aaf7ccf26");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox07.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox07.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox07.png?7d53ce9ef0542eb050d5fc4119937db0");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox08.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox08.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox08.png?7d53ce9ef0542eb050d5fc4119937db0");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/iconBox15.png":
-/*!**************************************************************!*\
-  !*** ./resources/public/assets/images/content/iconBox15.png ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/iconBox15.png?d9714d43bd8de100a2f07ec95105e550");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/logo01.png":
-/*!***********************************************************!*\
-  !*** ./resources/public/assets/images/content/logo01.png ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo01.png?363fc2bd151750d0338b13b6afdbd5a6");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/logo02.png":
-/*!***********************************************************!*\
-  !*** ./resources/public/assets/images/content/logo02.png ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo02.png?61786f487d14d45147f808a30501ce13");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/impression.jpg?ec1f49a90ac4a0bfede971cccdf601cd");
 
 /***/ }),
 
@@ -28496,6 +28508,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logo03.png?271e43c2a855feef4a1caf8ca1e1317d");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/muscle-header.jpg":
+/*!******************************************************************!*\
+  !*** ./resources/public/assets/images/content/muscle-header.jpg ***!
+  \******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/muscle-header.jpg?704cf59f6da5880c34c53e6acc36a306");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/onemore.jpg":
+/*!************************************************************!*\
+  !*** ./resources/public/assets/images/content/onemore.jpg ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/onemore.jpg?5cf2ca8face9ac7f2aaaf6d5e1ef982a");
+
+/***/ }),
+
+/***/ "./resources/public/assets/images/content/online-gym.jpg":
+/*!***************************************************************!*\
+  !*** ./resources/public/assets/images/content/online-gym.jpg ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/online-gym.jpg?deea931b6cb09f64588f5f9b2fbd8be3");
 
 /***/ }),
 
@@ -28694,10 +28751,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/public/assets/images/content/widgetChinseSymbol.png":
-/*!***********************************************************************!*\
-  !*** ./resources/public/assets/images/content/widgetChinseSymbol.png ***!
-  \***********************************************************************/
+/***/ "./resources/public/assets/images/content/yellow-belt.jpg":
+/*!****************************************************************!*\
+  !*** ./resources/public/assets/images/content/yellow-belt.jpg ***!
+  \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28705,7 +28762,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/widgetChinseSymbol.png?da945c751e700a9911901b1836b94b74");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/yellow-belt.jpg?9eaaf41b0d59c7de3faacba47b52ddc9");
 
 /***/ }),
 
@@ -29219,6 +29276,36 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_show_vue_vue_type_style_index_0_id_cdf060fe_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css":
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_style_index_0_id_6a87ecdd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_style_index_0_id_6a87ecdd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_style_index_0_id_6a87ecdd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -29836,13 +29923,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=f348271a */ "./resources/js/App.vue?vue&type=template&id=f348271a");
 /* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./resources/js/App.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_f348271a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -29864,13 +29951,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Box1_vue_vue_type_template_id_24a8936c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box1.vue?vue&type=template&id=24a8936c */ "./resources/js/component/Boxes/Box1.vue?vue&type=template&id=24a8936c");
 /* harmony import */ var _Box1_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box1.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box1.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box1_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box1_vue_vue_type_template_id_24a8936c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box1.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box1_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box1_vue_vue_type_template_id_24a8936c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box1.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -29893,7 +29980,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Box2_vue_vue_type_template_id_24b6aaed_style_background_color_3Ablack__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box2.vue?vue&type=template&id=24b6aaed&style=background-color%3Ablack */ "./resources/js/component/Boxes/Box2.vue?vue&type=template&id=24b6aaed&style=background-color%3Ablack");
 /* harmony import */ var _Box2_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box2.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box2.vue?vue&type=script&lang=js");
 /* harmony import */ var _Box2_vue_vue_type_style_index_0_id_24b6aaed_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Box2.vue?vue&type=style&index=0&id=24b6aaed&scope=true&lang=css */ "./resources/js/component/Boxes/Box2.vue?vue&type=style&index=0&id=24b6aaed&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -29901,7 +29988,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box2_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box2_vue_vue_type_template_id_24b6aaed_style_background_color_3Ablack__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box2.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box2_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box2_vue_vue_type_template_id_24b6aaed_style_background_color_3Ablack__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box2.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -29923,13 +30010,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Box3_vue_vue_type_template_id_24c4c26e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box3.vue?vue&type=template&id=24c4c26e */ "./resources/js/component/Boxes/Box3.vue?vue&type=template&id=24c4c26e");
 /* harmony import */ var _Box3_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box3.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box3.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box3_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box3_vue_vue_type_template_id_24c4c26e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box3.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box3_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box3_vue_vue_type_template_id_24c4c26e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box3.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -29951,13 +30038,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Box4_vue_vue_type_template_id_24d2d9ef__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box4.vue?vue&type=template&id=24d2d9ef */ "./resources/js/component/Boxes/Box4.vue?vue&type=template&id=24d2d9ef");
 /* harmony import */ var _Box4_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box4.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box4.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box4_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box4_vue_vue_type_template_id_24d2d9ef__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box4.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Box4_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box4_vue_vue_type_template_id_24d2d9ef__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box4.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -29980,7 +30067,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Box5_vue_vue_type_template_id_24e0f170__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box5.vue?vue&type=template&id=24e0f170 */ "./resources/js/component/Boxes/Box5.vue?vue&type=template&id=24e0f170");
 /* harmony import */ var _Box5_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box5.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box5.vue?vue&type=script&lang=js");
 /* harmony import */ var _Box5_vue_vue_type_style_index_0_id_24e0f170_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Box5.vue?vue&type=style&index=0&id=24e0f170&scope=true&lang=css */ "./resources/js/component/Boxes/Box5.vue?vue&type=style&index=0&id=24e0f170&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -29988,7 +30075,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box5_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box5_vue_vue_type_template_id_24e0f170__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box5.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box5_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box5_vue_vue_type_template_id_24e0f170__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box5.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30011,7 +30098,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Box6_vue_vue_type_template_id_24ef08f1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box6.vue?vue&type=template&id=24ef08f1 */ "./resources/js/component/Boxes/Box6.vue?vue&type=template&id=24ef08f1");
 /* harmony import */ var _Box6_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Box6.vue?vue&type=script&lang=js */ "./resources/js/component/Boxes/Box6.vue?vue&type=script&lang=js");
 /* harmony import */ var _Box6_vue_vue_type_style_index_0_id_24ef08f1_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Box6.vue?vue&type=style&index=0&id=24ef08f1&scope=true&lang=css */ "./resources/js/component/Boxes/Box6.vue?vue&type=style&index=0&id=24ef08f1&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30019,7 +30106,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box6_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box6_vue_vue_type_template_id_24ef08f1__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box6.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box6_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box6_vue_vue_type_template_id_24ef08f1__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box6.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30042,7 +30129,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_vue_vue_type_template_id_29342f00__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.vue?vue&type=template&id=29342f00 */ "./resources/js/component/Category/add.vue?vue&type=template&id=29342f00");
 /* harmony import */ var _add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add.vue?vue&type=script&lang=js */ "./resources/js/component/Category/add.vue?vue&type=script&lang=js");
 /* harmony import */ var _add_vue_vue_type_style_index_0_id_29342f00_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./add.vue?vue&type=style&index=0&id=29342f00&scope=true&lang=css */ "./resources/js/component/Category/add.vue?vue&type=style&index=0&id=29342f00&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30050,7 +30137,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_29342f00__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/add.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_29342f00__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/add.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30073,7 +30160,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit_vue_vue_type_template_id_adcf4f8a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edit.vue?vue&type=template&id=adcf4f8a */ "./resources/js/component/Category/edit.vue?vue&type=template&id=adcf4f8a");
 /* harmony import */ var _edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit.vue?vue&type=script&lang=js */ "./resources/js/component/Category/edit.vue?vue&type=script&lang=js");
 /* harmony import */ var _edit_vue_vue_type_style_index_0_id_adcf4f8a_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit.vue?vue&type=style&index=0&id=adcf4f8a&scope=true&lang=css */ "./resources/js/component/Category/edit.vue?vue&type=style&index=0&id=adcf4f8a&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30081,7 +30168,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_adcf4f8a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/edit.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_adcf4f8a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/edit.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30104,7 +30191,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_template_id_88ab2e1e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=88ab2e1e */ "./resources/js/component/Category/index.vue?vue&type=template&id=88ab2e1e");
 /* harmony import */ var _index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js */ "./resources/js/component/Category/index.vue?vue&type=script&lang=js");
 /* harmony import */ var _index_vue_vue_type_style_index_0_id_88ab2e1e_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&id=88ab2e1e&lang=css */ "./resources/js/component/Category/index.vue?vue&type=style&index=0&id=88ab2e1e&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30112,7 +30199,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_88ab2e1e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/index.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_88ab2e1e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Category/index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30135,7 +30222,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HelloWorld_vue_vue_type_template_id_045c4260_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HelloWorld.vue?vue&type=template&id=045c4260&scoped=true */ "./resources/js/component/HelloWorld.vue?vue&type=template&id=045c4260&scoped=true");
 /* harmony import */ var _HelloWorld_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HelloWorld.vue?vue&type=script&lang=js */ "./resources/js/component/HelloWorld.vue?vue&type=script&lang=js");
 /* harmony import */ var _HelloWorld_vue_vue_type_style_index_0_id_045c4260_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HelloWorld.vue?vue&type=style&index=0&id=045c4260&scoped=true&lang=css */ "./resources/js/component/HelloWorld.vue?vue&type=style&index=0&id=045c4260&scoped=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30143,7 +30230,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_HelloWorld_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_HelloWorld_vue_vue_type_template_id_045c4260_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-045c4260"],['__file',"resources/js/component/HelloWorld.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_HelloWorld_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_HelloWorld_vue_vue_type_template_id_045c4260_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-045c4260"],['__file',"resources/js/component/HelloWorld.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30166,7 +30253,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_vue_vue_type_template_id_55b52ccd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.vue?vue&type=template&id=55b52ccd */ "./resources/js/component/User/add.vue?vue&type=template&id=55b52ccd");
 /* harmony import */ var _add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add.vue?vue&type=script&lang=js */ "./resources/js/component/User/add.vue?vue&type=script&lang=js");
 /* harmony import */ var _add_vue_vue_type_style_index_0_id_55b52ccd_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./add.vue?vue&type=style&index=0&id=55b52ccd&scope=true&lang=css */ "./resources/js/component/User/add.vue?vue&type=style&index=0&id=55b52ccd&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30174,7 +30261,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_55b52ccd__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/add.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_55b52ccd__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/add.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30197,7 +30284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit_vue_vue_type_template_id_0cb7140e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edit.vue?vue&type=template&id=0cb7140e */ "./resources/js/component/User/edit.vue?vue&type=template&id=0cb7140e");
 /* harmony import */ var _edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit.vue?vue&type=script&lang=js */ "./resources/js/component/User/edit.vue?vue&type=script&lang=js");
 /* harmony import */ var _edit_vue_vue_type_style_index_0_id_0cb7140e_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit.vue?vue&type=style&index=0&id=0cb7140e&scope=true&lang=css */ "./resources/js/component/User/edit.vue?vue&type=style&index=0&id=0cb7140e&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30205,7 +30292,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_0cb7140e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/edit.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_0cb7140e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/edit.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30228,7 +30315,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_template_id_6839b104__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=6839b104 */ "./resources/js/component/User/index.vue?vue&type=template&id=6839b104");
 /* harmony import */ var _index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js */ "./resources/js/component/User/index.vue?vue&type=script&lang=js");
 /* harmony import */ var _index_vue_vue_type_style_index_0_id_6839b104_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&id=6839b104&lang=css */ "./resources/js/component/User/index.vue?vue&type=style&index=0&id=6839b104&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30236,7 +30323,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_6839b104__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/index.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_6839b104__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30259,7 +30346,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _show_vue_vue_type_template_id_cdf060fe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./show.vue?vue&type=template&id=cdf060fe */ "./resources/js/component/User/show.vue?vue&type=template&id=cdf060fe");
 /* harmony import */ var _show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./show.vue?vue&type=script&lang=js */ "./resources/js/component/User/show.vue?vue&type=script&lang=js");
 /* harmony import */ var _show_vue_vue_type_style_index_0_id_cdf060fe_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./show.vue?vue&type=style&index=0&id=cdf060fe&lang=css */ "./resources/js/component/User/show.vue?vue&type=style&index=0&id=cdf060fe&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30267,7 +30354,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_show_vue_vue_type_template_id_cdf060fe__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/show.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_show_vue_vue_type_template_id_cdf060fe__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/User/show.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30289,13 +30376,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _dashboard_vue_vue_type_template_id_1dbf81f4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dashboard.vue?vue&type=template&id=1dbf81f4 */ "./resources/js/component/dashboard.vue?vue&type=template&id=1dbf81f4");
 /* harmony import */ var _dashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dashboard.vue?vue&type=script&lang=js */ "./resources/js/component/dashboard.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_dashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_dashboard_vue_vue_type_template_id_1dbf81f4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/dashboard.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_dashboard_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_dashboard_vue_vue_type_template_id_1dbf81f4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/dashboard.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30317,13 +30404,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _footer_vue_vue_type_template_id_495588eb__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./footer.vue?vue&type=template&id=495588eb */ "./resources/js/component/footer.vue?vue&type=template&id=495588eb");
 /* harmony import */ var _footer_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./footer.vue?vue&type=script&lang=js */ "./resources/js/component/footer.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_footer_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_footer_vue_vue_type_template_id_495588eb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/footer.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_footer_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_footer_vue_vue_type_template_id_495588eb__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/footer.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30343,15 +30430,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _header_vue_vue_type_template_id_6a87ecdd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.vue?vue&type=template&id=6a87ecdd */ "./resources/js/component/header.vue?vue&type=template&id=6a87ecdd");
+/* harmony import */ var _header_vue_vue_type_template_id_6a87ecdd_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header.vue?vue&type=template&id=6a87ecdd&scoped=true */ "./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true");
 /* harmony import */ var _header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header.vue?vue&type=script&lang=js */ "./resources/js/component/header.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var _header_vue_vue_type_style_index_0_id_6a87ecdd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css */ "./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_header_vue_vue_type_template_id_6a87ecdd__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/header.vue"]])
+
+
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_header_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_header_vue_vue_type_template_id_6a87ecdd_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-6a87ecdd"],['__file',"resources/js/component/header.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30374,7 +30464,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_vue_vue_type_template_id_301a5a61__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.vue?vue&type=template&id=301a5a61 */ "./resources/js/component/product/add.vue?vue&type=template&id=301a5a61");
 /* harmony import */ var _add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add.vue?vue&type=script&lang=js */ "./resources/js/component/product/add.vue?vue&type=script&lang=js");
 /* harmony import */ var _add_vue_vue_type_style_index_0_id_301a5a61_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./add.vue?vue&type=style&index=0&id=301a5a61&lang=css */ "./resources/js/component/product/add.vue?vue&type=style&index=0&id=301a5a61&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30382,7 +30472,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_301a5a61__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/add.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_301a5a61__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/add.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30405,7 +30495,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit_vue_vue_type_template_id_7ef798fa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edit.vue?vue&type=template&id=7ef798fa */ "./resources/js/component/product/edit.vue?vue&type=template&id=7ef798fa");
 /* harmony import */ var _edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit.vue?vue&type=script&lang=js */ "./resources/js/component/product/edit.vue?vue&type=script&lang=js");
 /* harmony import */ var _edit_vue_vue_type_style_index_0_id_7ef798fa_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit.vue?vue&type=style&index=0&id=7ef798fa&scope=true&lang=css */ "./resources/js/component/product/edit.vue?vue&type=style&index=0&id=7ef798fa&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30413,7 +30503,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_7ef798fa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/edit.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_7ef798fa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/edit.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30436,7 +30526,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_template_id_bc997fdc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=bc997fdc */ "./resources/js/component/product/index.vue?vue&type=template&id=bc997fdc");
 /* harmony import */ var _index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js */ "./resources/js/component/product/index.vue?vue&type=script&lang=js");
 /* harmony import */ var _index_vue_vue_type_style_index_0_id_bc997fdc_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&id=bc997fdc&lang=css */ "./resources/js/component/product/index.vue?vue&type=style&index=0&id=bc997fdc&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30444,7 +30534,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_bc997fdc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/index.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_bc997fdc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30467,7 +30557,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _show_vue_vue_type_template_id_0b48546d__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./show.vue?vue&type=template&id=0b48546d */ "./resources/js/component/product/show.vue?vue&type=template&id=0b48546d");
 /* harmony import */ var _show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./show.vue?vue&type=script&lang=js */ "./resources/js/component/product/show.vue?vue&type=script&lang=js");
 /* harmony import */ var _show_vue_vue_type_style_index_0_id_0b48546d_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./show.vue?vue&type=style&index=0&id=0b48546d&lang=css */ "./resources/js/component/product/show.vue?vue&type=style&index=0&id=0b48546d&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30475,7 +30565,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_show_vue_vue_type_template_id_0b48546d__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/show.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_show_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_show_vue_vue_type_template_id_0b48546d__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/product/show.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30498,7 +30588,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _add_vue_vue_type_template_id_33eeaa7c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./add.vue?vue&type=template&id=33eeaa7c */ "./resources/js/component/setting/add.vue?vue&type=template&id=33eeaa7c");
 /* harmony import */ var _add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./add.vue?vue&type=script&lang=js */ "./resources/js/component/setting/add.vue?vue&type=script&lang=js");
 /* harmony import */ var _add_vue_vue_type_style_index_0_id_33eeaa7c_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./add.vue?vue&type=style&index=0&id=33eeaa7c&scope=true&lang=css */ "./resources/js/component/setting/add.vue?vue&type=style&index=0&id=33eeaa7c&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30506,7 +30596,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_33eeaa7c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/add.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_add_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_add_vue_vue_type_template_id_33eeaa7c__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/add.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30529,7 +30619,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _edit_vue_vue_type_template_id_f259568e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./edit.vue?vue&type=template&id=f259568e */ "./resources/js/component/setting/edit.vue?vue&type=template&id=f259568e");
 /* harmony import */ var _edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./edit.vue?vue&type=script&lang=js */ "./resources/js/component/setting/edit.vue?vue&type=script&lang=js");
 /* harmony import */ var _edit_vue_vue_type_style_index_0_id_f259568e_scope_true_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit.vue?vue&type=style&index=0&id=f259568e&scope=true&lang=css */ "./resources/js/component/setting/edit.vue?vue&type=style&index=0&id=f259568e&scope=true&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30537,7 +30627,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_f259568e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/edit.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_edit_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_edit_vue_vue_type_template_id_f259568e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/edit.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30560,7 +30650,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_vue_vue_type_template_id_d562079a__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=d562079a */ "./resources/js/component/setting/index.vue?vue&type=template&id=d562079a");
 /* harmony import */ var _index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js */ "./resources/js/component/setting/index.vue?vue&type=script&lang=js");
 /* harmony import */ var _index_vue_vue_type_style_index_0_id_d562079a_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&id=d562079a&lang=css */ "./resources/js/component/setting/index.vue?vue&type=style&index=0&id=d562079a&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30568,7 +30658,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_d562079a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/index.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_index_vue_vue_type_template_id_d562079a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/setting/index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30590,13 +30680,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _App_vue_vue_type_template_id_8f163ecc__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./App.vue?vue&type=template&id=8f163ecc */ "./resources/js/layout/App.vue?vue&type=template&id=8f163ecc");
 /* harmony import */ var _App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.vue?vue&type=script&lang=js */ "./resources/js/layout/App.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_8f163ecc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/layout/App.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_App_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_App_vue_vue_type_template_id_8f163ecc__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/layout/App.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30618,13 +30708,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _navbar_vue_vue_type_template_id_63c9dfe4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./navbar.vue?vue&type=template&id=63c9dfe4 */ "./resources/js/navbar.vue?vue&type=template&id=63c9dfe4");
 /* harmony import */ var _navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar.vue?vue&type=script&lang=js */ "./resources/js/navbar.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_navbar_vue_vue_type_template_id_63c9dfe4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/navbar.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_navbar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_navbar_vue_vue_type_template_id_63c9dfe4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/navbar.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30647,7 +30737,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_vue_vue_type_template_id_780e8960__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.vue?vue&type=template&id=780e8960 */ "./resources/js/pages/login.vue?vue&type=template&id=780e8960");
 /* harmony import */ var _login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./login.vue?vue&type=script&lang=js */ "./resources/js/pages/login.vue?vue&type=script&lang=js");
 /* harmony import */ var _login_vue_vue_type_style_index_0_id_780e8960_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./login.vue?vue&type=style&index=0&id=780e8960&lang=css */ "./resources/js/pages/login.vue?vue&type=style&index=0&id=780e8960&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30655,7 +30745,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_login_vue_vue_type_template_id_780e8960__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/login.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_login_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_login_vue_vue_type_template_id_780e8960__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/login.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30678,7 +30768,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _program_vue_vue_type_template_id_54eea5aa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./program.vue?vue&type=template&id=54eea5aa */ "./resources/js/pages/program.vue?vue&type=template&id=54eea5aa");
 /* harmony import */ var _program_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./program.vue?vue&type=script&lang=js */ "./resources/js/pages/program.vue?vue&type=script&lang=js");
 /* harmony import */ var _program_vue_vue_type_style_index_0_id_54eea5aa_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./program.vue?vue&type=style&index=0&id=54eea5aa&lang=css */ "./resources/js/pages/program.vue?vue&type=style&index=0&id=54eea5aa&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30686,7 +30776,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_program_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_program_vue_vue_type_template_id_54eea5aa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/program.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_program_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_program_vue_vue_type_template_id_54eea5aa__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/program.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30708,13 +30798,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _signUp_vue_vue_type_template_id_5e44f03e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./signUp.vue?vue&type=template&id=5e44f03e */ "./resources/js/pages/signUp.vue?vue&type=template&id=5e44f03e");
 /* harmony import */ var _signUp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./signUp.vue?vue&type=script&lang=js */ "./resources/js/pages/signUp.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_signUp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_signUp_vue_vue_type_template_id_5e44f03e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/signUp.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_signUp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_signUp_vue_vue_type_template_id_5e44f03e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/signUp.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30737,7 +30827,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _subscription_vue_vue_type_template_id_275a2ef4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./subscription.vue?vue&type=template&id=275a2ef4 */ "./resources/js/pages/subscription.vue?vue&type=template&id=275a2ef4");
 /* harmony import */ var _subscription_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subscription.vue?vue&type=script&lang=js */ "./resources/js/pages/subscription.vue?vue&type=script&lang=js");
 /* harmony import */ var _subscription_vue_vue_type_style_index_0_id_275a2ef4_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./subscription.vue?vue&type=style&index=0&id=275a2ef4&lang=css */ "./resources/js/pages/subscription.vue?vue&type=style&index=0&id=275a2ef4&lang=css");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
@@ -30745,7 +30835,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_subscription_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_subscription_vue_vue_type_template_id_275a2ef4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/subscription.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_subscription_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_subscription_vue_vue_type_template_id_275a2ef4__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/subscription.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -30767,13 +30857,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _sidebar_vue_vue_type_template_id_665f134e__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sidebar.vue?vue&type=template&id=665f134e */ "./resources/js/sidebar.vue?vue&type=template&id=665f134e");
 /* harmony import */ var _sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sidebar.vue?vue&type=script&lang=js */ "./resources/js/sidebar.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_sidebar_vue_vue_type_template_id_665f134e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/sidebar.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_sidebar_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_sidebar_vue_vue_type_template_id_665f134e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/sidebar.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -31566,18 +31656,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/component/header.vue?vue&type=template&id=6a87ecdd":
-/*!*************************************************************************!*\
-  !*** ./resources/js/component/header.vue?vue&type=template&id=6a87ecdd ***!
-  \*************************************************************************/
+/***/ "./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true ***!
+  \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_template_id_6a87ecdd__WEBPACK_IMPORTED_MODULE_0__.render)
+/* harmony export */   render: () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_template_id_6a87ecdd_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render)
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_template_id_6a87ecdd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./header.vue?vue&type=template&id=6a87ecdd */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_template_id_6a87ecdd_scoped_true__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./header.vue?vue&type=template&id=6a87ecdd&scoped=true */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=template&id=6a87ecdd&scoped=true");
 
 
 /***/ }),
@@ -31945,6 +32035,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_show_vue_vue_type_style_index_0_id_cdf060fe_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./show.vue?vue&type=style&index=0&id=cdf060fe&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/User/show.vue?vue&type=style&index=0&id=cdf060fe&lang=css");
+
+
+/***/ }),
+
+/***/ "./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_css_loader_dist_cjs_js_clonedRuleSet_9_use_1_node_modules_vue_loader_dist_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_9_use_2_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_header_vue_vue_type_style_index_0_id_6a87ecdd_scoped_true_lang_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader/dist/cjs.js!../../../node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!../../../node_modules/vue-loader/dist/stylePostLoader.js!../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css */ "./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9.use[1]!./node_modules/vue-loader/dist/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9.use[2]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/component/header.vue?vue&type=style&index=0&id=6a87ecdd&scoped=true&lang=css");
 
 
 /***/ }),

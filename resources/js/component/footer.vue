@@ -14,7 +14,7 @@
           </span>
               </h6>
               <div class="widget-inner">
-                <img src="./../../public/assets/images/content/widgetChinseSymbol.png" alt="">
+                <img src="./../../public/assets/images/content/onemore.jpg" alt="">
                 <p>
                   Pellentesque habitant morbi tristique senectus et netus et
                 </p>

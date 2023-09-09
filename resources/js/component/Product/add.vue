@@ -13,7 +13,8 @@
                                     <li v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id">
+                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id"
+                                style="background: #191c24;height: 34px;">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -38,7 +39,7 @@
                                 <div class="upload__box">
                                     <label for="exampleInputUsername1" class="lable">Image</label>
                                     <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
-                                        :data-max_length="maxImages">
+                                        :data-max_length="maxImages" style="background: #191c24;">
                                     <div class="upload__img-wrap">
                                         <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
                                             <div :style="'background-image: url(' + img.url + ')'" :data-number="index"

@@ -81,7 +81,7 @@ export default {
             };
             const response = await axios.get('/download/file/' + id, {
                 responseType: 'blob',
-                // headers: headers
+                headers: headers
             });
             var fileURL = window.URL.createObjectURL(new Blob([response.data]));
             var fileLink = document.createElement('a');

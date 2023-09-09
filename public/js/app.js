@@ -17802,13 +17802,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               });
             case 4:
               response = _context4.sent;
-              fileURL = window.URL.createObjectURL(new Blob([response.data]));
-              fileLink = document.createElement('a');
-              fileLink.href = fileURL;
-              fileLink.setAttribute('download', 'file.pdf');
-              document.body.appendChild(fileLink);
-              fileLink.click();
-            case 11:
+              if (response.data.status == 200) {
+                fileURL = window.URL.createObjectURL(new Blob([response.data]));
+                fileLink = document.createElement('a');
+                fileLink.href = fileURL;
+                fileLink.setAttribute('download', 'file.pdf');
+                document.body.appendChild(fileLink);
+                fileLink.click();
+              } else {
+                alert('Record Not Found');
+              }
+            case 6:
             case "end":
               return _context4.stop();
           }
@@ -18560,13 +18564,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       imageArray: [],
       pdfArray: [],
       maxImages: 5,
-      selectedCategory: '',
+      category_id: '',
       form: {
         name: '',
         title: '',
         price: '',
         status: '',
-        description: ''
+        description: '',
+        category_id: ''
       },
       categories: ''
     };
@@ -18582,7 +18587,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              _this.selectedCategory = event.target.value;
+              _this.form.category_id = event.target.value;
             case 1:
             case "end":
               return _context.stop();
@@ -18676,7 +18681,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               _this4.errors.push('Price required');
               return _context4.abrupt("return");
             case 10:
-              if (_this4.selectedCategory) {
+              if (_this4.form.category_id) {
                 _context4.next = 13;
                 break;
               }
@@ -18970,8 +18975,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               };
               _context3.next = 4;
               return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/download/file/' + id, {
-                responseType: 'blob'
-                // headers: headers
+                responseType: 'blob',
+                headers: headers
               });
             case 4:
               response = _context3.sent;
@@ -24253,7 +24258,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "aria-label": "Default select example",
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return $data.form.category_id = $event;
-    })
+    }),
+    style: {
+      "background": "#191c24",
+      "height": "34px"
+    }
   }, [_hoisted_9, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id
@@ -24283,7 +24292,10 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onChange: _cache[3] || (_cache[3] = function () {
       return $options.handleFileChange && $options.handleFileChange.apply($options, arguments);
     }),
-    "data-max_length": $data.maxImages
+    "data-max_length": $data.maxImages,
+    style: {
+      "background": "#191c24"
+    }
   }, null, 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_17), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.imageArray, function (img, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: index,
@@ -24491,6 +24503,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "image",
     onChange: _cache[3] || (_cache[3] = function () {}),
     "class": "form-control",
+    multiple: "",
     id: "",
     placeholder: "Image"
   }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -24498,6 +24511,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "file",
     onChange: _cache[4] || (_cache[4] = function () {}),
     "class": "form-control",
+    multiple: "",
     id: "",
     placeholder: "File"
   }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -27889,7 +27903,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n  margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-045c4260] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-045c4260] {\n  color: #42b983;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n  margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-045c4260] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-045c4260] {\n  color: #42b983;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

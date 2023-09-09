@@ -25,7 +25,7 @@ class ProductController extends Controller
     {
         $category = Category::where('name', 'program')->first();
         if(!empty($category)){
-            $products = Product::where('category_id', $category->id)->get();
+            $products = Product::with('files')->where('category_id', $category->id)->first();
             return response()->json($products);
         }
         else{
@@ -55,6 +55,7 @@ class ProductController extends Controller
     public function productFiles($id)
     {
         $product = Media::where('product_id', $id)->where('type', 'pdf')->get();
+        return $product;
         if (!empty($product)) {
             foreach ($product as $file) {
                 $data['file'] = storage_path("app/" . $file->image);
@@ -65,9 +66,9 @@ class ProductController extends Controller
         } else {
             $data['message'] = 'Not Have Files';
             $data['status'] = 400;
+            return response()->json($data);
         }
 
-        return response()->json($data);
     }
 
     /**
@@ -105,7 +106,7 @@ class ProductController extends Controller
                 $file = $file['file'];
                 $originalname = $file->getClientOriginalName();
                 $path = $file->storeAs('pdf', $originalname);
-                $images = Media::create([
+                Media::create([
                     'product_id' => $product->id,
                     'image' => $path,
                     'type' => 'pdf'
@@ -128,7 +129,8 @@ class ProductController extends Controller
         $data['file'] = storage_path("app/" . $file->image);
         $data['status'] = 200;
         $data['filename'] = str_replace(['pdf', '/'], '', $file->image);
-        return response()->download($data);
+        // return $data;
+        return response()->download($data['file']);
     }
 
     public function show($id)

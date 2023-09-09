@@ -1,5 +1,5 @@
 <template>
-   <nav class="sidebar sidebar-offcanvas" id="sidebar">
+   <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background: #36445d;">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         </div>
         <ul class="nav">

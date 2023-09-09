@@ -1,9 +1,9 @@
 <template id="app">
-    <div class="row">
-        <div class="col-md-8 grid-margin stretch-card offset-2 mt-5 " style="background: #191c24;">
+    <div class="row hero-section">
+        <div class="col-md-8 grid-margin stretch-card offset-2 mt-5">
             <div class="card" style="background: #191c24;">
                 <div class="card-body">
-                    <h4 class="card-title" style="    margin-bottom: 38px;">Login</h4>
+                    <h4 class="card-title" style="margin-bottom: 38px;">Login</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group">
                             <label>Email</label>
@@ -57,5 +57,13 @@ export default {
 form label{
     margin-top: -28px;
     margin-left: -16px;
+}
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../../public/assets/images/content/gym-gallery.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 </style>

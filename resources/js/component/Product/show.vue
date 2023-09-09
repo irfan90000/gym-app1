@@ -87,7 +87,7 @@ export default {
             var fileLink = document.createElement('a');
 
             fileLink.href = fileURL;
-            fileLink.setAttribute('download', 'file.pdf');
+            fileLink.setAttribute('download', 'gym.pdf');
             document.body.appendChild(fileLink);
 
             fileLink.click();

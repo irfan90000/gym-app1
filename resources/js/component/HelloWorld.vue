@@ -3748,6 +3748,9 @@ export default {
       this.Program_Products = response.data;
     },
     async download(id) {
+      if( typeof id == 'undefined'){
+        alert('Record Not Found');
+      }
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
       const headers = {
         'Authorization': `Bearer ${token}`
@@ -3756,17 +3759,18 @@ export default {
         responseType: 'blob',
         headers: headers
       });
-      if (response.data.status == 200) {
+      console.log(response.data);
+      if (response.data.status == 400) {
+        alert('Record Not Found');
+      } else {
         var fileURL = window.URL.createObjectURL(new Blob([response.data]));
         var fileLink = document.createElement('a');
 
         fileLink.href = fileURL;
-        fileLink.setAttribute('download', 'file.pdf');
+        fileLink.setAttribute('download', 'gym.pdf');
         document.body.appendChild(fileLink);
 
         fileLink.click();
-      } else {
-        alert('Record Not Found');
       }
 
     },

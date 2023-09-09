@@ -24,25 +24,23 @@ class ProductController extends Controller
     public function program()
     {
         $category = Category::where('name', 'program')->first();
-        if(!empty($category)){
+        if (!empty($category)) {
             $products = Product::with('files')->where('category_id', $category->id)->first();
             return response()->json($products);
-        }
-        else{
+        } else {
             $data['massege'] = "No Record Found";
             $data['status'] = 500;
             return response()->json($data);
         }
-        
     }
 
     public function subscription()
     {
         $category = Category::where('name', 'monthly_subscription')->first();
-        if(!empty($category)){
+        if (!empty($category)) {
             $product = Product::where('category_id', $category->id)->with('files')->first();
             return response()->json($product);
-        }else{
+        } else {
             $data['massege'] = "No Record Found";
             $data['status'] = 500;
             return response()->json($data);
@@ -54,21 +52,25 @@ class ProductController extends Controller
      */
     public function productFiles($id)
     {
-        $product = Media::where('product_id', $id)->where('type', 'pdf')->get();
-        return $product;
-        if (!empty($product)) {
-            foreach ($product as $file) {
-                $data['file'] = storage_path("app/" . $file->image);
-                $data['status'] = 200;
-                $data['filename'] = str_replace(['pdf', '/'], '', $file);
-                return response()->download($data['file']);
+        if ($id != 'undefined') {
+            $product = Media::where('product_id', $id)->where('type', 'pdf')->get();
+            if (!empty($product)) {
+                foreach ($product as $file) {
+                    $data['file'] = storage_path("app/" . $file->image);
+                    $data['status'] = 200;
+                    $data['filename'] = str_replace(['pdf', '/'], '', $file);
+                    return response()->download($data['file']);
+                }
+            } else {
+                $data['message'] = 'Not Have Files';
+                $data['status'] = 400;
+                return response()->json($data);
             }
         } else {
             $data['message'] = 'Not Have Files';
             $data['status'] = 400;
             return response()->json($data);
         }
-
     }
 
     /**

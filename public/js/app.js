@@ -25281,12 +25281,13 @@ var _hoisted_1 = {
   "class": "row hero-section"
 };
 var _hoisted_2 = {
-  "class": "col-md-8 grid-margin stretch-card offset-2 mt-5"
+  "class": "col-md-8 grid-margin stretch-card offset-2 custom-main-box"
 };
 var _hoisted_3 = {
-  "class": "card",
+  "class": "card custom-crd",
   style: {
-    "background": "#191c24"
+    "background": "rgb(0, 0, 0, 0.6)",
+    "max-width": "768px"
   }
 };
 var _hoisted_4 = {
@@ -25295,7 +25296,8 @@ var _hoisted_4 = {
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   "class": "card-title",
   style: {
-    "margin-bottom": "38px"
+    "margin-bottom": "25px",
+    "color": "white"
   }
 }, "Login", -1 /* HOISTED */);
 var _hoisted_6 = {
@@ -28193,15 +28195,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _public_assets_images_content_gym_gallery_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/assets/images/content/gym-gallery.jpg */ "./resources/public/assets/images/content/gym-gallery.jpg");
+/* harmony import */ var _public_assets_images_content_bg_gym_login_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../public/assets/images/content/bg-gym-login.jpg */ "./resources/public/assets/images/content/bg-gym-login.jpg");
 // Imports
 
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_assets_images_content_gym_gallery_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_assets_images_content_bg_gym_login_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\n.hero-section {\n  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  min-height: 100vh;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nform label{\n    font-size: larger;\n    margin-top: -28px;\n    margin-left: -16px;\n    color: white;\n    padding-left: 16px;\n}\n.hero-section {\n  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  min-height: 100vh;\n}\n.custom-main-box {\n    width: 580px;\n    margin: 120px auto;\n}\n.custom-crd {\n    padding: 25px 50px;\n    margin: 0px;\n}\n/* media query for response  */\n@media only screen and (max-width: 1144px) {\n.custom-crd {\n        margin: 0 0 0 -6px;\n}\n}\n@media only screen and (max-width: 912px) {\n.custom-crd {\n        margin: 0 0 0 -12px;\n}\n}\n@media only screen and (max-width: 768px) {\n.grid-margin {\n        margin-left: 2.666667% !important;\n}\n.custom-crd {\n        padding: 10px 15px;\n        margin: 0px 40px 0 0px;\n}\n.stretch-card>.card {\n    width: 100%;\n    min-width: 0%;\n}\n}\n@media only screen and (max-width: 468px) {\n.grid-margin {\n        margin-left: -0.3333% !important;\n}\n.custom-crd {\n        padding: 10px 15px;\n        margin: 0px 0px 0px 5px;\n}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28376,6 +28378,21 @@ module.exports = function (url, options) {
 
 /***/ }),
 
+/***/ "./resources/public/assets/images/content/bg-gym-login.jpg":
+/*!*****************************************************************!*\
+  !*** ./resources/public/assets/images/content/bg-gym-login.jpg ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/bg-gym-login.jpg?67ef7a2622b744ecdaba656ea73ee5ae");
+
+/***/ }),
+
 /***/ "./resources/public/assets/images/content/formLogo.png":
 /*!*************************************************************!*\
   !*** ./resources/public/assets/images/content/formLogo.png ***!
@@ -28463,21 +28480,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/galleryItem05.jpg?c5afd972fa6093bc2fa95015804bac79");
-
-/***/ }),
-
-/***/ "./resources/public/assets/images/content/gym-gallery.jpg":
-/*!****************************************************************!*\
-  !*** ./resources/public/assets/images/content/gym-gallery.jpg ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/gym-gallery.jpg?e8563c24bc4e3636c86e1b5fc08604e9");
 
 /***/ }),
 

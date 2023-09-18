@@ -17791,24 +17791,32 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
+              if (typeof id == 'undefined') {
+                alert('Record Not Found');
+              }
               token = localStorage.getItem('token'); // Replace with your actual authentication token
               headers = {
                 'Authorization': "Bearer ".concat(token)
               };
-              _context4.next = 4;
+              _context4.next = 5;
               return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/download/product/all/file/' + id, {
                 responseType: 'blob',
                 headers: headers
               });
-            case 4:
+            case 5:
               response = _context4.sent;
-              fileURL = window.URL.createObjectURL(new Blob([response.data]));
-              fileLink = document.createElement('a');
-              fileLink.href = fileURL;
-              fileLink.setAttribute('download', 'file.pdf');
-              document.body.appendChild(fileLink);
-              fileLink.click();
-            case 11:
+              console.log(response.data);
+              if (response.data.status == 400) {
+                alert('Record Not Found');
+              } else {
+                fileURL = window.URL.createObjectURL(new Blob([response.data]));
+                fileLink = document.createElement('a');
+                fileLink.href = fileURL;
+                fileLink.setAttribute('download', 'gym.pdf');
+                document.body.appendChild(fileLink);
+                fileLink.click();
+              }
+            case 8:
             case "end":
               return _context4.stop();
           }
@@ -18560,7 +18568,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       imageArray: [],
       pdfArray: [],
       maxImages: 5,
-      selectedCategory: '',
+      category_id: '',
       form: {
         name: '',
         title: '',
@@ -18583,7 +18591,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              _this.selectedCategory = event.target.value;
+              _this.form.category_id = event.target.value;
             case 1:
             case "end":
               return _context.stop();
@@ -18640,7 +18648,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _this3.form.title = response.data.title;
                 _this3.form.price = response.data.price;
                 _this3.form.description = response.data.description;
-                _this3.form.category_id = response.data.category_id;
               }
             case 6:
             case "end":
@@ -18652,63 +18659,62 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     submit: function submit(e) {
       var _this4 = this;
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-        var token, headers, response;
+        var token, config, response;
         return _regeneratorRuntime().wrap(function _callee4$(_context4) {
           while (1) switch (_context4.prev = _context4.next) {
             case 0:
               _this4.errors = [];
-              console.log(_this4.form, 'dd');
               if (_this4.form.name) {
-                _context4.next = 5;
+                _context4.next = 4;
                 break;
               }
               _this4.errors.push('Name required');
               return _context4.abrupt("return");
-            case 5:
+            case 4:
               if (_this4.form.title) {
-                _context4.next = 8;
+                _context4.next = 7;
                 break;
               }
               _this4.errors.push('Title required');
               return _context4.abrupt("return");
-            case 8:
+            case 7:
               if (_this4.form.price) {
-                _context4.next = 11;
+                _context4.next = 10;
                 break;
               }
               _this4.errors.push('Price required');
               return _context4.abrupt("return");
-            case 11:
-              if (_this4.selectedCategory) {
-                _context4.next = 14;
+            case 10:
+              if (_this4.form.category_id) {
+                _context4.next = 13;
                 break;
               }
               _this4.errors.push('Category required');
               return _context4.abrupt("return");
-            case 14:
+            case 13:
               if (_this4.form.description) {
-                _context4.next = 17;
+                _context4.next = 16;
                 break;
               }
               _this4.errors.push('Description required');
               return _context4.abrupt("return");
-            case 17:
+            case 16:
               e.preventDefault();
               token = localStorage.getItem('token'); // Replace with your actual authentication token
-              console.log(token);
-              headers = {
-                'Authorization': "Bearer ".concat(token)
+              config = {
+                headers: {
+                  'content-type': 'multipart/form-data',
+                  'Authorization': "Bearer ".concat(token)
+                }
               };
-              _context4.next = 23;
-              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].post('update/product/' + _this4.$route.params.id, _this4.form, {
-                headers: headers
-              });
-            case 23:
+              _context4.next = 21;
+              return axios__WEBPACK_IMPORTED_MODULE_2__["default"].post('update/product/' + _this4.$route.params.id, _this4.form, config);
+            case 21:
               response = _context4.sent;
               if (response.data.status == 200) {
                 _this4.$router.push('/product');
               }
-            case 25:
+            case 23:
             case "end":
               return _context4.stop();
           }
@@ -18973,15 +18979,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
               };
               _context3.next = 4;
               return axios__WEBPACK_IMPORTED_MODULE_2__["default"].get('/download/file/' + id, {
-                responseType: 'blob'
-                // headers: headers
+                responseType: 'blob',
+                headers: headers
               });
             case 4:
               response = _context3.sent;
               fileURL = window.URL.createObjectURL(new Blob([response.data]));
               fileLink = document.createElement('a');
               fileLink.href = fileURL;
-              fileLink.setAttribute('download', 'file.pdf');
+              fileLink.setAttribute('download', 'gym.pdf');
               document.body.appendChild(fileLink);
               fileLink.click();
             case 11:
@@ -24258,7 +24264,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $data.form.category_id = $event;
     }),
     style: {
-      "height": "40px !important"
+      "background": "#191c24",
+      "height": "34px"
     }
   }, [_hoisted_9, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.categories, function (category) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
@@ -24286,13 +24293,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     type: "file",
     "class": "form-control",
     multiple: "multiple",
-    style: {
-      "background": "repeating-linear-gradient(45deg, black, transparent 100px)"
-    },
     onChange: _cache[3] || (_cache[3] = function () {
       return $options.handleFileChange && $options.handleFileChange.apply($options, arguments);
     }),
-    "data-max_length": $data.maxImages
+    "data-max_length": $data.maxImages,
+    style: {
+      "background": "#191c24"
+    }
   }, null, 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_17), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.imageArray, function (img, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: index,
@@ -24314,9 +24321,6 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onChange: _cache[4] || (_cache[4] = function ($event) {
       return $options.uploadFile($event);
     }),
-    style: {
-      "background": "repeating-linear-gradient(45deg, black, transparent 100px)"
-    },
     multiple: "multiple",
     "data-max_length": "2",
     "class": "form-control",
@@ -24503,6 +24507,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "image",
     onChange: _cache[3] || (_cache[3] = function () {}),
     "class": "form-control",
+    multiple: "",
     id: "",
     placeholder: "Image"
   }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [_hoisted_19, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -24510,6 +24515,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "file",
     onChange: _cache[4] || (_cache[4] = function () {}),
     "class": "form-control",
+    multiple: "",
     id: "",
     placeholder: "File"
   }, null, 32 /* HYDRATE_EVENTS */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
@@ -27901,7 +27907,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n  margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-045c4260] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-045c4260] {\n  color: #42b983;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-045c4260] {\n  margin: 40px 0 0;\n}\nul[data-v-045c4260] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-045c4260] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-045c4260] {\n  color: #42b983;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28021,7 +28027,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np {\n    margin: 0;\n}\n.card-design{\n    background: #191c24 !important;\n}\n.upload__btn {\n    display: inline-block;\n    font-weight: 600;\n    color: #fff;\n    text-align: center;\n    min-width: 116px;\n    padding: 5px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    border: 2px solid;\n    background-color: #4045ba;\n    border-color: #4045ba;\n    border-radius: 10px;\n    line-height: 26px;\n    font-size: 14px;\n}\n.upload__btn:hover {\n    background-color: unset;\n    color: #4045ba;\n    transition: all 0.3s ease;\n}\n.upload__btn-box {\n    margin-bottom: 10px;\n}\n.upload__img-wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n}\n.upload__img-box {\n    width: 200px;\n    padding: 0 10px;\n    margin-bottom: 12px;\n}\n.upload__img-close {\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.5);\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    text-align: center;\n    line-height: 24px;\n    z-index: 1;\n    cursor: pointer;\n}\n.upload__img-close:after {\n    content: '\\2716';\n    font-size: 14px;\n    color: white;\n}\n.img-bg {\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    position: relative;\n    padding-bottom: 100%;\n}\n.form-group mt-5 {\n    border-bottom:0;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 43px !important;\n}\nform .lable{\n    color: white;\n    font-size: 17px;\n    margin-left: 1px;\n}\nselect.form-control{\n    padding: 0.4375rem 0.75rem;\n    border: 0;\n    /* color: #4b5564; */\n    background-color: #191C24;\n}\ninput, textarea, select, file{\n    color:white !important;\n}\n.form-control {\n    display: block  !important;\n    width: 100% !important;\n    padding: 0.469rem 0.735rem !important;\n    font-size: 0.9375rem !important;\n    font-weight: 400 !important;\n    line-height: 2.4 !important;\n    color: #a1b0cb !important;\n    background-clip: padding-box !important;\n    border: 1px solid #546990 !important;\n    border-radius: 0.25rem !important;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np {\n    margin: 0;\n}\n.card-design{\n    background: #191c24 !important;\n}\n.upload__btn {\n    display: inline-block;\n    font-weight: 600;\n    color: #fff;\n    text-align: center;\n    min-width: 116px;\n    padding: 5px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    border: 2px solid;\n    background-color: #4045ba;\n    border-color: #4045ba;\n    border-radius: 10px;\n    line-height: 26px;\n    font-size: 14px;\n}\n.upload__btn:hover {\n    background-color: unset;\n    color: #4045ba;\n    transition: all 0.3s ease;\n}\n.upload__btn-box {\n    margin-bottom: 10px;\n}\n.upload__img-wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n}\n.upload__img-box {\n    width: 200px;\n    padding: 0 10px;\n    margin-bottom: 12px;\n}\n.upload__img-close {\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.5);\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    text-align: center;\n    line-height: 24px;\n    z-index: 1;\n    cursor: pointer;\n}\n.upload__img-close:after {\n    content: '\\2716';\n    font-size: 14px;\n    color: white;\n}\n.img-bg {\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    position: relative;\n    padding-bottom: 100%;\n}\n.form-group mt-5 {\n    border-bottom:0;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 43px !important;\n}\nform .lable{\n    color: white;\n    font-size: 17px;\n    margin-left: 1px;\n}\nselect.form-control{\n    padding: 0.4375rem 0.75rem;\n    border: 0;\n    /* color: #4b5564; */\n    background-color: #191C24;\n}\ninput, textarea, select{\n    color:white !important;\n}\n.form-control {\n    display: block  !important;\n    width: 100% !important;\n    padding: 0.469rem 0.735rem !important;\n    font-size: 0.9375rem !important;\n    font-weight: 400 !important;\n    line-height: 2.4 !important;\n    color: #a1b0cb !important;\n    background-clip: padding-box !important;\n    border: 1px solid #546990 !important;\n    border-radius: 0.25rem !important;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -28045,7 +28051,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np {\n    margin: 0;\n}\n.card-design{\n    background: #191c24 !important;\n}\n.form-check-input {\n    width: 1.5em !important;\n    height: 1em !important;\n    margin-top: 0.25em;\n    vertical-align: top;\n    background-color: #fff;\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: contain;\n    border: 1px solid rgba(0, 0, 0, 0.25);\n}\n.upload__btn {\n    display: inline-block;\n    font-weight: 600;\n    color: #fff;\n    text-align: center;\n    min-width: 116px;\n    padding: 5px;\n    transition: all 0.3s ease;\n    cursor: pointer;\n    border: 2px solid;\n    background-color: #4045ba;\n    border-color: #4045ba;\n    border-radius: 10px;\n    line-height: 26px;\n    font-size: 14px;\n}\n.upload__btn:hover {\n    background-color: unset;\n    color: #4045ba;\n    transition: all 0.3s ease;\n}\n.upload__btn-box {\n    margin-bottom: 10px;\n}\n.upload__img-wrap {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -10px;\n}\n.upload__img-box {\n    width: 200px;\n    padding: 0 10px;\n    margin-bottom: 12px;\n}\n.upload__img-close {\n    width: 24px;\n    height: 24px;\n    border-radius: 50%;\n    background-color: rgba(0, 0, 0, 0.5);\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    text-align: center;\n    line-height: 24px;\n    z-index: 1;\n    cursor: pointer;\n}\n.upload__img-close:after {\n    content: '\\2716';\n    font-size: 14px;\n    color: white;\n}\n.img-bg {\n    background-repeat: no-repeat;\n    background-position: center;\n    background-size: cover;\n    position: relative;\n    padding-bottom: 100%;\n}\n.form-group mt-5 {\n    border-bottom:0;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 43px !important;\n}\nform-check{\n    height: 10px !important;\n}\nselect.form-control{\n    padding: 0.4375rem 0.75rem;\n    border: 0;\n    /* color: #4b5564; */\n    background-color: #191C24;\n}\ninput, textarea, select, file{\n    color:white !important;\n}\n.form-control {\n    display: block  !important;\n    width: 100% !important;\n    padding: 0.469rem 0.735rem !important;\n    font-size: 0.9375rem !important;\n    font-weight: 400 !important;\n    line-height: 2.4 !important;\n    color: #a1b0cb !important;\n    background-clip: padding-box !important;\n    border: 1px solid #546990 !important;\n    border-radius: 0.25rem !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form-group mt-5 {\n    border-bottom: 1px solid #2c2e33;\n    padding-bottom: 0.8rem;\n    margin-bottom: 0.8rem;\n}\n.card-design{\n    background: #191c24 !important;\n}\nform label{\n    margin-top: -28px;\n    margin-left: -16px;\n}\nform input {\n    height: 32px;\n}\nform .lable{\n    color: white;\n    font-size: 17px;\n    margin-left: 1px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

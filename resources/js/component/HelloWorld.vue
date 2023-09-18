@@ -2546,7 +2546,7 @@
                   {{ Program_Products.description }}
                 </p>
 
-                <div class="text-center ct-u-marginTop80"  v-if="token != null">
+                <div class="text-center ct-u-marginTop80" v-if="token != null">
                   <a class="btn ct-btn--o btn-default" @click="download(Program_Products.id)"><span>Download</span></a>
                 </div>
 
@@ -3715,7 +3715,7 @@ export default {
     return {
       Program_Products: [],
       Subs_Products: [],
-      token:null
+      token: null
     }
   },
   components: {
@@ -3748,22 +3748,31 @@ export default {
       this.Program_Products = response.data;
     },
     async download(id) {
+      if( typeof id == 'undefined'){
+        alert('Record Not Found');
+      }
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
       const headers = {
         'Authorization': `Bearer ${token}`
       };
       const response = await axios.get('/download/product/all/file/' + id, {
         responseType: 'blob',
-        headers :headers 
+        headers: headers
       });
-      var fileURL = window.URL.createObjectURL(new Blob([response.data]));
-      var fileLink = document.createElement('a');
+      console.log(response.data);
+      if (response.data.status == 400) {
+        alert('Record Not Found');
+      } else {
+        var fileURL = window.URL.createObjectURL(new Blob([response.data]));
+        var fileLink = document.createElement('a');
 
-      fileLink.href = fileURL;
-      fileLink.setAttribute('download', 'file.pdf');
-      document.body.appendChild(fileLink);
+        fileLink.href = fileURL;
+        fileLink.setAttribute('download', 'gym.pdf');
+        document.body.appendChild(fileLink);
 
-      fileLink.click();
+        fileLink.click();
+      }
+
     },
 
   },
@@ -3793,4 +3802,5 @@ li {
 
 a {
   color: #42b983;
-}</style>
+}
+</style>

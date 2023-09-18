@@ -77,7 +77,7 @@
 
             <router-link v-if="token == null" to="/login">Login</router-link>
             <!-- <router-link @click="logout">Logout</router-link> -->
-            <a href="" @click="logout" v-else>Logout</a>
+            <a href="" @click="logout" v-if="token != null">Logout</a>
           </li>
 
         </ul>

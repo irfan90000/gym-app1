@@ -10,7 +10,7 @@
                             <h2 class="card-title">Edit User</h2>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
-                                    <li v-for="error in errors">{{ error }}</li>
+                                    <li v-for="error in errors" style="color: white;">{{ error }}</li>
                                 </ul>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Name</label>

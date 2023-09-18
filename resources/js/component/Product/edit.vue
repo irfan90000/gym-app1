@@ -13,7 +13,7 @@
                                     <li style="color: white;" v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select" style="background-color: #191C24" @change="updateSelectedCategory">
+                                <select class="form-select" v-model="form.category_id" style="background-color: #191C24" @change="updateSelectedCategory">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -114,6 +114,7 @@ export default {
 
             const response = await axios.get('/edit/product/'+this.$route.params.id,{headers});
             if(response.data){
+                this.form.category_id = response.data.category_id;
                 this.form.name = response.data.name;
                 this.form.title = response.data.title;
                 this.form.price = response.data.price;

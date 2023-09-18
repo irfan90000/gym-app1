@@ -8,7 +8,7 @@
                     <div class="card mt-5" style="background: #191c24;">
                         <div class="card-body">
                             <div class="row">
-                                <h2 class="card-title col-10">Files</h2>
+                                <h2 class="card-title col-10">Health Detail</h2>
                                 <router-link to="/user" class="nav-link btn btn-primary col-1">Back</router-link>
                             </div>
 
@@ -29,7 +29,7 @@
                                             <td>{{ detail.height }}</td>
                                             <td>{{ detail.weight }}</td>
                                             <td>{{ detail.activity }}</td>
-                                            <td>{{ detail.baseactivity }}</td>
+                                            <td>{{ detail.besactivity }}</td>
                                         </tr>
                                     </tbody>
                                 </table>

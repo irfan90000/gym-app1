@@ -14,5 +14,8 @@ export default {
   seBestActivity(state, addbestActivity) {
     state.health.bestActivity = addbestActivity;
   },
+  setproduct_id(state, product) {
+    state.health.product_id = product;
+  },
     
   };

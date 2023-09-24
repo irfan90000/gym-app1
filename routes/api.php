@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HealthController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SettingsController;
@@ -69,4 +70,10 @@ Route::middleware('auth:api')->group(function () {
     Route::controller(HealthController::class)->group(function () {
         Route::post('add/health', 'store');
     });
+    Route::controller(OrderController::class)->group(function () {
+        Route::get('orders', 'index');
+    });
 });
+Route::get('product/subscription/user', [ProductController::class, 'subscription_user']);
+Route::get('product/program/user', [ProductController::class, 'program_user']);
+Route::get('product/personal-program/user', [ProductController::class, 'personal_program']);

@@ -13,7 +13,8 @@ export default createStore({
             height:'',
             weight:'',
             activity:'',
-            bestActivity:''
+            bestActivity:'',
+            product_id:'',
         }
     },
     mutations,

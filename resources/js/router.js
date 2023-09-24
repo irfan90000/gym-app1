@@ -25,6 +25,7 @@ import dashboard from '../js/component/dashboard.vue';
 import Theme from '../js/component/HelloWorld.vue';
 
 import orders from '../js/component/order.vue';
+import orderShow from '../js/component/orderShow.vue';
 import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
@@ -54,6 +55,7 @@ const routes = [
     { path: "/add/user/", component: AddUser },
     { path: "/edit/user/:id", component: EditUser },
     { path: "/show/user/:id", component: ShowUsers },
+    { path: "/show/order/:id", component: orderShow },
     { path: "/user", component: Users },
     { path: "/", component: Theme},
     { path: "/subscription", component: Subscription},

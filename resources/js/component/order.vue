@@ -19,8 +19,8 @@
                                             <th style="text-align: inherit; font-size: 18px;">User Name</th>
                                             <th style="text-align: inherit; font-size: 18px;">Product</th>
                                             <th style="text-align: inherit; font-size: 18px;">Category</th>
-                                            <!-- <th style="text-align: inherit; font-size: 18px;">Address</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Action</th> -->
+                                            <!-- <th style="text-align: inherit; font-size: 18px;">Address</th> -->
+                                            <th style="text-align: inherit; font-size: 18px;"></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -29,11 +29,9 @@
                                             <td style="text-align: inherit; font-size: 18px;">{{ order.product?order.product.name:'' }}</td>
                                             <td style="text-align: inherit; font-size: 18px;">{{ order.product?order.product.category.name:'' }}</td>
                                             <!-- <td style="text-align: inherit; font-size: 18px;">{{ user.address }}</td> -->
-                                            <!-- <td style="text-align: inherit; font-size: 18px;">
-                                                <a @click="show(user.id)" class="btn btn-warning">Show</a>
-                                                <a @click="edit(user.id)" class="btn btn-success">Edit</a>
-                                                <a @click="del(user.id)" class="btn btn-danger">Delete</a>
-                                            </td> -->
+                                            <td style="text-align: inherit; font-size: 18px;">
+                                                <a @click="show(order.id)" class="btn btn-warning">Show</a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -83,7 +81,7 @@ export default {
             this.$router.push(`/edit/user/${id}`);
         },
         async show(id) {
-            this.$router.push(`/show/user/${id}`);
+            this.$router.push(`/show/order/${id}`);
         },
         async del(id) {
             const token = localStorage.getItem('token'); // Replace with your actual authentication token

@@ -72,6 +72,7 @@ Route::middleware('auth:api')->group(function () {
     });
     Route::controller(OrderController::class)->group(function () {
         Route::get('orders', 'index');
+        Route::get('order/show/{id}', 'show');
     });
 });
 Route::get('product/subscription/user', [ProductController::class, 'subscription_user']);

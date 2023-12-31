@@ -68,7 +68,6 @@ export default {
             this.form.value = response.data.value;
         },
         async submit(e) {
-            alert(this.form.status)
             this.errors = [];
             if (!this.form.name) {
                 this.errors.push('Name required.');

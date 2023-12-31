@@ -136,30 +136,7 @@ class ProductController extends Controller
             'status' => $status,
             'description' => $request->description,
         ]);
-        if ($request->has('images')) {
-            foreach ($request->images as $image) {
-                $file = $image['image'];
-                $originalname = $file->getClientOriginalName();
-                $path = $file->storeAs('images', $originalname);
-                $images = Media::create([
-                    'product_id' => $product->id,
-                    'image' => $path,
-                    'type' => 'image'
-                ]);
-            }
-        }
-        if ($request->has('files')) {
-            foreach ($request['files'] as $key => $file) {
-                $file = $file['file'];
-                $originalname = $file->getClientOriginalName();
-                $path = $file->storeAs('pdf', $originalname);
-                Media::create([
-                    'product_id' => $product->id,
-                    'image' => $path,
-                    'type' => 'pdf'
-                ]);
-            }
-        }
+        $this->storeDocs($request, $product);
         $data['message'] = 'Product Add Successfully';
         $data['status'] = 200;
         if (!empty($product)) {
@@ -213,6 +190,7 @@ class ProductController extends Controller
             'status' => $status,
             'description' => $request->description,
         ]);
+        $this->storeDocs($request, $product);
         $data['message'] = 'Product Update Successfully';
         $data['status'] = 200;
         if (!empty($product)) {
@@ -237,5 +215,38 @@ class ProductController extends Controller
         $delFile->delete();
         $data['message'] = 'File Delete Successfully';
         return response()->json($data);
+    }
+
+    /**
+     * @param Request $request
+     * @param $product
+     * @return void
+     */
+    public function storeDocs(Request $request, $product): void
+    {
+        if ($request->has('images')) {
+            foreach ($request->images as $image) {
+                $file = $image['image'];
+                $originalname = $file->getClientOriginalName();
+                $path = $file->storeAs('images', $originalname);
+                Media::create([
+                    'product_id' => $product->id?? $product,
+                    'image' => $path,
+                    'type' => 'image'
+                ]);
+            }
+        }
+        if ($request->has('files')) {
+            foreach ($request['files'] as $key => $file) {
+                $file = $file['file'];
+                $originalname = $file->getClientOriginalName();
+                $path = $file->storeAs('pdf', $originalname);
+                Media::create([
+                    'product_id' => $product->id?? $product,
+                    'image' => $path,
+                    'type' => 'pdf'
+                ]);
+            }
+        }
     }
 }

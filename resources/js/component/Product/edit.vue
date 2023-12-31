@@ -29,15 +29,24 @@
                                     <input type="text" name="title" v-model="form.title" class="form-control"
                                         id="exampleInputUsername1" placeholder="Title">
                                 </div>
-                                <div class="form-group mt-5">
-                                    <label for="" class="label">Image</label>
-                                    <input type="file" name="image" @change="" class="form-control" multiple
-                                        id="" placeholder="Image">
+                                <div class="upload__box">
+                                    <label for="exampleInputUsername1" class="lable">Image</label>
+                                    <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
+                                           :data-max_length="maxImages" style="background: #191c24;">
+                                    <div class="upload__img-wrap">
+                                        <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
+                                            <div :style="'background-image: url(' + img.url + ')'" :data-number="index"
+                                                 :data-file="img.name" class="img-bg">
+                                                <div class="upload__img-close" @click="removeImage(index)"></div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="form-group mt-5">
-                                    <label for="">File</label>
-                                    <input type="file" name="file" @change="" class="form-control" multiple
-                                        id="" placeholder="File">
+                                    <label for="exampleInputUsername1">File</label>
+                                    <input type="file" name="file" @change="uploadFile($event)" multiple="multiple"
+                                           data-max_length="2" class="form-control" id="exampleInputUsername1"
+                                           placeholder="File">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Price</label>
@@ -121,7 +130,7 @@ export default {
                 this.form.description = response.data.description;
             }
         },
-       async submit(e) {  
+       async submit(e) {
         this.errors = [];
             if (!this.form.name) {
                 this.errors.push('Name required');

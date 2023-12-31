@@ -80,7 +80,7 @@ export default {
                 'Authorization': `Bearer ${token}`
             };
             const response = await axios.get('/delete/product/'+id,{headers});
-            this.getProduct();
+            await this.getProduct();
         }
     },
     mounted(){
@@ -96,7 +96,7 @@ export default {
     background-color: #191c24;
 }
 .table-responsive {
-    overflow-x: 0 !important;
+    overflow-x: hidden !important;
 }
 th{
     font-size : 20px

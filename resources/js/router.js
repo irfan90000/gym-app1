@@ -7,14 +7,14 @@ import AddCategory from '../js/component/Category/add.vue';
 import EditCategory from '../js/component/Category/edit.vue';
 import Category from '../js/component/Category/index.vue';
 
-import AddProduct from '../js/component/product/add.vue';
-import EditProduct from '../js/component/product/edit.vue';
-import ShowProduct from '../js/component/product/show.vue';
-import Product from '../js/component/product/index.vue';
+import AddProduct from '../js/component/Product/add.vue';
+import EditProduct from '../js/component/Product/edit.vue';
+import ShowProduct from '../js/component/Product/show.vue';
+import Product from '../js/component/Product/index.vue';
 
-import AddSetting from '../js/component/setting/add.vue';
-import EditSetting from '../js/component/setting/edit.vue';
-import Setting from '../js/component/setting/index.vue';
+import AddSetting from '../js/component/Setting/add.vue';
+import EditSetting from '../js/component/Setting/edit.vue';
+import Setting from '../js/component/Setting/index.vue';
 
 import AddUser from '../js/component/User/add.vue';
 import EditUser from '../js/component/User/edit.vue';
@@ -30,13 +30,13 @@ import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
 
-import box1 from '../js/component/Boxes/Box1.vue'; 
-import box2 from '../js/component/Boxes/Box2.vue'; 
-import box3 from '../js/component/Boxes/Box3.vue'; 
-import box4 from '../js/component/Boxes/Box4.vue'; 
-import box5 from '../js/component/Boxes/Box5.vue'; 
-import box6 from '../js/component/Boxes/Box6.vue'; 
-import main_box from '../js/component/Boxes/main_box.vue'; 
+import box1 from '../js/component/Boxes/Box1.vue';
+import box2 from '../js/component/Boxes/Box2.vue';
+import box3 from '../js/component/Boxes/Box3.vue';
+import box4 from '../js/component/Boxes/Box4.vue';
+import box5 from '../js/component/Boxes/Box5.vue';
+import box6 from '../js/component/Boxes/Box6.vue';
+import main_box from '../js/component/Boxes/main_box.vue';
 
 
 const routes = [

@@ -13,8 +13,8 @@
 
 <body>
   <div id="app">
-    <app />
-  </div>  
+{{--    <app />--}}
+  </div>
   <script src="/js/main.min.js?v=4.0.2"></script>
   <script src="{{asset('build/assets/vendors/js/vendor.bundle.base.js')}}"></script>
   <script src="{{asset('build/assets/js/off-canvas.js')}}"></script>
@@ -29,7 +29,7 @@
 
   <!-- <script src="{{asset('assets/js/off-canvas.js')}}"></script> -->
   <script src="{{asset('assets//hoverable-collapse.js')}}"></script>
-  
+
   <!-- <script src="{{asset('assets/css/bootstrap.css')}}"></script>
   <script src="{{asset('assets/css/motive.css')}}"></script>
   <script src="{{asset('assets/css/ct/motive.css')}}"></script>

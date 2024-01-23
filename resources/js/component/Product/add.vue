@@ -3,7 +3,7 @@
         <sidebar />
         <div class="container-fluid page-body-wrapper">
             <navbar />
-            <div class="row col-12 mt-5">
+            <div class="row col-12 mt-5" style="background: #191c24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
                         <div class="card-body">
@@ -13,7 +13,8 @@
                                     <li v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id">
+                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id"
+                                style="background: #191c24;height: 34px;">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -38,7 +39,7 @@
                                 <div class="upload__box">
                                     <label for="exampleInputUsername1" class="lable">Image</label>
                                     <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
-                                        :data-max_length="maxImages">
+                                        :data-max_length="maxImages" style="background: #191c24;">
                                     <div class="upload__img-wrap">
                                         <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
                                             <div :style="'background-image: url(' + img.url + ')'" :data-number="index"
@@ -66,8 +67,8 @@
                                 </div>
                                 <div class="form-group mt-5">
                                 <div class="form-check">
-                                    <label class="lable"> Status </label>
-                                    <input type="checkbox" v-model="form.status" class="form-check-input" style="margin-left: 5px;">
+                                    <label class=""> Status </label>
+                                    <input type="checkbox" v-model="form.status" class="" style="margin-left: 56px;margin-top: -30px;">
                                 </div>
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>

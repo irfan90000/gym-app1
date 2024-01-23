@@ -16,13 +16,15 @@
             <div class="navbar-block-inner">
               <ul class="socialicons">
                 <li>
-                  <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook">
+                  <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="bottom" title=""
+                    data-original-title="Facebook">
                     <i class="fa fa-facebook"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter">
+                  <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="bottom" title=""
+                    data-original-title="Twitter">
                     <i class="fa fa-twitter"></i>
                   </a>
                 </li>
@@ -71,26 +73,41 @@
           <li class="onepage"><a href="#map">Map</a></li>
           <li class="onepage">
             <!-- <a @click="login">Login</a> -->
-            <router-link to="/login">Login</router-link>
+            <!-- <router-link to="/login">Login</router-link> -->
+
+            <router-link v-if="token == null" to="/login">Login</router-link>
+            <!-- <router-link @click="logout">Logout</router-link> -->
+            <a href="" @click="logout" v-if="token != null">Logout</a>
           </li>
-          
+
         </ul>
       </div>
     </nav>
   </header>
-
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  components:{
+  data(){
+    return {
+      token:null
+    }
+  },
+  components: {
 
   },
-  methods:{
-    login(){
+  methods: {
+    login() {
       this.$router.push('/login')
+    },
+    async logout() {
+      localStorage.clear()
+      this.$router.push('/')
     }
+  },
+  mounted(){
+    this.token = localStorage.getItem('token');
   }
 }
 </script>

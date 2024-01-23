@@ -28,8 +28,8 @@
                 </div>
               </div>
               <div class="preview-item-content">
-                <!-- <p class="preview-subject mb-1">Log out</p> -->
-                <router-link to="/">Log out</router-link>
+                <a class="preview-subject mb-1" @click="logout">Log out</a>
+                <!-- <router-link to="/">Log out</router-link> -->
 
               </div>
             </a>

@@ -240,24 +240,25 @@
                     </div>
 
                     <div class="hero__card">
-                      <p class="hero__text" style="color:white">Take the FREE Body Type quiz to find out exactly what diet and exercises will
+                      <p class="hero__text" style="color:white">Take the FREE Body Type quiz to find out exactly what diet
+                        and exercises will
                         get you the
                         best results! </p>
                       <div class="hero__cta-container d-flex">
-                        <a @click="firstroute()" class="btn btn-primary" style="color:white">
+                        <!-- <a @click="firstroute()" class="btn btn-primary" style="color:white">
                           <div class="hero__cta male">
                             <span class="hero__cta-label">MALE</span>
                             <span class="hero__cta-label">➔</span>
                           </div>
-                        </a>
+                        </a> -->
                         <!-- href="/b1" -->
-<!-- href="/b1" -->
-                        <a @click="firstroute()" class="btn btn-primary" style="color:white">
+                        <!-- href="/b1" -->
+                        <!-- <a @click="firstroute()" class="btn btn-primary" style="color:white">
                           <div class="hero__ct  a female">
                             <span class="hero__cta-label">FEMALE</span>
                             <span class="hero__cta-label">➔</span>
                           </div>
-                        </a>
+                        </a> -->
                       </div>
                     </div>
                   </article>
@@ -935,8 +936,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1181,8 +1182,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1427,8 +1428,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1673,8 +1674,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -1919,8 +1920,8 @@
                         <article class="lightGalleryVideo">
                           <div data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8">
                             <figure class="ct-hover-effect">
-                              <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
-                                alt="">
+                              <img class="grayscale"
+                                src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
 
                               <figcaption>
                                 <div class="ct-item-hover">
@@ -2529,23 +2530,25 @@
             <div class="col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
               <article class="ct-pricingTable">
                 <div class="ct-pricingTable-image">
-                  <img src="./../../public/assets/images/content/iconBox04.png" alt="icon">
+                  <img src="./../../public/assets/images/content/pexels-nathan-cowley-1153369.jpg" alt="icon">
                 </div>
 
 
-                <div class="ct-pricingTable-price">
+                <div class="ct-pricingTable-price m-0 text-center">
                   <h5>{{ Program_Products.name }}</h5>
                 </div>
 
-                <p class="ct-pricingTable-text">
-                  {{ Program_Products.Title }}
+                <p class="ct-pricingTable-text m-0 text-center">
+                  {{ Program_Products.title }}
                 </p>
-                <hr>
-                <p class="ct-pricingTable-text">
+                <p class="ct-pricingTable-text m-0 text-center">
+                  {{ Program_Products.price }}
+                </p>
+                <p class="ct-pricingTable-text m-0 text-center">
                   {{ Program_Products.description }}
                 </p>
 
-                <div class="text-center ct-u-marginTop80">
+                <div class="text-center ct-u-marginTop80" v-if="token != null">
                   <a class="btn ct-btn--o btn-default" @click="download(Program_Products.id)"><span>Download</span></a>
                 </div>
 
@@ -2555,20 +2558,23 @@
             <div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
               <article class="ct-pricingTable ct-pricingTable-primary">
                 <div class="ct-pricingTable-image">
-                  <img src="./../../public/assets/images/content/iconBox05.png" alt="icon">
+                  <img src="./../../public/assets/images/content/pexels-pikx-by-panther-1547248.jpg" alt="icon">
                 </div>
-                <div class="ct-pricingTable-price">
+                <div class="ct-pricingTable-price m-0 text-center">
                   <h5>{{ Subs_Products.name }}</h5>
                 </div>
 
-                <p class="ct-pricingTable-text">
-                  {{ Subs_Products.Title }}
+                <p class="ct-pricingTable-text m-0 text-center">
+                  {{ Subs_Products.title }}
                 </p>
-                <p class="ct-pricingTable-text">
+                <p class="ct-pricingTable-text m-0 text-center">
+                  {{ Subs_Products.price }}
+                </p>
+                <p class="ct-pricingTable-text m-0 text-center">
                   {{ Subs_Products.description }}
                 </p>
 
-                <div class="text-center ct-u-marginTop60">
+                <div class="text-center ct-u-marginTop60" v-if="token != null">
                   <a class="btn ct-btn--c btn-default" @click="download(Subs_Products.id)"><span>Download</span></a>
                 </div>
               </article>
@@ -2577,22 +2583,24 @@
             <div class="col-lg-3 col-lg-offset-0 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
               <article class="ct-pricingTable">
                 <div class="ct-pricingTable-image">
-                  <img src="./../../public/assets/images/content/iconBox06.png" alt="icon">
+                  <img src="./../../public/assets/images/content/pexels-nathan-cowley-1153369.jpg" alt="icon">
                 </div>
 
-                <h3 class="ct-pricingTables-header"><span>gym only</span>
-                  <small><span>access to the gym</span></small>
+                <h3 class="ct-pricingTables-header"><span>{{personal_program.name}}</span>
+                  <small><span>{{ personal_program.title }}</span></small>
                 </h3>
 
-                <div class="ct-pricingTable-price">
-                  <span>$12<span>/ month</span></span>
-                </div>
-
+                <!-- <div class="ct-pricingTable-price">
+                  <span>{{personal_program.price}}</span>
+                </div> -->
+                <p class="ct-pricingTable-text m-0 text-center">
+                  {{ personal_program.price }}
+                </p>
                 <p class="ct-pricingTable-text">
-                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  {{personal_program.description}}
                 </p>
 
-                <ul class="ct-pricingTable-list">
+                <!-- <ul class="ct-pricingTable-list">
                   <li>
                     Fifo - Fly in / fly out
                   </li>
@@ -2602,10 +2610,10 @@
                   <li>
                     1 isotonic drink free
                   </li>
-                </ul>
+                </ul> -->
 
-                <div class="text-center ct-u-marginTop40">
-                  <a href="#" class="btn ct-btn--o btn-default"><span>choose</span></a>
+                <div class="text-center ct-u-marginTop60" v-if="token != null">
+                  <a class="btn ct-btn--c btn-default" @click="select_gender(personal_program.id)"><span>Choose</span></a>
                 </div>
               </article>
             </div>
@@ -2666,7 +2674,8 @@
           <div class="ct-portfolio lightGallery ct-portfolio--col4 ct-portfolio-container is-loaded"
             style="position: relative; height: 494.4px;">
 
-            <article class="ct-portfolio-item gym" data-src="./../../public/assets/images/content/pexels-pixabay-260447.jpg"
+            <article class="ct-portfolio-item gym"
+              data-src="./../../public/assets/images/content/pexels-pixabay-260447.jpg"
               style="position: absolute; left: 0px; top: 0px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-pixabay-260447.jpg" alt="">
@@ -2684,7 +2693,8 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item facility" data-src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg"
+            <article class="ct-portfolio-item facility"
+              data-src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg"
               style="position: absolute; left: 372px; top: 0px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-victor-freitas-703016.jpg" alt="">
@@ -2701,10 +2711,12 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="ct-portfolio-item cage" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
+            <article class="ct-portfolio-item cage"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
               style="position: absolute; left: 744px; top: 0px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761665.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2718,10 +2730,12 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="ct-portfolio-item dojo" data-src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+            <article class="ct-portfolio-item dojo"
+              data-src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
               style="position: absolute; left: 1116px; top: 0px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2739,7 +2753,8 @@
             <article class="ct-portfolio-item gym" data-src="https://www.youtube.com/watch?v=EaE66cI4Bz8"
               style="position: absolute; left: 0px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-zakaria-boumliha-2827400.jpg"
+                  alt="">
 
                 <figcaption>
                   <div class="ct-item-hover">
@@ -2756,10 +2771,12 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item facility" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
+            <article class="ct-portfolio-item facility"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
               style="position: absolute; left: 372px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4761668.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2774,10 +2791,12 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item dojo" data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
+            <article class="ct-portfolio-item dojo"
+              data-src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
               style="position: absolute; left: 744px; top: 247px;">
               <figure class="ct-hover-effect">
-                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg" alt="">
+                <img class="grayscale" src="./../../public/assets/images/content/pexels-cottonbro-studio-4753898.jpg"
+                  alt="">
                 <figcaption>
                   <div class="ct-item-hover">
                     <div class="ct-hover-container">
@@ -2792,7 +2811,8 @@
               </figure>
             </article>
 
-            <article class="ct-portfolio-item gym" data-src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg"
+            <article class="ct-portfolio-item gym"
+              data-src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg"
               style="position: absolute; left: 1116px; top: 247px;">
               <figure class="ct-hover-effect">
                 <img class="grayscale" src="./../../public/assets/images/content/pexels-leon-ardho-1552103.jpg" alt="">
@@ -3702,6 +3722,8 @@ export default {
     return {
       Program_Products: [],
       Subs_Products: [],
+      personal_program: [],
+      token: null
     }
   },
   components: {
@@ -3710,51 +3732,63 @@ export default {
   },
   methods: {
     async getProductSubs() {
-      const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
-      const response = await axios.get('/product/subscription',{headers});
+
+      const response = await axios.get('/product/subscription/user');
       this.Subs_Products = response.data;
     },
-    async firstroute(){
-      var user_id  = localStorage.getItem('user_id');
-      if(user_id){
+    async firstroute() {
+      var user_id = localStorage.getItem('user_id');
+      if (user_id) {
         this.$router.push('/b1')
-      }else{
+      } else {
         alert('Please Login First')
       }
     },
     async getProductProgram() {
-      const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
-      const response = await axios.get('/product/program',{headers});
+      const response = await axios.get('/product/program/user');
       this.Program_Products = response.data;
     },
+    async getProductpersonnalProgram() {
+      const response = await axios.get('/product/personal-program/user');
+      this.personal_program = response.data;
+    },
+    async select_gender(id){
+      this.$store.commit('setproduct_id',id)
+      this.$router.push("/select-gender")
+    },
     async download(id) {
+      if (typeof id == 'undefined') {
+        alert('Record Not Found');
+      }
       const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
+      const headers = {
+        'Authorization': `Bearer ${token}`
+      };
       const response = await axios.get('/download/product/all/file/' + id, {
         responseType: 'blob',
-      },{headers});
-      var fileURL = window.URL.createObjectURL(new Blob([response.data]));
-      var fileLink = document.createElement('a');
+        headers: headers
+      });
+      console.log(response.data);
+      if (response.data.status == 400) {
+        alert('Record Not Found');
+      } else {
+        var fileURL = window.URL.createObjectURL(new Blob([response.data]));
+        var fileLink = document.createElement('a');
+        fileLink.href = fileURL;
+        fileLink.setAttribute('download', 'gym.pdf');
+        document.body.appendChild(fileLink);
 
-      fileLink.href = fileURL;
-      fileLink.setAttribute('download', 'file.pdf');
-      document.body.appendChild(fileLink);
+        fileLink.click();
+      }
 
-      fileLink.click();
     },
 
   },
   mounted() {
     this.getProductProgram();
     this.getProductSubs();
+    this.getProductpersonnalProgram();
+    this.token = localStorage.getItem('token');
   },
 }
 </script>

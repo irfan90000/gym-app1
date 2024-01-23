@@ -24,6 +24,8 @@ import ShowUsers from '../js/component/User/show.vue';
 import dashboard from '../js/component/dashboard.vue';
 import Theme from '../js/component/HelloWorld.vue';
 
+import orders from '../js/component/order.vue';
+import orderShow from '../js/component/orderShow.vue';
 import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
@@ -34,6 +36,7 @@ import box3 from '../js/component/Boxes/Box3.vue';
 import box4 from '../js/component/Boxes/Box4.vue'; 
 import box5 from '../js/component/Boxes/Box5.vue'; 
 import box6 from '../js/component/Boxes/Box6.vue'; 
+import main_box from '../js/component/Boxes/main_box.vue'; 
 
 
 const routes = [
@@ -52,10 +55,12 @@ const routes = [
     { path: "/add/user/", component: AddUser },
     { path: "/edit/user/:id", component: EditUser },
     { path: "/show/user/:id", component: ShowUsers },
+    { path: "/show/order/:id", component: orderShow },
     { path: "/user", component: Users },
     { path: "/", component: Theme},
     { path: "/subscription", component: Subscription},
     { path: "/program", component: Program},
+    { path: "/orders", component: orders},
     { path: "/signUp", component: SignUp},
     { path: "/b1", component: box1},
     { path: "/b2", component: box2},
@@ -63,6 +68,7 @@ const routes = [
     { path: "/b4", component: box4},
     { path: "/b5", component: box5},
     { path: "/b6", component: box6},
+    { path: "/select-gender", component: main_box},
 ];
 const router = createRouter({
     history : createWebHistory(),

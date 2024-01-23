@@ -49,7 +49,7 @@ export default {
             }
         },
         next() {
-            router.push('/theme')
+            router.push('/')
         }
     }
 }

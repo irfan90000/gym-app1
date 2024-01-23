@@ -3,12 +3,12 @@
         <sidebar />
         <div class="container-fluid page-body-wrapper">
             <navbar />
-            <div class="row col-12 mt-5">
+            <div class="row col-12 mt-5" style="background-color: #191c24;">
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card card-design">
                         <div class="card-body">
                             <div class="row">
-                                <h2 class="card-title col-11">Files</h2>
+                                <h2 class="card-title col-10">Files</h2>
                                 <router-link to="/product" class="nav-link btn btn-primary col-1">Back</router-link>
                             </div>
 
@@ -16,15 +16,15 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th>Image</th>
-                                            <th>File</th>
+                                            <th class="text-left">Image</th>
+                                            <th >File</th>
                                             <th>Action</th>
                                             <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr v-for="file in files">
-                                            <td>{{ file.image }}</td>
+                                            <td class="text-left">{{ file.image }}</td>
                                             <td>{{ file.type }}</td>
                                             <td>
                                                 <a @click="download(file.id)" download
@@ -81,12 +81,13 @@ export default {
             };
             const response = await axios.get('/download/file/' + id, {
                 responseType: 'blob',
-            },{headers});
+                headers: headers
+            });
             var fileURL = window.URL.createObjectURL(new Blob([response.data]));
             var fileLink = document.createElement('a');
 
             fileLink.href = fileURL;
-            fileLink.setAttribute('download', 'file.pdf');
+            fileLink.setAttribute('download', 'gym.pdf');
             document.body.appendChild(fileLink);
 
             fileLink.click();

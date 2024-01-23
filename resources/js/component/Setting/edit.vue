@@ -22,10 +22,10 @@
                                     <input type="text" name="value" v-model="form.value" class="form-control"
                                         id="exampleInputUsername1" placeholder="Value">
                                 </div>
-                                <div class="form-check">
-                                    <label class="label"> Status </label>
-                                    <input type="checkbox" name="status" v-model="form.status" class="form-check-input"
-                                        style=" margin-left: 6px; margin-top: 3px;">
+                                <div class="form-check d-flex">
+                                    <label class="label" style="margin-top: -2px;"> Status </label>
+                                    <input type="checkbox" name="status" v-model="form.status" class=""
+                                    style="margin-left: 6px;margin-top: -12px;">
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>
                                 <button class="btn btn-dark">Cancel</button>
@@ -66,9 +66,9 @@ export default {
             const response = await axios.get('/edit/setting/' + this.$route.params.id,{headers});
             this.form.name = response.data.name;
             this.form.value = response.data.value;
-            this.form.status = response.data.status;
         },
         async submit(e) {
+            alert(this.form.status)
             this.errors = [];
             if (!this.form.name) {
                 this.errors.push('Name required.');

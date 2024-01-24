@@ -107,4 +107,10 @@ form .label{
     color: white;
     font-size: 13px;
 }
+.form-control {
+    height: 32px !important;
+}
+select.form-control {
+    line-height: 3.4 !important;
+}
 </style>

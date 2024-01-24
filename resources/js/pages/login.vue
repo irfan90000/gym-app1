@@ -1,21 +1,21 @@
 <template id="app">
     <div class="row hero-section">
-        <div class="col-md-8 grid-margin stretch-card offset-2 custom-main-box">
-            <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6); max-width: 768px">
+        <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box">
+            <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);">
                 <div class="card-body">
-                    <h4 class="card-title" style="margin-bottom: 25px; color: white">Login</h4>
+                    <h1 class="card-title">Login</h1>
                     <form class="forms-sample" @submit.prevent="submit">
-                        <div class="form-group">
-                            <label>Email</label>
+                        <div class="form-group input-group-sm">
+                            <label><h3>Email</h3></label>
                             <input type="email" name="email" v-model="form.email" class="form-control" placeholder="Email"
-                            style="height: 32px;">
+                           >
                         </div>
-                        <div class="form-group mt-5">
-                            <label>Password</label>
+                        <div class="form-group input-group-sm mt-5">
+                            <label><h3>Password</h3></label>
                             <input type="password" name="password" v-model="form.password" class="form-control"
-                                placeholder="Password" style="height: 32px;">
+                                placeholder="Password">
                         </div>
-                        <button class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-primary btn-sm btn-block mt-5"><h3>Submit</h3></button>
                     </form>
                 </div>
             </div>
@@ -59,7 +59,6 @@ form label{
     margin-top: -28px;
     margin-left: -16px;
     color: white;
-    padding-left: 16px;
 }
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
@@ -69,14 +68,27 @@ form label{
   background-size: cover;
   min-height: 100vh;
 }
+.offset-2 {
+    margin-left: 25.666667% !important;
+}
 .custom-main-box {
-    width: 580px;
     margin: 120px auto;
+    height: 100%;
 }
 .custom-crd {
-    padding: 25px 50px;
+    padding: 25px 50px 40px 50px;
     margin: 0px;
 }
+.card-title{
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 28px;
+}
+.forms-sample{
+    padding-top: 25px;
+}
+
 /* media query for response  */
 @media only screen and (max-width: 1144px) {
     .custom-crd {

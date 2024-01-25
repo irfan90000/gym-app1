@@ -3,7 +3,7 @@
         <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box">
             <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);">
                 <div class="card-body">
-                    <h1 class="card-title">Login</h1>
+                    <h4 class="card-title">Login</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group input-group-sm">
                             <label><h3>Email</h3></label>
@@ -15,7 +15,7 @@
                             <input type="password" name="password" v-model="form.password" class="form-control"
                                 placeholder="Password">
                         </div>
-                        <button class="btn btn-primary btn-sm btn-block mt-5"><h3>Submit</h3></button>
+                        <button class="btn btn-primary btn-sm btn-block mt-5 me-2"><h4>Submit</h4></button>
                     </form>
                 </div>
             </div>
@@ -88,7 +88,10 @@ form label{
 .forms-sample{
     padding-top: 25px;
 }
-
+.me-2 {
+    font-size: 16px !important;
+    padding: 7px 0 !important;
+}
 /* media query for response  */
 @media only screen and (max-width: 1144px) {
     .custom-crd {

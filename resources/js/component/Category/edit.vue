@@ -5,7 +5,7 @@
             <navbar />
             <div class="row col-12 mt-5">
                 <div class="col-10 grid-margin stretch-card mt-5">
-                    <div class="card mt-5"  style="background: #191c24;">
+                    <div class="card mt-5"  style="background: #36445d;">
                         <div class="card-body">
                             <h4 class="card-title">Edit Category</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)">

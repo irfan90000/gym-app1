@@ -1,32 +1,24 @@
 <template id="app">
-    <div class="row">
-        <div class="col-md-8 grid-margin stretch-card offset-2 mt-5 ">
-            <div class="card">
+    <div class="row hero-section">
+        <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box mt-5">
+            <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);margin-top:100px;">
                 <div class="card-body">
                     <h4 class="card-title">Sign Up</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group">
-                            <label >User Name</label>
+                            <label><h3>User Name</h3></label>
                             <input type="text" name="email" v-model="form.name" class="form-control" placeholder="User Name">
                         </div>
-                        <div class="form-group">
-                            <label >Email</label>
+                        <div class="form-group mt-5">
+                            <label><h3>Email</h3></label>
                             <input type="email" name="email" v-model="form.email" class="form-control" placeholder="Email">
                         </div>
-                        <div class="form-group">
-                            <label >Phone</label>
-                            <input type="number" name="email" v-model="form.phone" class="form-control" placeholder="Phone">
-                        </div>
-                        <div class="form-group">
-                            <label >Address</label>
-                            <input type="text" name="email" v-model="form.address" class="form-control" placeholder="Address">
-                        </div>
-                        <div class="form-group">
-                            <label >Password</label>
+                        <div class="form-group mt-5">
+                            <label><h3>Password</h3></label>
                             <input type="password" name="password" v-model="form.password" class="form-control" 
                                 placeholder="Password">
                         </div>
-                        <button class="btn btn-primary me-2">Submit</button>
+                        <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
                     </form>
                 </div>
             </div>
@@ -60,3 +52,25 @@ export default {
     }
 }
 </script>
+<style>
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(../../public/assets/images/content/bg-gym-login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.custom-main-box {
+    margin: 120px auto !important;
+    height: 100%;
+}
+.custom-crd {
+    padding: 25px 50px 40px 50px;
+    margin: 0px;
+}
+.me-2 {
+    font-size: 16px !important;
+    padding: 7px 0 !important;
+}
+</style>

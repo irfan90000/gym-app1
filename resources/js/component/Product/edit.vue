@@ -5,15 +5,15 @@
             <navbar />
             <div class="row col-12 mt-5" style="background-color: #191C24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
-                    <div class="card mt-5 card-design">
-                        <div class="card-body">
+                    <div class="card mt-5 card-design" style="background: #36445d;">
+                        <div class="card-body" style="background: #36445d;">
                             <h4 class="card-title">Edit Product</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
                                     <li style="color: white;" v-for="error in errors">{{ error }}</li>
                                 </ul>
-                                <label for="" class="lable">Select Category</label>
-                                <select class="form-select" style="background-color: #191C24" @change="updateSelectedCategory">
+                                <label for="" class="lable" >Select Category</label>
+                                <select class="form-select" style="background: #36445d;border:1px solid #546990; height: 32px;" @change="updateSelectedCategory">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}

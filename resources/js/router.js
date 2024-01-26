@@ -34,6 +34,8 @@ import box3 from '../js/component/Boxes/Box3.vue';
 import box4 from '../js/component/Boxes/Box4.vue'; 
 import box5 from '../js/component/Boxes/Box5.vue'; 
 import box6 from '../js/component/Boxes/Box6.vue'; 
+import reset from '../js/pages/reset.vue';
+import forgetPass from '../js/pages/forgetPass.vue';
 
 
 const routes = [
@@ -63,6 +65,8 @@ const routes = [
     { path: "/b4", component: box4},
     { path: "/b5", component: box5},
     { path: "/b6", component: box6},
+    { path: "/reset", component: reset},
+    { path: "/forgetPass", component: forgetPass},
 ];
 const router = createRouter({
     history : createWebHistory(),

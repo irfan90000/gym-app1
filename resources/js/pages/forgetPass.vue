@@ -3,18 +3,34 @@
         <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box mt-5">
             <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);margin-top:100px;">
                 <div class="card-body">
-                    <h4 class="card-title">Reset</h4>
+                    <h4 class="card-title">Forget Password</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group">
-                            <label><h3>User Name</h3></label>
-                            <input type="text" name="email" v-model="form.name" class="form-control" placeholder="User Name">
+                            <label><h3>Email</h3></label>
+                            <input type="text" name="email" v-model="form.name" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group mt-5">
-                            <label><h3>Password</h3></label>
-                            <input type="password" name="password" v-model="form.password" class="form-control" 
-                                placeholder="Password">
+                            <label><h3>New Password</h3></label>
+                        <input
+                        type="password"
+                        id="new-password"
+                        v-model="form.name"
+                        class="form-control"
+                        placeholder="New Password"
+                        required />
                         </div>
-                        <button class="btn btn-primary btn-block mt-5 me-2">Reset</button>
+                        <div class="form-group mt-5">
+                            <label><h3>Confirm Password</h3></label>
+                        <input
+                        type="password"
+                        id="confirm-password"
+                        v-model="form.name"
+                        class="form-control"
+                        placeholder="Confirm Password"
+                        required />
+                        </div>
+                        <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
+                        <hr />
                     </form>
                 </div>
             </div>

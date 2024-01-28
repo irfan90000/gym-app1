@@ -30,13 +30,14 @@ import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
 
-import box1 from '../js/component/Boxes/Box1.vue'; 
-import box2 from '../js/component/Boxes/Box2.vue'; 
-import box3 from '../js/component/Boxes/Box3.vue'; 
-import box4 from '../js/component/Boxes/Box4.vue'; 
-import box5 from '../js/component/Boxes/Box5.vue'; 
-import box6 from '../js/component/Boxes/Box6.vue'; 
-import main_box from '../js/component/Boxes/main_box.vue'; 
+import box1 from '../js/component/Boxes/Box1.vue';
+import box2 from '../js/component/Boxes/Box2.vue';
+import box3 from '../js/component/Boxes/Box3.vue';
+import box4 from '../js/component/Boxes/Box4.vue';
+import box5 from '../js/component/Boxes/Box5.vue';
+import box6 from '../js/component/Boxes/Box6.vue';
+import main_box from '../js/component/Boxes/main_box.vue';
+import Stripe from '../js/pages/stripe.vue'
 
 
 const routes = [
@@ -69,6 +70,7 @@ const routes = [
     { path: "/b5", component: box5},
     { path: "/b6", component: box6},
     { path: "/select-gender", component: main_box},
+    { path: "/stripe", component: Stripe},
 ];
 const router = createRouter({
     history : createWebHistory(),

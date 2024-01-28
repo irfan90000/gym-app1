@@ -2549,7 +2549,7 @@
                 </p>
 
                 <div class="text-center ct-u-marginTop80" v-if="token != null">
-                  <a class="btn ct-btn--o btn-default" @click="download(Program_Products.id)"><span>Download</span></a>
+                  <a class="btn ct-btn--o btn-default" @click="download(Program_Products.id)"><span>Downloadd</span></a>
                 </div>
 
               </article>

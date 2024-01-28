@@ -6,6 +6,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SettingsController;
+use App\Http\Controllers\StripeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -78,3 +79,8 @@ Route::middleware('auth:api')->group(function () {
 Route::get('product/subscription/user', [ProductController::class, 'subscription_user']);
 Route::get('product/program/user', [ProductController::class, 'program_user']);
 Route::get('product/personal-program/user', [ProductController::class, 'personal_program']);
+
+
+Route::post('payment/initiate', [StripeController::class, 'initiatePayment']);
+Route::post('payment/complete', [StripeController::class, 'completePayment']);
+Route::post('payment/failure', [StripeController::class, 'failPayment']);

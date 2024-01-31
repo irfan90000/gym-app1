@@ -491,16 +491,15 @@
               <h3><span>NO MORE EXCUSES, JOIN A CLASS TODAY</span> <small><span>COME TO THE DOJO TODAY</span></small></h3>
             </div>
           </div>
-
-
+          <!-- one  -->
           <div class="ct-testimonial ct-js-testimonial">
-            <div class="ct-js-testimonial-row ct-testimonial-row">
+            <div class="ct-js-testimonial-row ct-testimonial-row pb-5">
               <article class="ct-testimonial-item ct-testimonial-item--large skrollable skrollable-before"
-                data-bottom-top="left: -140%;" data-bottom="left: 0;" style="height: 337px; left: -140%;">
+                data-bottom-top="left: -140%;" data-bottom="left: 0;">
                 <a href="trainer-single.html">
                   <div class="ct-testimonial-item-media">
                     <figure>
-                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/galleryItem01.jpg"
+                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/testimonial-img-one.jpeg"
                         alt="">
                     </figure>
                   </div>
@@ -510,7 +509,7 @@
                       <small><span>Anthony B. Laura James</span></small>
                     </h4>
 
-                    <p class="ct-testimonial-item-text text-center">
+                    <p class="text-center">
                       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                       Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
                       amet quam egestas.
@@ -519,70 +518,73 @@
                 </a>
               </article>
             </div>
-
-            <div class="ct-js-testimonial-row ct-testimonial-row">
+            <!-- two -->
+            <div class="ct-js-testimonial-row ct-testimonial-row pb-5">
               <article class="ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before"
-                data-bottom-top="left: -140%;" data-bottom="left: 0;" style="height: 355px; left: -140%;">
+                data-bottom-top="left: -140%;" data-bottom="left: 0;">
                 <a href="trainer-single.html">
-                  <div class="ct-testimonial-item-media">
-                    <figure>
-                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/galleryItem02.jpg"
-                        alt="">
-                    </figure>
-                  </div>
-                  <div class="ct-testimonial-item-content">
-                    <h4 class="text-uppercase text-center ct-testimonial-item-header">
-                      <span>MUAH THAI BOXING</span>
-                      <small><span>Telian Tek</span></small>
-                    </h4>
 
-                    <p class="ct-testimonial-item-text text-center">
+                  <div class="ct-testimonial-item-media">
+                      <figure>
+                          <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/testimonial-img-three.jpeg"
+                          alt="">
+                      </figure>
+                  </div>
+
+                  <div class="ct-testimonial-item-content">
+                      <h4 class="text-uppercase text-center ct-testimonial-item-header">
+                      <span>BRAZILIAN JUI-JITSU</span>
+                      <small><span>FABRICIO DA SILVA</span></small>
+                      </h4>
+
+                      <p class="ct-testimonial-item-text text-center">
                       Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                       Vestibulum tortor.
-                    </p>
+                      </p>
                   </div>
                 </a>
               </article>
 
               <article class="ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before"
-                data-bottom-top="right: -140%;" data-bottom="right: 0;" style="height: 355px; right: -140%;">
+                data-bottom-top="right: -140%;" data-bottom="right: 0;">
                 <a href="trainer-single.html">
+
                   <div class="ct-testimonial-item-media">
-                    <figure>
-                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/galleryItem03.jpg"
-                        alt="">
-                    </figure>
+                      <figure>
+                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/testimonial-img-two.jpeg"
+                          alt="">
+                      </figure>
                   </div>
                   <div class="ct-testimonial-item-content">
-                    <h4 class="text-uppercase text-center ct-testimonial-item-header">
-                      <span>BRAZILIAN JUI-JITSU</span>
-                      <small><span>FABRICIO DA SILVA</span></small>
-                    </h4>
+                      <h4 class="text-uppercase text-center ct-testimonial-item-header">
+                          <span>MUAH THAI BOXING</span>
+                          <small><span>Telian Tek</span></small>
+                      </h4>
 
-                    <p class="ct-testimonial-item-text text-center">
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Vestibulum tortor.
-                    </p>
+                      <p class="ct-testimonial-item-text text-center">
+                          Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                          Vestibulum tortor.
+                      </p>
                   </div>
                 </a>
               </article>
             </div>
-
+            <!-- three -->
             <div class="ct-js-testimonial-row ct-testimonial-row">
               <article class="ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before"
-                data-bottom-top="left: -140%;" data-bottom="left: 0;" style="height: 320px; left: -140%;">
+                data-bottom-top="left: -140%;" data-bottom="left: 0;">
                 <a href="trainer-single.html">
 
                   <div class="ct-testimonial-item-media pull-right">
                     <figure>
-                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/galleryItem04.jpg"
+                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/testimonial-img-three.jpeg"
                         alt="">
                     </figure>
                   </div>
 
                   <div class="ct-testimonial-item-content">
                     <h4 class="text-uppercase text-center ct-testimonial-item-header">
-                      <span>PRAYING MANTIS KUNG-FU</span>
+                      <span style="color:red;">PRAYING MANTIS KUNG-FU</span>
                       <small><span>JET LEE, BRUCE LEE</span></small>
                     </h4>
 
@@ -595,12 +597,12 @@
               </article>
 
               <article class="ct-testimonial-item ct-testimonial-item--small skrollable skrollable-before"
-                data-bottom-top="right: -140%;" data-bottom="right: 0;" style="height: 320px; right: -140%;">
-                <a href="trainer-single.html">
+                data-bottom-top="right: -140%;" data-bottom="right: 0;">
+                <a href="trainer-single.html" >
 
-                  <div class="ct-testimonial-item-media pull-right">
+                  <div class="ct-testimonial-item-media pull-right" style="background-color: lightblue;">
                     <figure>
-                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/galleryItem05.jpg"
+                      <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/testimonial-img-one.jpeg"
                         alt="">
                     </figure>
                   </div>

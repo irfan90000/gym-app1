@@ -36,7 +36,7 @@ import box5 from '../js/component/Boxes/Box5.vue';
 import box6 from '../js/component/Boxes/Box6.vue'; 
 import reset from '../js/pages/reset.vue';
 import forgetPass from '../js/pages/forgetPass.vue';
-
+import memberShip from '../js/component/memberShip.vue';
 
 const routes = [
     { path: "/login", component: Login },
@@ -67,6 +67,7 @@ const routes = [
     { path: "/b6", component: box6},
     { path: "/reset", component: reset},
     { path: "/forgetPass", component: forgetPass},
+    { path: "/memberShip", component: memberShip },
 ];
 const router = createRouter({
     history : createWebHistory(),

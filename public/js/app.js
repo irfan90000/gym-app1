@@ -29167,6 +29167,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\nh3[data-v-7fe74dc6] {\n  margin: 40px 0 0;\n}\nul[data-v-7fe74dc6] {\n  list-style-type: none;\n  padding: 0;\n}\nli[data-v-7fe74dc6] {\n  display: inline-block;\n  margin: 0 10px;\n}\na[data-v-7fe74dc6] {\n  color: #42b983;\n}", ""]);
+<<<<<<< HEAD
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29215,6 +29216,8 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.table thead:before {\n    background-color: #191c24;\n}\n.table-responsive {\n    overflow-x: 0 !important;\n}\nth {\n    font-size: 20px\n}\n", ""]);
+=======
+>>>>>>> 82819da6522e90f9067e9ddf37cd24aa2a0f692f
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29412,7 +29415,11 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()(_public_assets_images_content_bg_gym_login_jpg__WEBPACK_IMPORTED_MODULE_2__["default"]);
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, "\n.hero-section {\n    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    min-height: 100vh;\n}\n.custom-main-box {\n    margin: 120px auto !important;\n    height: 100%;\n}\n.custom-crd {\n    padding: 25px 50px 40px 50px;\n    margin: 0px;\n}\n.me-2 {\n    font-size: 16px !important;\n    padding: 7px 0 !important;\n}\n", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, "\n.hero-section {\n  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),\n    url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n  min-height: 100vh;\n}\n.custom-main-box {\n    margin: 120px auto !important;\n    height: 100%;\n}\n.custom-crd {\n    padding: 25px 50px 40px 50px;\n    margin: 0px;\n}\n.me-2 {\n    font-size: 16px !important;\n    padding: 7px 0 !important;\n}\n", ""]);
+>>>>>>> 82819da6522e90f9067e9ddf37cd24aa2a0f692f
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -31678,6 +31685,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Box6_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Box6_vue_vue_type_template_id_24ef08f1__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/Box6.vue"]])
+<<<<<<< HEAD
 /* hot reload */
 if (false) {}
 
@@ -31706,6 +31714,8 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_main_box_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_main_box_vue_vue_type_template_id_e11db96a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/Boxes/main_box.vue"]])
+=======
+>>>>>>> 82819da6522e90f9067e9ddf37cd24aa2a0f692f
 /* hot reload */
 if (false) {}
 
@@ -32069,6 +32079,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_memberShip_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_memberShip_vue_vue_type_template_id_7fe74dc6_scoped_true__WEBPACK_IMPORTED_MODULE_0__.render],['__scopeId',"data-v-7fe74dc6"],['__file',"resources/js/component/memberShip.vue"]])
+<<<<<<< HEAD
 /* hot reload */
 if (false) {}
 
@@ -32131,6 +32142,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_orderShow_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_orderShow_vue_vue_type_template_id_c06e596a__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/component/orderShow.vue"]])
+=======
+>>>>>>> 82819da6522e90f9067e9ddf37cd24aa2a0f692f
 /* hot reload */
 if (false) {}
 
@@ -32559,6 +32572,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_signUp_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_signUp_vue_vue_type_template_id_5e44f03e__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/signUp.vue"]])
+<<<<<<< HEAD
 /* hot reload */
 if (false) {}
 
@@ -32587,6 +32601,8 @@ __webpack_require__.r(__webpack_exports__);
 
 ;
 const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_irfan_gym_app1_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_stripe_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_stripe_vue_vue_type_template_id_69182f14__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/pages/stripe.vue"]])
+=======
+>>>>>>> 82819da6522e90f9067e9ddf37cd24aa2a0f692f
 /* hot reload */
 if (false) {}
 

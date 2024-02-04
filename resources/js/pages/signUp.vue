@@ -1,6 +1,6 @@
 <template id="app">
 
-    <div class="row">
+    <div class="row hero-section">
         <div class="col-md-8 grid-margin stretch-card offset-2 mt-5 ">
             <div class="card" style="background: #191c24;">
 
@@ -9,17 +9,18 @@
                     <form class="forms-sample" @submit.prevent="submit">
 
                         <div class="form-group">
-                            <label><h3>User Name</h3></label>
+                            <label>User Name</label>
                             <input type="text" name="email" v-model="form.name" class="form-control" placeholder="User Name">
                         </div>
                         <div class="form-group mt-5">
-                            <label><h3>Email</h3></label>
+                            <label>Email</label>
                             <input type="email" name="email" v-model="form.email" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group mt-5">
-                            <label><h3>Password</h3></label>
+                            <label>Password</label>
                             <input type="password" name="password" v-model="form.password" class="form-control"
                                 placeholder="Password">
+                        </div>
 
                         <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
                     </form>

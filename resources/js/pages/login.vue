@@ -6,12 +6,12 @@
                     <h4 class="card-title">Login</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group input-group-sm">
-                            <label><h3>Email</h3></label>
+                            <label>Email</label>
                             <input type="email" name="email" v-model="form.email" class="form-control" placeholder="Email"
                            >
                         </div>
                         <div class="form-group input-group-sm mt-5">
-                            <label><h3>Password</h3></label>
+                            <label>Password</label>
                             <input type="password" name="password" v-model="form.password" class="form-control"
                                 placeholder="Password">
                         </div>

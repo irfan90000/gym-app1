@@ -73,7 +73,7 @@
           <li class="onepage"><a href="#callToAction">Call To Action</a></li>
           <li class="onepage"><a href="#services">Services</a></li>
           <li class="onepage"><a href="#gallery">Gallery</a></li>
-          <li class="onepage"><a href="#map">Map</a></li>
+            <router-link v-if="token == null" to="/signUp">SignUp</router-link>
           <li class="onepage">
             <!-- <a @click="login">Login</a> -->
             <!-- <router-link to="/login">Login</router-link> -->

@@ -41,12 +41,12 @@ import reset from '../js/pages/reset.vue';
 import forgetPass from '../js/pages/forgetPass.vue';
 import memberShip from '../js/component/memberShip.vue';
 
-import box1 from '../js/component/Boxes/Box1.vue';
-import box2 from '../js/component/Boxes/Box2.vue';
-import box3 from '../js/component/Boxes/Box3.vue';
-import box4 from '../js/component/Boxes/Box4.vue';
-import box5 from '../js/component/Boxes/Box5.vue';
-import box6 from '../js/component/Boxes/Box6.vue';
+// import box1 from '../js/component/Boxes/Box1.vue';
+// import box2 from '../js/component/Boxes/Box2.vue';
+// import box3 from '../js/component/Boxes/Box3.vue';
+// import box4 from '../js/component/Boxes/Box4.vue';
+// import box5 from '../js/component/Boxes/Box5.vue';
+// import box6 from '../js/component/Boxes/Box6.vue';
 import main_box from '../js/component/Boxes/main_box.vue';
 import Stripe from '../js/pages/stripe.vue'
 

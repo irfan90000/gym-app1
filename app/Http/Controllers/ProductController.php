@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Media;
+use App\Models\Order;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Storage;
@@ -24,25 +26,62 @@ class ProductController extends Controller
     public function program()
     {
         $category = Category::where('name', 'program')->first();
-        if(!empty($category)){
-            $products = Product::where('category_id', $category->id)->get();
+        if (!empty($category)) {
+            $products = Product::with('files')->where('category_id', $category->id)->get();
             return response()->json($products);
-        }
-        else{
+        } else {
             $data['massege'] = "No Record Found";
             $data['status'] = 500;
             return response()->json($data);
         }
-        
+    }
+
+    public function program_user()
+    {
+        $category = Category::where('name', 'program')->first();
+        if (!empty($category)) {
+            $products = Product::with('files')->where('category_id', $category->id)->first();
+            return response()->json($products);
+        } else {
+            $data['massege'] = "No Record Found";
+            $data['status'] = 500;
+            return response()->json($data);
+        }
+    }
+
+    public function personal_program()
+    {
+        $category = Category::where('name', 'like', '%' . 'personal_program' . '%')->first();
+        if (!empty($category)) {
+            $products = Product::with('files')->where('category_id', $category->id)->first();
+            return response()->json($products);
+        } else {
+            $data['massege'] = "No Record Found";
+            $data['status'] = 500;
+            return response()->json($data);
+        }
     }
 
     public function subscription()
     {
-        $category = Category::where('name', 'monthly_subscription')->first();
-        if(!empty($category)){
+        $category = Category::where('name', 'like', '%' . 'monthly_subscription' . '%')->first();
+        if (!empty($category)) {
+            $product = Product::where('category_id', $category->id)->with('files')->get();
+            return response()->json($product);
+        } else {
+            $data['massege'] = "No Record Found";
+            $data['status'] = 500;
+            return response()->json($data);
+        }
+    }
+
+    public function subscription_user()
+    {
+        $category = Category::where('name', 'like', '%' . 'monthly_subscription' . '%')->first();
+        if (!empty($category)) {
             $product = Product::where('category_id', $category->id)->with('files')->first();
             return response()->json($product);
-        }else{
+        } else {
             $data['massege'] = "No Record Found";
             $data['status'] = 500;
             return response()->json($data);
@@ -54,20 +93,29 @@ class ProductController extends Controller
      */
     public function productFiles($id)
     {
-        $product = Media::where('product_id', $id)->where('type', 'pdf')->get();
-        if (!empty($product)) {
-            foreach ($product as $file) {
-                $data['file'] = storage_path("app/" . $file->image);
-                $data['status'] = 200;
-                $data['filename'] = str_replace(['pdf', '/'], '', $file);
-                return response()->download($data['file']);
+        if ($id != 'undefined') {
+            $product = Media::where('product_id', $id)->where('type', 'pdf')->get();
+            if (!empty($product)) {
+                Order::create([
+                    'user_id' => Auth::user()->id,
+                    'product_id' => $id,
+                ]);
+                foreach ($product as $file) {
+                    $data['file'] = storage_path("app/" . $file->image);
+                    $data['status'] = 200;
+                    $data['filename'] = str_replace(['pdf', '/'], '', $file);
+                    return response()->download($data['file']);
+                }
+            } else {
+                $data['message'] = 'Not Have Files';
+                $data['status'] = 400;
+                return response()->json($data);
             }
         } else {
             $data['message'] = 'Not Have Files';
             $data['status'] = 400;
+            return response()->json($data);
         }
-
-        return response()->json($data);
     }
 
     /**
@@ -105,7 +153,7 @@ class ProductController extends Controller
                 $file = $file['file'];
                 $originalname = $file->getClientOriginalName();
                 $path = $file->storeAs('pdf', $originalname);
-                $images = Media::create([
+                Media::create([
                     'product_id' => $product->id,
                     'image' => $path,
                     'type' => 'pdf'
@@ -128,7 +176,8 @@ class ProductController extends Controller
         $data['file'] = storage_path("app/" . $file->image);
         $data['status'] = 200;
         $data['filename'] = str_replace(['pdf', '/'], '', $file->image);
-        return response()->download($data);
+        // return $data;
+        return response()->download($data['file']);
     }
 
     public function show($id)

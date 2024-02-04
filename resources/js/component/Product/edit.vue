@@ -14,6 +14,7 @@
                                 </ul>
                                 <label for="" class="lable" >Select Category</label>
                                 <select class="form-select" style="background: #36445d;border:1px solid #546990; height: 32px;" @change="updateSelectedCategory">
+
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -31,12 +32,12 @@
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="" class="label">Image</label>
-                                    <input type="file" name="image" @change="" class="form-control"
+                                    <input type="file" name="image" @change="" class="form-control" multiple
                                         id="" placeholder="Image">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="">File</label>
-                                    <input type="file" name="file" @change="" class="form-control"
+                                    <input type="file" name="file" @change="" class="form-control" multiple
                                         id="" placeholder="File">
                                 </div>
                                 <div class="form-group mt-5">
@@ -75,13 +76,14 @@ export default {
             imageArray: [],
             pdfArray: [],
             maxImages: 5,
-            selectedCategory:'',
+            category_id:'',
             form: {
                 name: '',
                 title: '',
                 price: '',
                 status: '',
-                description:''
+                description:'',
+                category_id:''
             },
             categories:''
 
@@ -93,7 +95,7 @@ export default {
     },
     methods: {
         async updateSelectedCategory(event){
-            this.selectedCategory = event.target.value;
+            this.form.category_id = event.target.value;
         },
         async getCategory() {
             const token = localStorage.getItem('token'); // Replace with your actual authentication token
@@ -113,13 +115,14 @@ export default {
 
             const response = await axios.get('/edit/product/'+this.$route.params.id,{headers});
             if(response.data){
+                this.form.category_id = response.data.category_id;
                 this.form.name = response.data.name;
                 this.form.title = response.data.title;
                 this.form.price = response.data.price;
                 this.form.description = response.data.description;
             }
         },
-       async submit(e) {  
+       async submit(e) {
         this.errors = [];
             if (!this.form.name) {
                 this.errors.push('Name required');
@@ -133,7 +136,7 @@ export default {
                 this.errors.push('Price required');
                 return;
             }
-            if (!this.selectedCategory) {
+            if (!this.form.category_id) {
                 this.errors.push('Category required');
                 return;
             }

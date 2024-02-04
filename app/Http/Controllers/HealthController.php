@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Health;
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,6 +23,10 @@ class HealthController extends Controller
             'weight' => $request->weight,
             'activity' => $request->activity,
             'besactivity' => $request->bestActivity,
+        ]);
+        Order::create([
+            'user_id' => Auth::user()->id,
+            'product_id' => $request->product_id,
         ]);
         if($health){
             return response()->json($health);

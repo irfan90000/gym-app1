@@ -8,11 +8,9 @@
                     <div class="card mt-5" style="background: #191c24;">
                         <div class="card-body">
                             <div class="row">
-                                <h2 class="card-title col-10">Health Detail</h2>
-                                <router-link to="/user" class="nav-link btn btn-primary col-1">Back</router-link>
+                                <h2 class="card-title col-11"></h2>
                             </div>
-
-                            <div class="table-responsive mt-5">
+                            <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
@@ -24,12 +22,12 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="detail in details">
-                                            <td>{{ detail.age }}</td>
-                                            <td>{{ detail.height }}</td>
-                                            <td>{{ detail.weight }}</td>
-                                            <td>{{ detail.activity }}</td>
-                                            <td>{{ detail.besactivity }}</td>
+                                        <tr>
+                                            <td>{{ orders.age }}</td>
+                                            <td>{{ orders.height }}</td>
+                                            <td>{{ orders.weight }}</td>
+                                            <td>{{ orders.activity }}</td>
+                                            <td>{{ orders.besactivity }}</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -42,14 +40,14 @@
     </div>
 </template>
 <script>
-import sidebar from '../../sidebar.vue';
-import navbar from '../../navbar.vue';
+import sidebar from '../sidebar.vue';
+import navbar from '../navbar.vue';
 import axios from 'axios';
 export default {
     name: 'index',
     data() {
         return {
-            details: ''
+            orders: ''
         }
     },
     components: {
@@ -57,23 +55,35 @@ export default {
         sidebar
     },
     methods: {
-        async getDetail() {
-            const token = localStorage.getItem('token'); // Replace with your actual authentication token
-            const headers = {
-                'Authorization': `Bearer ${token}`
-            };
-            const response = await axios.get('/show/user/' + this.$route.params.id,{headers});
-            this.details = response.data;
-        },
+        async getOrderDetail() {
+            try {
+                const token = localStorage.getItem('token'); // Replace with your actual authentication token
+                const headers = {
+                    'Authorization': `Bearer ${token}`
+                };
+
+                const response = await axios.get('/order/show/' + this.$route.params.id, { headers });
+                this.orders = response.data.user.health;
+            } catch (error) {
+                console.error("Error fetching users:", error);
+            }
+        }
     },
     mounted() {
-        this.getDetail();
+        this.getOrderDetail();
     }
 }
 </script>
 <style>
+.table thead:before {
+    background-color: #191c24;
+}
 
-th{
-    font-size : 20px
+.table-responsive {
+    overflow-x: 0 !important;
+}
+
+th {
+    font-size: 20px
 }
 </style>

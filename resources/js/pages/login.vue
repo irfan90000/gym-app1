@@ -37,13 +37,13 @@ export default {
     methods: {
         async submit() {
             const response = await axios.post('/login', this.form);
-            localStorage.setItem("token", response.data.token);
-            console.log(response, 'dfgdfg');
             if (response.data.code == 200) {
+                localStorage.setItem("token", response.data.token);
+                localStorage.setItem("user_id", response.data.user.id);
                 if (response.data.user.role == 'admin') {
                     this.$router.push("/dashboard");
                 } else {
-                    this.$router.push('/theme')
+                    this.$router.push('/')
                 }
 
             } else {

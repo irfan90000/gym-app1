@@ -13,9 +13,12 @@
 
 <body>
   <div id="app">
-    <app />
-  </div>  
-  <script src="/js/main.min.js?v=4.0.2"></script>
+{{--    <app />--}}
+  </div>
+  <!-- In your HTML -->
+
+
+{{--  <script src="/js/main.min.js?v=4.0.2"></script>--}}
   <script src="{{asset('build/assets/vendors/js/vendor.bundle.base.js')}}"></script>
   <script src="{{asset('build/assets/js/off-canvas.js')}}"></script>
   <script src="{{asset('build/assets/js/hoverable-collapse.js')}}"></script>
@@ -27,13 +30,16 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script src="https://js.stripe.com/v3/"></script>
+
   <!-- <script src="{{asset('assets/js/off-canvas.js')}}"></script> -->
   <script src="{{asset('assets//hoverable-collapse.js')}}"></script>
-  
+
   <!-- <script src="{{asset('assets/css/bootstrap.css')}}"></script>
   <script src="{{asset('assets/css/motive.css')}}"></script>
   <script src="{{asset('assets/css/ct/motive.css')}}"></script>
   <script src="{{asset('assets/css/style.css')}}"></script> -->
+
 </body>
 
 </html>

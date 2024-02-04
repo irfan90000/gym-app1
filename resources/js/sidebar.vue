@@ -39,6 +39,15 @@
             </a>
           </li>
           <li class="nav-item menu-items">
+            <a class="nav-link" to="/orders">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+              <!-- <span class="menu-title">Settings</span> -->
+              <router-link to="/orders" style="font-size: 13px;">Orders</router-link>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
             <a class="nav-link" to="/dashoard">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>

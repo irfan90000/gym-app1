@@ -1,10 +1,13 @@
 <template id="app">
-    <div class="row hero-section">
-        <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box mt-5">
-            <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);margin-top:100px;">
+
+    <div class="row">
+        <div class="col-md-8 grid-margin stretch-card offset-2 mt-5 ">
+            <div class="card" style="background: #191c24;">
+
                 <div class="card-body">
-                    <h4 class="card-title">Sign Up</h4>
+                    <h4 class="card-title mb-5">Sign Up</h4>
                     <form class="forms-sample" @submit.prevent="submit">
+
                         <div class="form-group">
                             <label><h3>User Name</h3></label>
                             <input type="text" name="email" v-model="form.name" class="form-control" placeholder="User Name">
@@ -15,9 +18,9 @@
                         </div>
                         <div class="form-group mt-5">
                             <label><h3>Password</h3></label>
-                            <input type="password" name="password" v-model="form.password" class="form-control" 
+                            <input type="password" name="password" v-model="form.password" class="form-control"
                                 placeholder="Password">
-                        </div>
+
                         <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
                     </form>
                 </div>
@@ -43,10 +46,9 @@ export default {
     methods: {
         async submit() {
             const response = await axios.post('/signUp', this.form);
+            console.log(response);
             if(response.data.status == 200){
-                localStorage.setItem("token",response.data.token);
-                localStorage.setItem("user_id",response.data.user.id);
-                this.$router.push("/theme");
+                this.$router.push("/");
             }
         }
     }

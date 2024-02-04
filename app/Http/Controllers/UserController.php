@@ -17,14 +17,14 @@ class UserController extends Controller
     {
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
             $user = Auth::user();
-            if ($user->role == 'admin') {
-                $token = $user->createToken('gymapp')->accessToken;
-                $message = 'user login successfully';
-                $response = ['code' => 200, 'status' => true, 'user' => $user, 'token' => $token, 'message' => $message];
-                return response($response);
-            } else {
-                return  $response = ['code' => 401, 'status' => false, 'message' => 'kindly verify your email !'];
-            }
+            // if ($user->role == 'admin') {
+            $token = $user->createToken('gymapp')->accessToken;
+            $message = 'user login successfully';
+            $response = ['code' => 200, 'status' => true, 'user' => $user, 'token' => $token, 'message' => $message];
+            return response($response);
+            // } else {
+            // return  $response = ['code' => 401, 'status' => false, 'message' => 'kindly verify your email !'];
+            // }
         }
         $message = 'Invalid email or password';
         $response = ['code' => 401, 'status' => false, 'token' => '', 'message' => $message];
@@ -81,7 +81,7 @@ class UserController extends Controller
      */
     public function show(string $id)
     {
-        $health = Health::where('user_id',$id)->first();
+        $health = Health::where('user_id', $id)->get();
         return response()->json($health);
     }
 

@@ -14,7 +14,10 @@
                             <label>Password</label>
                             <input type="password" name="password" v-model="form.password" class="form-control"
                                 placeholder="Password">
+
                         </div>
+                        <router-link v-if="token == null" to="/reset">Forgot Password</router-link>
+
                         <button class="btn btn-primary btn-sm btn-block mt-5 me-2"><h4>Submit</h4></button>
                     </form>
                 </div>

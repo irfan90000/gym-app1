@@ -6,31 +6,37 @@
                     <h4 class="card-title">Forget Password</h4>
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group">
-                            <label><h3>Email</h3></label>
-                            <input type="text" name="email" v-model="form.name" class="form-control" placeholder="Email">
+                            <label>Email</label>
+                            <input type="text" name="email" v-model="form.name" class="form-control"
+                                   placeholder="Email">
                         </div>
                         <div class="form-group mt-5">
-                            <label><h3>New Password</h3></label>
-                        <input
-                        type="password"
-                        id="new-password"
-                        v-model="form.name"
-                        class="form-control"
-                        placeholder="New Password"
-                        required />
+                            <label>OTP(4 Digit code)</label>
+                            <input type="text" name="email" v-model="form.name" class="form-control"
+                                   placeholder="Email">
                         </div>
                         <div class="form-group mt-5">
-                            <label><h3>Confirm Password</h3></label>
-                        <input
-                        type="password"
-                        id="confirm-password"
-                        v-model="form.name"
-                        class="form-control"
-                        placeholder="Confirm Password"
-                        required />
+                            <label>New Password</label>
+                            <input
+                                type="password"
+                                id="new-password"
+                                v-model="form.name"
+                                class="form-control"
+                                placeholder="New Password"
+                                required/>
+                        </div>
+                        <div class="form-group mt-5">
+                            <label>Confirm Password</label>
+                            <input
+                                type="password"
+                                id="confirm-password"
+                                v-model="form.name"
+                                class="form-control"
+                                placeholder="Confirm Password"
+                                required/>
                         </div>
                         <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
-                        <hr />
+                        <hr/>
                     </form>
                 </div>
             </div>
@@ -39,6 +45,7 @@
 </template>
 <script>
 import axios from 'axios';
+
 export default {
     name: 'app',
     data() {
@@ -52,28 +59,29 @@ export default {
             }
         }
     },
-    methods: {
-        
-    }
+    methods: {}
 }
 </script>
 <style>
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(../../public/assets/images/content/bg-gym-login.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
+
 .custom-main-box {
     margin: 120px auto !important;
     height: 100%;
 }
+
 .custom-crd {
     padding: 25px 50px 40px 50px;
     margin: 0px;
 }
+
 .me-2 {
     font-size: 16px !important;
     padding: 7px 0 !important;

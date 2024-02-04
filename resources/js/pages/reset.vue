@@ -3,18 +3,13 @@
         <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box mt-5">
             <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);margin-top:100px;">
                 <div class="card-body">
-                    <h4 class="card-title">Reset</h4>
+
                     <form class="forms-sample" @submit.prevent="submit">
                         <div class="form-group">
-                            <label><h3>User Name</h3></label>
-                            <input type="text" name="email" v-model="form.name" class="form-control" placeholder="User Name">
+                            <label>Email</label>
+                            <input type="text" name="email" v-model="form.name" class="form-control" placeholder="Please enter your email for password link">
                         </div>
-                        <div class="form-group mt-5">
-                            <label><h3>Password</h3></label>
-                            <input type="password" name="password" v-model="form.password" class="form-control" 
-                                placeholder="Password">
-                        </div>
-                        <button class="btn btn-primary btn-block mt-5 me-2">Reset</button>
+                        <button class="btn btn-primary btn-block mt-5 me-2">Send</button>
                     </form>
                 </div>
             </div>
@@ -37,7 +32,7 @@ export default {
         }
     },
     methods: {
-        
+
     }
 }
 </script>

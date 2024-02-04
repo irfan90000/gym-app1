@@ -1,9 +1,8 @@
 <template id="app">
-
     <div class="row hero-section">
-        <div class="col-md-8 grid-margin stretch-card offset-2 mt-5 ">
-            <div class="card" style="background: #191c24;">
-
+        <div class="col-md-2"></div>
+        <div class="col-md-6 grid-margin stretch-card offset-2 custom-main-box">
+            <div class="card custom-crd" style="background: rgb(0, 0, 0, 0.6);">
                 <div class="card-body">
                     <h4 class="card-title mb-5">Sign Up</h4>
                     <form class="forms-sample" @submit.prevent="submit">
@@ -27,6 +26,7 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-2"></div>
     </div>
 </template>
 <script>
@@ -59,21 +59,8 @@ export default {
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(../../public/assets/images/content/bg-gym-login.jpg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
 }
-.custom-main-box {
-    margin: 120px auto !important;
-    height: 100%;
-}
-.custom-crd {
-    padding: 25px 50px 40px 50px;
-    margin: 0px;
-}
-.me-2 {
-    font-size: 16px !important;
-    padding: 7px 0 !important;
-}
+
 </style>

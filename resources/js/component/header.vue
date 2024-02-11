@@ -4,6 +4,9 @@
       <div class="navbar navbar-default" style="margin-left: -380px;">
         <div class="container">
           <div class="navbar-block navbar-left">
+            <div>
+              <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/logo-footer-btm.jpeg" alt="" style="width: 85px; margin-right: 10px;">
+            </div>
             <div class="navbar-block-inner">
               <ul class="list-unstyled list-inline">
                 <li><span>Call Us Now <a href="tel:1234567890">123 456 789 - 0</a></span></li>

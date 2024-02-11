@@ -5,7 +5,7 @@
             <navbar />
             <div class="row col-12 mt-5">
                 <div class="col-10 grid-margin stretch-card mt-5">
-                    <div class="card mt-5"   style="background: #191c24;">
+                    <div class="card mt-5"   style="background: #36445d;">
                         <div class="card-body">
                             <h2 class="card-title">Add User</h2>
                             <form class="forms-sample" @submit.prevent="submit($event)">
@@ -106,5 +106,11 @@ export default {
 form .label{
     color: white;
     font-size: 13px;
+}
+.form-control {
+    height: 32px !important;
+}
+select.form-control {
+    line-height: 3.4 !important;
 }
 </style>

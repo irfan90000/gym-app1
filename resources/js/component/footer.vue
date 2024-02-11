@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-12">
             <div class="widget ct-widget-shortMessage">
 
               <h6 class="ct-widget-header">
@@ -26,7 +26,7 @@
           </div>
 
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-12">
             <div class="widget ct-widget-openHours">
 
               <h6 class="ct-widget-header">
@@ -55,9 +55,7 @@
             </div>
           </div>
 
-          <div class="clearfix visible-sm"></div>
-
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-12">
             <div class="widget ct-widget-recentNews">
 
               <h6 class="ct-widget-header">
@@ -87,7 +85,7 @@ TITANS</span></h6>
           </div>
 
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-6 col-12">
             <div class="widget ct-widget-contact">
 
               <h6 class="ct-widget-header">

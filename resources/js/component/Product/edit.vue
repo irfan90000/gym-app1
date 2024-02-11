@@ -5,8 +5,8 @@
             <navbar />
             <div class="row col-12 mt-5" style="background-color: #191C24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
-                    <div class="card mt-5 card-design">
-                        <div class="card-body">
+                    <div class="card mt-5 card-design" style="background: #36445d;">
+                        <div class="card-body" style="background: #36445d;">
                             <h4 class="card-title">Edit Product</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
@@ -121,7 +121,7 @@ export default {
                 this.form.description = response.data.description;
             }
         },
-       async submit(e) {  
+       async submit(e) {
         this.errors = [];
             if (!this.form.name) {
                 this.errors.push('Name required');

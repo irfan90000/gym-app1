@@ -6,15 +6,15 @@
             <div class="row col-12 mt-5" style="background: #191c24;">
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
-                        <div class="card-body">
+                        <div class="card-body custom-card">
                             <h4 class="card-title">Add Product</h4>
                             <form class="forms-sample" @submit.prevent="submit($event)" enctype="multipart/form-data">
                                 <ul>
                                     <li v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <label for="" class="lable">Select Category</label>
-                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id"
-                                style="background: #191c24;height: 34px;">
+
+                                <select class="form-select form-control" aria-label="Default select example" v-model="form.category_id" style="background: #36445d;">
                                     <option>Select Category</option>
                                     <option v-for="category in categories" :value="category.id">
                                         {{ category.name }}
@@ -39,7 +39,11 @@
                                 <div class="upload__box">
                                     <label for="exampleInputUsername1" class="lable">Image</label>
                                     <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
+<<<<<<< HEAD
                                         :data-max_length="maxImages" style="background: #191c24;">
+=======
+                                        :data-max_length="maxImages" style="background: #36445d;">
+>>>>>>> d6ae4d234f125033cdb9c834169be09fa26f7748
                                     <div class="upload__img-wrap">
                                         <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
                                             <div :style="'background-image: url(' + img.url + ')'" :data-number="index"
@@ -210,7 +214,10 @@ p {
 .card-design{
     background: #191c24 !important;
 }
-
+.custom-card{
+    background: #36445d;
+    border-radius: 5px;
+}
 
 
 .upload__btn {

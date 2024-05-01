@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/{any}', function () {
+    return view('app'); // Assuming 'app' is your main Vue.js application entry point
+})->where('any', '.*');
+
  Route::get('/', function () {
      return view('app');
  })->name('home');

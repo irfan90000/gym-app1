@@ -1,12 +1,14 @@
 <template>
   <!-- partial:../../partials/_navbar.html -->
-  <nav class="navbar p-0 fixed-top d-flex flex-row">
+  <nav class="navbar p-0 fixed-top d-flex flex-row pb-2">
     <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
       <a class="navbar-brand brand-logo-mini" href=""><img src="" alt="logo" /></a>
     </div>
     <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
       <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-        <span class="mdi mdi-menu"></span>
+          <div>
+              <img class="grayscale grayscale-fade" src="./../public/assets/images/content/logo-footer-btm.jpeg" alt="" style="width: 85px; margin-right: 10px;">
+          </div>
       </button>
 
       <ul class="navbar-nav navbar-nav-right">

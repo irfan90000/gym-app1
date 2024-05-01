@@ -7,15 +7,16 @@
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5 card-design">
                         <div class="card-body" style="background-color: #36445d;">
-                            <div class="row">
+                            <div class="row" style="margin:10px 0 40px 0">
                                 <h2 class="card-title col-11">Product</h2>
-                                <router-link to="add/product" class="nav-link btn btn-primary col-1">Add</router-link>
+                                <router-link to="add/product" class="nav-link btn btn-primary col-1 text-center mt-3">Add</router-link>
                             </div>
 
                             <div class="table-responsive">
                                 <table class="table" style="margin:10px 0 40px 0">
                                     <thead>
                                         <tr>
+                                            <th  style="text-align: inherit; font-size: 18px;">Id</th>
                                             <th  style="text-align: inherit; font-size: 18px;">Name</th>
                                             <th  style="text-align: inherit; font-size: 18px;">Title</th>
                                             <th  style="text-align: inherit; font-size: 18px;">Price</th>
@@ -25,12 +26,15 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="product in Products">
-                                            <td  style="text-align: inherit; font-size: 18px;">{{ product.name }}</td>
-                                            <td  style="text-align: inherit; font-size: 18px;">{{ product.title }}</td>
-                                            <td  style="text-align: inherit; font-size: 18px;">{{ product.price }}</td>
-                                            <td  style="text-align: inherit; font-size: 18px;">{{ product.status }}</td>
-                                            <td  style="text-align: inherit; font-size: 18px;"><a @click="show(product.id)" class="btn btn-warning">Show</a>
+                                        <tr v-for="product in Products" >
+                                            <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.id }}</td>
+                                            <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.name }}</td>
+                                            <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.title }}</td>
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">${{ product.price }}</td>
+                                            <td class="py-4"  style="text-align: inherit; font-size: 18px;">
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;"><a @click="show(product.id)" class="btn btn-warning">Show</a>
                                             <a @click="edit(product.id)" class="btn btn-success">Edit</a>
                                             <a @click="del(product.id)" class="btn btn-danger">Delete</a></td>
                                         </tr>

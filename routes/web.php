@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\StripeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +15,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('app');
-// });
-Route::get('{any?}', function () {
-    return view('app');
-})->where('any', '.*');
-// Route::post('/login', [UserController::class, 'login'])->name('login');
+ Route::get('/', function () {
+     return view('app');
+ })->name('home');
+//Route::get('{any?}', function () {
+//    return view('app');
+//})->where('any', '.*');
+//// Route::post('/login', [UserController::class, 'login'])->name('login');
+
+//
+//Route::post('/checkout/process',  [PaymentsController::class,'index'])->name('checkout.process');
+Route::get('/payment/success', [StripeController::class,'paymentSuccess'])->name('payment.success');
+Route::get('stripp/{id}', [StripeController::class,'payment'])->name('payment');
+

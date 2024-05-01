@@ -7,14 +7,15 @@
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5" style="background: #36445d;">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="row" style="margin:10px 0 40px 0">
                                 <h2 class="card-title col-11">Category</h2>
-                                <router-link to="add/category" class="nav-link btn btn-primary col-1">Add</router-link>
+                                <router-link to="add/category" class="nav-link btn btn-primary col-1 mt-3">Add</router-link>
                             </div>
                             <div class="table-responsive">
                                 <table class="table" style="margin:10px 0 40px 0">
                                     <thead>
                                         <tr>
+                                            <th style="text-align: inherit;">Id</th>
                                             <th style="text-align: inherit;">Name</th>
                                             <th style="text-align: inherit; font-size: 18px;">Status</th>
                                             <th style="text-align: inherit; font-size: 18px;">Action</th>
@@ -23,9 +24,12 @@
                                     </thead>
                                     <tbody>
                                         <tr v-for="category in Categories">
-                                            <td style="text-align: inherit; font-size: 18px;">{{ category.name }}</td>
-                                            <td style="text-align: inherit; font-size: 18px;">{{ category.status }}</td>
-                                            <td style="text-align: inherit; font-size: 18px;"><a class="btn btn-success"
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ category.id }}</td>
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ category.name }}</td>
+                                            <td class="py-4"  style="text-align: inherit; font-size: 18px;">
+                                                <span class="badge badge-pill badge-success">Active</span>
+                                            </td>
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;"><a class="btn btn-success"
                                                     @click="edit(category.id)">Edit</a>
                                                 <a class="btn btn-danger" @click="del(category.id)">Delete</a>
                                             </td>

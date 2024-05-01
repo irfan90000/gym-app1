@@ -25,9 +25,9 @@ class ProductController extends Controller
 
     public function program()
     {
-        $category = Category::where('name', 'program')->first();
+        $category = Category::where('slug', 'program')->first();
         if (!empty($category)) {
-            $products = Product::with('files')->where('category_id', $category->id)->get();
+            $products = Product::with('files')->where('category_slug', $category->slug)->get();
             return response()->json($products);
         } else {
             $data['massege'] = "No Record Found";
@@ -40,7 +40,7 @@ class ProductController extends Controller
     {
         $category = Category::where('name', 'program')->first();
         if (!empty($category)) {
-            $products = Product::with('files')->where('category_id', $category->id)->first();
+            $products = Product::with('files')->where('category_slug', $category->slug)->get();
             return response()->json($products);
         } else {
             $data['massege'] = "No Record Found";
@@ -53,7 +53,7 @@ class ProductController extends Controller
     {
         $category = Category::where('name', 'like', '%' . 'personal_program' . '%')->first();
         if (!empty($category)) {
-            $products = Product::with('files')->where('category_id', $category->id)->first();
+            $products = Product::with('files')->where('category_slug', $category->slug)->first();
             return response()->json($products);
         } else {
             $data['massege'] = "No Record Found";
@@ -64,9 +64,9 @@ class ProductController extends Controller
 
     public function subscription()
     {
-        $category = Category::where('name', 'like', '%' . 'monthly_subscription' . '%')->first();
+        $category = Category::where('slug', 'monthly_subscription')->first();
         if (!empty($category)) {
-            $product = Product::where('category_id', $category->id)->with('files')->get();
+            $product = Product::where('category_slug', $category->slug)->get();
             return response()->json($product);
         } else {
             $data['massege'] = "No Record Found";
@@ -77,9 +77,9 @@ class ProductController extends Controller
 
     public function subscription_user()
     {
-        $category = Category::where('name', 'like', '%' . 'monthly_subscription' . '%')->first();
+        $category = Category::where('slug', 'monthly_subscription')->first();
         if (!empty($category)) {
-            $product = Product::where('category_id', $category->id)->with('files')->first();
+            $product = Product::where('category_slug', $category->slug)->with('files')->get();
             return response()->json($product);
         } else {
             $data['massege'] = "No Record Found";
@@ -129,7 +129,7 @@ class ProductController extends Controller
             $status = 0;
         }
         $product = Product::create([
-            'category_id' => $request->category_id,
+            'category_slug' => $request->category_slug,
             'title' => $request->title,
             'name' => $request->name,
             'price' => $request->price,
@@ -206,7 +206,7 @@ class ProductController extends Controller
             $status = 0;
         }
         $product = Product::where('id', $id)->update([
-            'category_id' => $request->category_id,
+            'category_slug' => $request->category_slug,
             'title' => $request->title,
             'name' => $request->name,
             'price' => $request->price,

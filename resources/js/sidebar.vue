@@ -1,8 +1,8 @@
 <template>
-   <nav class="sidebar sidebar-offcanvas" id="sidebar" style="background: #36445d;">
+   <nav class="sidebar sidebar-offcanvas mt-4" id="sidebar" style="background: #36445d;">
         <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
         </div>
-        <ul class="nav">
+        <ul class="nav mt-4">
           <li class="nav-item menu-items">
             <a class="nav-link" to="/dashoard">
               <span class="menu-icon">
@@ -53,9 +53,20 @@
                 <i class="mdi mdi-speedometer"></i>
               </span>
               <!-- <span class="menu-title">Settings</span> -->
-              <router-link to="/user" style="font-size: 13px;">User</router-link>
+              <router-link to="/trainer" style="font-size: 13px;">Trainer</router-link>
             </a>
           </li>
+
+            <li class="nav-item menu-items">
+                <a class="nav-link" to="/dashoard">
+              <span class="menu-icon">
+                <i class="mdi mdi-speedometer"></i>
+              </span>
+                    <!-- <span class="menu-title">Settings</span> -->
+                    <router-link to="/user" style="font-size: 13px;">Users</router-link>
+                </a>
+            </li>
+
           <li class="nav-item menu-items">
             <a class="nav-link" to="/dashoard">
               <span class="menu-icon">

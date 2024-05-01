@@ -8,5 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Media extends Model
 {
     use HasFactory;
-    protected $fillable = ['product_id','image','type'];
+
+    protected $fillable = ['product_id', 'image', 'type'];
+
+
+    public function media()
+    {
+        return $this->hasOne(Media::class, 'product_id', 'id');
+    }
 }

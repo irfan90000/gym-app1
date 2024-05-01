@@ -11,7 +11,7 @@ class Product extends Model
 
     protected $fillable = [
         'id',
-        'category_id',
+        'category_slug',
         'name',
         'title',
         'price',
@@ -21,7 +21,11 @@ class Product extends Model
     public function files(){
        return $this->hasMany(Media::class,'product_id','id');
     }
+
+    public function file(){
+        return $this->hasOne(Media::class,'product_id','id')->where('type','pdf');
+    }
     public function category(){
-       return $this->belongsTo(Category::class,'category_id','id');
+       return $this->belongsTo(Category::class,'category_slug','slug');
     }
 }

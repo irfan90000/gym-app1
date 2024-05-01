@@ -1,8 +1,8 @@
 <template>
     <div class="container-scroller">
-        <sidebar />
+        <sidebar/>
         <div class="container-fluid page-body-wrapper" style="background: #191c24;">
-            <navbar />
+            <navbar/>
             <div class="row col-12 mt-5">
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5" style="background: #191c24;">
@@ -15,24 +15,32 @@
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
-                                        <tr>
-                                            <th style="text-align: inherit; font-size: 18px;">User Name</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Product</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Category</th>
-                                            <!-- <th style="text-align: inherit; font-size: 18px;">Address</th> -->
-                                            <th style="text-align: inherit; font-size: 18px;"></th>
-                                        </tr>
+                                    <tr>
+                                        <th style="text-align: inherit; font-size: 18px;">User Name</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Product</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Category Type</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Payment Id</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Created at</th>
+
+                                        <!-- <th style="text-align: inherit; font-size: 18px;">Address</th> -->
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="order in orders">
-                                            <td style="text-align: inherit; font-size: 18px;">{{ order.user.username }}</td>
-                                            <td style="text-align: inherit; font-size: 18px;">{{ order.product?order.product.name:'' }}</td>
-                                            <td style="text-align: inherit; font-size: 18px;">{{ order.product?order.product.category.name:'' }}</td>
-                                            <!-- <td style="text-align: inherit; font-size: 18px;">{{ user.address }}</td> -->
-                                            <td style="text-align: inherit; font-size: 18px;">
-                                                <a @click="show(order.id)" class="btn btn-warning">Show</a>
-                                            </td>
-                                        </tr>
+                                    <tr v-for="order in orders">
+                                        <td style="text-align: inherit; font-size: 18px;">{{ order.user.username }}</td>
+                                        <td style="text-align: inherit; font-size: 18px;">
+                                            {{ order.product ? order.product.name : '' }}
+                                        </td>
+                                        <td style="text-align: inherit; font-size: 18px;">
+                                            {{ order.product ? order.product.category.name : '' }}
+                                        </td>
+                                        <td style="text-align: inherit; font-size: 18px;">{{ order.payment_id }}</td>
+                                        <td style="text-align: inherit; font-size: 18px;">{{ order.created_at }}</td>
+                                        <!-- <td style="text-align: inherit; font-size: 18px;">{{ user.address }}</td> -->
+                                        <!--                                            <td style="text-align: inherit; font-size: 18px;">-->
+                                        <!--                                                <a @click="show(order.id)" class="btn btn-warning">Show</a>-->
+                                        <!--                                            </td>-->
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -48,6 +56,7 @@ import sidebar from '../sidebar.vue';
 // import sidebar from '../../sidebar.vue';
 import navbar from '../navbar.vue';
 import axios from 'axios';
+
 export default {
     name: 'index',
     data() {
@@ -71,7 +80,7 @@ export default {
                     'Authorization': `Bearer ${token}`
                 };
 
-                const response = await axios.get('/orders', { headers });
+                const response = await axios.get('/orders', {headers});
                 this.orders = response.data;
             } catch (error) {
                 console.error("Error fetching users:", error);
@@ -88,7 +97,7 @@ export default {
             const headers = {
                 'Authorization': `Bearer ${token}`
             };
-            const response = await axios.get('/delete/user/' + id,{headers});
+            const response = await axios.get('/delete/user/' + id, {headers});
             this.getOrders();
         }
     },

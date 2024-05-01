@@ -2,28 +2,22 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use App\Models\Product;
-use App\Models\Role;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class RoleSeeder extends Seeder
+
+class ProductSeeder extends Seeder
 {
+
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Role::truncate();
-        Product::truncate();
-        Role::create([
-            'name' => 'admin'
-        ]);
-        Role::create([
-            'name' => 'team_member'
-        ]);
 
+        Category::truncate();
+        Product::truncate();
         Category::updateOrCreate(
             ['name' => 'Program'],
             [
@@ -121,6 +115,5 @@ class RoleSeeder extends Seeder
             'price' => 30,
             'status' => 1,
         ]);
-
     }
 }

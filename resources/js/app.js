@@ -12,3 +12,5 @@ import store from './Vuex/store/index.js';
 import { createApp } from 'vue'
 axios.defaults.baseURL='/api';
 createApp(App).use(router).use(store).mixin(mixin).mount('#app')
+
+

@@ -38,12 +38,8 @@
                                 </div> -->
                                 <div class="upload__box">
                                     <label for="exampleInputUsername1" class="lable">Image</label>
-                                    <input type="file" class="form-control" multiple="multiple" @change="handleFileChange"
-<<<<<<< HEAD
-                                        :data-max_length="maxImages" style="background: #191c24;">
-=======
-                                        :data-max_length="maxImages" style="background: #36445d;">
->>>>>>> d6ae4d234f125033cdb9c834169be09fa26f7748
+                                    <input type="file" class="form-control" multiple="multiple" @change="handleFileChange" :data-max_length="maxImages" style="background: #36445d;">
+
                                     <div class="upload__img-wrap">
                                         <div v-for="(img, index) in imageArray" :key="index" class="upload__img-box">
                                             <div :style="'background-image: url(' + img.url + ')'" :data-number="index"

@@ -7,7 +7,7 @@
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5"  style="background: #36445d;">
                         <div class="card-body">
-                            <h2 class="card-title">Edit User</h2>
+                            <h2 class="card-title">Edit Trainer</h2>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
                                     <li v-for="error in errors" style="color: white;">{{ error }}</li>

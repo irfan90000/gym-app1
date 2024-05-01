@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 
+
 import Login from '../js/pages/login.vue';
 
 import AddCategory from '../js/component/Category/add.vue';
@@ -19,6 +20,7 @@ import Setting from '../js/component/setting/index.vue';
 import AddUser from '../js/component/User/add.vue';
 import EditUser from '../js/component/User/edit.vue';
 import Users from '../js/component/User/index.vue';
+import Trainer from '../js/component/User/Trainer.vue';
 import ShowUsers from '../js/component/User/show.vue';
 
 import dashboard from '../js/component/dashboard.vue';
@@ -29,6 +31,7 @@ import orderShow from '../js/component/orderShow.vue';
 import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
+import UserProduct from './component/UserProduct.vue';
 
 import main_box from '../js/component/Boxes/main_box.vue';
 import Stripe from '../js/pages/stripe.vue'
@@ -62,6 +65,7 @@ const routes = [
     { path: "/edit/user/:id", component: EditUser },
     { path: "/show/user/:id", component: ShowUsers },
     { path: "/show/order/:id", component: orderShow },
+    { path: "/trainer", component: Trainer },
     { path: "/user", component: Users },
     { path: "/", component: Theme},
     { path: "/subscription", component: Subscription},
@@ -80,8 +84,11 @@ const routes = [
     { path: "/reset", component: reset},
     { path: "/forgetPass", component: forgetPass},
     { path: "/memberShip", component: memberShip },
+    { path: "/user-product", component: UserProduct },
 
 ];
+
+console.log(createWebHistory());
 const router = createRouter({
     history : createWebHistory(),
     routes,

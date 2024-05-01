@@ -7,15 +7,15 @@
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5"   style="background: #36445d;">
                         <div class="card-body">
-                            <h2 class="card-title">Add User</h2>
+                            <h2 class="card-title">Add Trainer</h2>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
                                     <li v-for="error in errors">{{ error }}</li>
                                 </ul>
                                 <div class="form-group mt-5">
-                                    <label for="exampleInputUsername1">Name</label>
-                                    <input type="text" name="name" v-model="form.name" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Name">
+                                    <label for="exampleInputUsername1">Username</label>
+                                    <input type="text" name="username" v-model="form.username" class="form-control" id="exampleInputUsername1"
+                                        placeholder="username">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Email</label>
@@ -28,9 +28,27 @@
                                         placeholder="phone">
                                 </div>
                                 <div class="form-group mt-5">
+                                    <label for="exampleInputUsername1">Coupon code</label>
+                                    <input type="text" name="coupon_code" v-model="form.coupon_code" class="form-control" id="exampleInputUsername1"
+                                           placeholder="Coupon code">
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label for="exampleInputUsername1">Discount %</label>
+                                    <input type="text"   class="form-control" id="exampleInputUsername1"
+                                           placeholder="Coupon code">
+                                </div>
+
+                                <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Address</label>
                                     <input type="text" name="address" v-model="form.address" class="form-control" id="exampleInputUsername1"
                                         placeholder="Address">
+                                </div>
+
+                                <div class="form-group mt-5">
+                                    <label for="exampleInputUsername1">Image</label>
+                                    <input type="file" name="image"  multiple="multiple"
+                                           data-max_length="2" class="form-control" id="exampleInputUsername1"
+                                           placeholder="File">
                                 </div>
                                 <button type="submit" class="btn btn-primary me-2">Submit</button>
                                 <button class="btn btn-dark">Cancel</button>
@@ -56,18 +74,20 @@ export default {
         return{
             errors: [],
             form:{
-                name:'',
+                username:'',
                 email:'',
                 phone:'',
-                address:''
+                address:'',
+                coupon_code:'',
+                image:null
             }
         }
     },
     methods:{
         async submit(e) {
             this.errors = [];
-            if (!this.form.name) {
-                this.errors.push('Name required.');
+            if (!this.form.username) {
+                this.errors.push('Username required.');
                 return;
             }
             if (!this.form.email) {
@@ -90,7 +110,7 @@ export default {
             };
             const response = await axios.post('/add/user', this.form,{headers});
             if (response.data.status == 200) {
-                this.$router.push('/user')
+                this.$router.push('/trainer')
             }
 
         }

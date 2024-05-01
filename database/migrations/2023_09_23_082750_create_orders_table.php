@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id')->nullable();
             $table->string('product_id')->nullable();
+            $table->string('payment_id')->nullable();
             $table->timestamps();
         });
     }

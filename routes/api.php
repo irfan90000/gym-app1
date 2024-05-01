@@ -27,11 +27,14 @@ use Illuminate\Support\Facades\Route;
 // });
 Route::post('/login', [UserController::class, 'login'])->name('login');
 Route::post('/signUp', [UserController::class, 'signUp'])->name('signUp');
+Route::post('/otp-sent', [UserController::class, 'otp'])->name('opt');
+Route::post('/reset-password', [UserController::class, 'resetPasswod'])->name('opt');
 
 Route::middleware('auth:api')->group(function () {
     Route::controller(UserController::class)->group(function () {
         Route::post('add/user', 'store');
         Route::get('users', 'index');
+        Route::get('trainers', 'trainers');
         Route::get('edit/user/{id}', 'edit');
         Route::get('show/user/{id}', 'show');
         Route::post('update/user/{id}', 'update');
@@ -84,3 +87,6 @@ Route::get('product/personal-program/user', [ProductController::class, 'personal
 Route::post('payment/initiate', [StripeController::class, 'initiatePayment']);
 Route::post('payment/complete', [StripeController::class, 'completePayment']);
 Route::post('payment/failure', [StripeController::class, 'failPayment']);
+Route::post('/stripe/payment/{id}', [StripeController::class, 'payment']);
+
+

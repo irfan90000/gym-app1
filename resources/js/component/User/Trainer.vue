@@ -15,28 +15,32 @@
                             <div class="table-responsive">
                                 <table class="table" style="margin:10px 0 40px 0">
                                     <thead>
-                                        <tr>
-                                            <th style="text-align: inherit; font-size: 18px;">Id</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Name</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Email</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Phone</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Address</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Action</th>
-                                        </tr>
+                                    <tr>
+                                        <th style="text-align: inherit; font-size: 18px;">Id</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Name</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Email</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Phone</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Coupon Code</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Discount %</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Address</th>
+                                        <th style="text-align: inherit; font-size: 18px;">Action</th>
+                                    </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="user in Users">
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.id }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.username }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.email }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.phone }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.address }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">
-                                                <a @click="show(user.id)" class="btn btn-warning">Show</a>
-                                                <a @click="edit(user.id)" class="btn btn-success">Edit</a>
-                                                <a @click="del(user.id)" class="btn btn-danger">Delete</a>
-                                            </td>
-                                        </tr>
+                                    <tr v-for="user in Users">
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.id }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.username }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.email }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.phone }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.coupon_code }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">10</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.address }}</td>
+                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">
+                                            <a @click="show(user.id)" class="btn btn-warning">Show</a>
+                                            <a @click="edit(user.id)" class="btn btn-success">Edit</a>
+                                            <a @click="del(user.id)" class="btn btn-danger">Delete</a>
+                                        </td>
+                                    </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -52,7 +56,7 @@ import sidebar from '../../sidebar.vue';
 import navbar from '../../navbar.vue';
 import axios from 'axios';
 export default {
-    name: 'index',
+    name: 'Trainer',
     data() {
         return {
             Users: ''
@@ -74,7 +78,7 @@ export default {
                     'Authorization': `Bearer ${token}`
                 };
 
-                const response = await axios.get('/users', { headers });
+                const response = await axios.get('/trainers', { headers });
                 this.Users = response.data;
             } catch (error) {
                 console.error("Error fetching users:", error);

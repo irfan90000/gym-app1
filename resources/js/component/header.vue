@@ -9,8 +9,8 @@
             </div>
             <div class="navbar-block-inner">
               <ul class="list-unstyled list-inline">
-                <li><span>Call Us Now <a href="tel:1234567890">123 456 789 - 0</a></span></li>
-                <li><span><a href="mailto:info@dojo.com">info@dojo.com</a></span></li>
+                <li><span>Call Us Now <a href="tel:1234567890">+61 431270638</a></span></li>
+                <li><span><a href="mailto:Hermesonori@gmail.com">Hermesonori@gmail.com</a></span></li>
               </ul>
             </div>
           </div>
@@ -64,25 +64,18 @@
             <!-- <img alt="Brand" src="./../../public/assets/images/content/logo.png"> -->
           </a>
         </div>
-
         <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right" style="display: contents;">
           <li class="onepage active"><a href="#home">Home</a></li>
-          <li class="onepage"><a href="#testimonials">Testimonials</a></li>
+          <li class="onepage"><a href="#galleries">Gallery</a></li>
           <li class="onepage"><a href="#trainers">Trainers</a></li>
-          <li class="onepage"><a href="#calendars">Calendar</a></li>
           <li class="onepage"><a href="#callToAction">Call To Action</a></li>
-          <li class="onepage"><a href="#services">Services</a></li>
-          <li class="onepage"><a href="#gallery">Gallery</a></li>
-          <li class="onepage"><a href="#map">Map</a></li>
-          <li class="onepage">
-            <!-- <a @click="login">Login</a> -->
-            <!-- <router-link to="/login">Login</router-link> -->
+          <li class="onepage"><a href="#plan">Plans</a></li>
+          <li class="onepage"><a href="#subscription">Monthly Subscription</a></li>
 
+          <li class="onepage">
             <router-link v-if="token == null" to="/login">Login</router-link>
-            <!-- <router-link @click="logout">Logout</router-link> -->
             <a href="" @click="logout" v-if="token != null">Logout</a>
           </li>
-
         </ul>
       </div>
     </nav>

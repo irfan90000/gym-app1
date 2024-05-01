@@ -11,11 +11,12 @@
                               <h2 class="card-title col-11">Settings</h2>
                               <router-link to="add/setting" class="nav-link btn btn-primary col-1">Add</router-link>
                           </div>
-                          
+
                           <div class="table-responsive">
                               <table class="table" style="margin:10px 0 40px 0">
                                   <thead>
                                       <tr>
+                                          <th style="text-align: inherit; font-size: 18px;">Id</th>
                                           <th style="text-align: inherit; font-size: 18px;">Name</th>
                                           <th style="text-align: inherit; font-size: 18px;">Value</th>
                                           <th style="text-align: inherit; font-size: 18px;">Status</th>
@@ -24,10 +25,13 @@
                                   </thead>
                                   <tbody>
                                       <tr v-for="setting in Settings">
-                                          <td style="text-align: inherit; font-size: 18px;">{{setting.name}}</td>
-                                          <td style="text-align: inherit; font-size: 18px;">{{setting.value}}</td>
-                                          <td style="text-align: inherit; font-size: 18px;">{{setting.status}}</td>
-                                          <td style="text-align: inherit; font-size: 18px;"><a @click="edit(setting.id)" class="btn btn-success">Edit</a>
+                                          <td class="py-4" style="text-align: inherit; font-size: 18px;">{{setting.id}}</td>
+                                          <td class="py-4" style="text-align: inherit; font-size: 18px;">{{setting.name}}</td>
+                                          <td  class="py-4" style="text-align: inherit; font-size: 18px;">{{setting.value}}</td>
+                                          <td class="py-4" style="text-align: inherit; font-size: 18px;">
+                                              <span class="badge badge-pill badge-success">Active</span>
+                                          </td>
+                                          <td  class="py-4" style="text-align: inherit; font-size: 18px;"><a @click="edit(setting.id)" class="btn btn-success">Edit</a>
                                           <a @click="del(setting.id)" class="btn btn-danger">Delete</a></td>
                                       </tr>
                                   </tbody>

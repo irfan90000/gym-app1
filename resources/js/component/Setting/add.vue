@@ -7,7 +7,7 @@
                 <div class="col-10 grid-margin stretch-card mt-5">
                     <div class="card mt-5"  style="background: #36445d;">
                         <div class="card-body">
-                            <h2 class="card-title">Add Category</h2>
+                            <h2 class="card-title">Add Setting</h2>
                             <form class="forms-sample" @submit.prevent="submit($event)">
                                 <ul>
                                     <li v-for="error in errors">{{ error }}</li>
@@ -15,12 +15,12 @@
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Name</label>
                                     <input type="text" name="name" v-model="form.name" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Username">
+                                        placeholder="Username" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Value</label>
                                     <input type="text" name="value" v-model="form.value" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Value">
+                                        placeholder="Value" style="text-transform: none">
                                 </div>
                                 <div class="form-check d-flex">
                                     <label class="label" style="margin-top: -2px;"> Status </label>

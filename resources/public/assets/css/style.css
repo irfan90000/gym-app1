@@ -9305,7 +9305,7 @@ figure.ct-hover-effect figcaption .ct-item-hover .ct-hover-container p {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  background-color: transparent;
+  /*background-color: transparent;*/
   margin: 10px auto 30px;
   padding: 10px;
 }
@@ -9357,7 +9357,7 @@ figure.ct-hover-effect figcaption .ct-item-hover .ct-hover-container p {
   font-size: 0.936em;
   font-weight: 400;
   color: #fff;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 3px;
   position: relative;
 }
@@ -9423,7 +9423,7 @@ figure.ct-hover-effect figcaption .ct-item-hover .ct-hover-container p {
   }
 }
 .form-control {
-  background-color: transparent;
+  /*background-color: transparent;*/
   border-radius: 1px !important;
 }
 form .form-group,
@@ -9436,12 +9436,12 @@ form .input-group .form-control {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
-  background-color: transparent;
+  /*background-color: transparent;*/
   padding: 0 0 0 15px;
   color: #000;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+    /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 20px;
   -webkit-transition: all 0.3s ease;
@@ -9464,7 +9464,7 @@ form .input-group .form-control::-webkit-input-placeholder {
   color: transparent;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 20px;
 }
@@ -9473,7 +9473,7 @@ form .input-group .form-control:-moz-placeholder {
   color: transparent;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 20px;
 }
@@ -9482,7 +9482,7 @@ form .input-group .form-control::-moz-placeholder {
   color: transparent;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 34px;
 }
@@ -9491,7 +9491,7 @@ form .input-group .form-control:-ms-input-placeholder {
   color: transparent;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 34px;
 }
@@ -9532,7 +9532,7 @@ form .input-group label {
   color: #fff;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 2px;
   line-height: 20px;
   position: absolute;
@@ -12995,3 +12995,7 @@ nav.navbar-scroll-top {
     margin-top: 0;
   }
 }
+
+
+
+

@@ -1,5 +1,7 @@
 <template>
+
     <Dashbord />
+
 </template>
 <script>
 import Dashbord from '../layout/App.vue'

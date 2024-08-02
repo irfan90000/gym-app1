@@ -9,10 +9,10 @@
                         <div class="card-body">
                             <div class="row" style="margin:10px 0 40px 0">
                                 <h2 class="card-title col-11">Category</h2>
-                                <router-link to="add/category" class="nav-link btn btn-primary col-1 mt-3">Add</router-link>
+                                <router-link to="add/category" class="nav-link btn btn-primary col-1 mt-3" style="font-size: 14px;">Add</router-link>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table" style="margin:10px 0 40px 0">
+                            <div class="table">
+                                <table class="table table-dark table-hover mb-0">
                                     <thead>
                                         <tr>
                                             <th style="text-align: inherit;">Id</th>
@@ -29,9 +29,9 @@
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">
                                                 <span class="badge badge-pill badge-success">Active</span>
                                             </td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;"><a class="btn btn-success"
+                                            <td class="py-4 " style="text-align: inherit; font-size: 18px;"><a class="btn btn-success"
                                                     @click="edit(category.id)">Edit</a>
-                                                <a class="btn btn-danger" @click="del(category.id)">Delete</a>
+                                                <a class="btn btn-danger btn-cat" @click="del(category.id)">Delete</a>
                                             </td>
                                             <td></td>
                                         </tr>
@@ -86,15 +86,22 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+.btn-cat{
+    margin-left: 10px;
+}
 .table thead:before {
-    background-color: #191c24;
+    background-color: transparent !important;
 }
 
 .table-responsive {
     overflow-x: 0 !important;
 }
 th{
-    font-size : 20px
+    font-size : 20px;
+    padding: 20px !important;
+}
+td{
+    padding-left: 20px !important;
 }
 </style>

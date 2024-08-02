@@ -31,7 +31,9 @@ import orderShow from '../js/component/orderShow.vue';
 import Subscription from '../js/pages/subscription.vue';
 import Program from '../js/pages/program.vue';
 import SignUp from '../js/pages/signUp.vue';
-import UserProduct from './component/UserProduct.vue';
+
+
+import userProduct from '../js/component/userProduct.vue';
 
 import main_box from '../js/component/Boxes/main_box.vue';
 import Stripe from '../js/pages/stripe.vue'
@@ -84,7 +86,9 @@ const routes = [
     { path: "/reset", component: reset},
     { path: "/forgetPass", component: forgetPass},
     { path: "/memberShip", component: memberShip },
-    { path: "/user-product", component: UserProduct },
+
+
+    { path: "/UserProduct", component: userProduct },
 
 ];
 

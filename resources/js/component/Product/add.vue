@@ -22,13 +22,13 @@
                                 </select>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Name</label>
-                                    <input type="text" name="name" v-model="form.name" class="form-control"
-                                        id="exampleInputUsername1" placeholder="Name">
+                                    <input type="text" name="name" v-model="form.name" class="form-control "
+                                        id="exampleInputUsername1" placeholder="Name" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Tilte</label>
-                                    <input type="text" name="title" v-model="form.title" class="form-control"
-                                        id="exampleInputUsername1" placeholder="Title">
+                                    <input type="text" name="title" v-model="form.title" class="form-control form-text"
+                                        id="exampleInputUsername1" placeholder="Title" style="text-transform: none">
                                 </div>
                                 <!-- <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Image</label>
@@ -71,8 +71,8 @@
                                     <input type="checkbox" v-model="form.status" class="" style="margin-left: 56px;margin-top: -30px;">
                                 </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                <button class="btn btn-dark">Cancel</button>
+                                <button type="submit" class="btn btn-primary ">Submit</button>
+                                <button class="btn btn-dark ">Cancel</button>
                             </form>
                         </div>
                     </div>
@@ -203,7 +203,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 p {
     margin: 0;
 }
@@ -214,7 +214,10 @@ p {
     background: #36445d;
     border-radius: 5px;
 }
-
+.btn{
+    padding: 12px !important;
+    font-size: 14px !important;
+}
 
 .upload__btn {
     display: inline-block;

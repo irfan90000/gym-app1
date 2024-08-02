@@ -45,7 +45,7 @@
             <div class="col-lg-9 mb-3 mb-lg-0">
                 <!-- Card -->
                 <div class="card mb-3 mb-lg-5">
-                    <!-- Header -->
+                    <!-- Header -->ct-callToAction ct-callToAction--type1ct-pricingTable ct-pricingTable-primary
                     <div class="px-card py-3">
                         <div class="row gy-2">
                             <div class="col-sm-3 d-flex flex-column">

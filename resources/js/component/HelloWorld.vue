@@ -1000,50 +1000,51 @@
 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group ct-u-marginBottom30">
-                                        <input type="text" class="form-control" id="firstName" required=""
+                                    <div class="form-group ct-u-marginBottom30 mt-5" >
+                                        <input type="text" class="form-control " id="firstName" required=""
                                                name="field[]"
-                                               placeholder="First Name" style="height: 40px;">
-                                        <label for="firstName">First Name</label>
+                                               placeholder="First Name" style="height: 40px; color: white;
+                                                text-transform: none ; ">
+                                        <label for="firstName" >First Name</label>
                                     </div>
 
-                                    <div class="form-group ct-u-marginBottom30 mt-5">
+                                    <div class="form-group ct-u-marginBottom30 mt-5" >
                                         <input type="text" class="form-control" id="adress" required="" name="field[]"
                                                placeholder="Adress"
-                                               style="height: 40px;">
-                                        <label for="adress">Adress</label>
+                                               style="height: 40px; color: white; text-transform: none;">
+                                        <label for="adress" >Adress</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group ct-u-marginBottom30">
+                                    <div class="form-group ct-u-marginBottom30 mt-5"  >
                                         <input type="text" class="form-control" id="lastName" required="" name="field[]"
-                                               placeholder="Last Name" style="height: 40px;">
-                                        <label for="lastName">Last Name</label>
+                                               placeholder="Last Name" style="height: 40px; color: white; text-transform: none">
+                                        <label for="lastName" >Last Name</label>
                                     </div>
 
-                                    <div class="form-group ct-u-marginBottom30 mt-5">
+                                    <div class="form-group ct-u-marginBottom30 mt-5" >
                                         <input type="email" class="form-control" id="email" required="" name="field[]"
                                                placeholder="Email"
-                                               style="height: 40px;">
-                                        <label for="email">E-mail</label>
+                                               style="height: 40px; color: white; text-transform: none;">
+                                        <label for="email" >E-mail</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="row col-12 p-0 ml-1 mt-5">
-                                <div class="col-12 ct-u-marginBottom30 p-0">
-                                    <div class="form-group">
+                            <div class="row col-12 p-0 ml-1 mt-5" >
+                                <div class="col-12 ct-u-marginBottom30 p-0" >
+                                    <div class="form-group" >
                     <textarea class="form-control" id="textarea" rows="7" required="" name="field[]"
-                              placeholder="Message"></textarea>
-                                        <label for="textarea">Message</label>
+                              placeholder="Message" style="color: white; text-transform: none;"></textarea>
+                                        <label for="textarea" >Message</label>
                                     </div>
                                 </div>
 
                                 <div class="col-12 p-0">
-                                    <div class="form-group">
-                                        <div class="row col-12 p-0">
-                                            <div class="col-sm-offset-4 col-sm-4">
-                                                <button type="submit" class="btn btn-block ct-btn--o btn-default"><span>Submit</span>
+                                    <div class="form-group" >
+                                        <div class="row col-12 p-0" >
+                                            <div class="col-sm-offset-4 col-sm-4" >
+                                                <button type="submit" class="btn btn-block ct-btn--o btn-default" ><span>Submit</span>
                                                 </button>
                                             </div>
                                         </div>

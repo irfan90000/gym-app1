@@ -15,33 +15,33 @@
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Username</label>
                                     <input type="text" name="username" v-model="form.username" class="form-control" id="exampleInputUsername1"
-                                        placeholder="username">
+                                        placeholder="username" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Email</label>
                                     <input type="text" name="email" v-model="form.email" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Email">
+                                        placeholder="Email" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Phone</label>
                                     <input type="text" name="phone" v-model="form.phone" class="form-control" id="exampleInputUsername1"
-                                        placeholder="phone">
+                                        placeholder="phone" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Coupon code</label>
                                     <input type="text" name="coupon_code" v-model="form.coupon_code" class="form-control" id="exampleInputUsername1"
-                                           placeholder="Coupon code">
+                                           placeholder="Coupon code" style="text-transform: none">
                                 </div>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Discount %</label>
                                     <input type="text"   class="form-control" id="exampleInputUsername1"
-                                           placeholder="Coupon code">
+                                           placeholder="Coupon code" style="text-transform: none">
                                 </div>
 
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1">Address</label>
                                     <input type="text" name="address" v-model="form.address" class="form-control" id="exampleInputUsername1"
-                                        placeholder="Address">
+                                        placeholder="Address" style="text-transform: none">
                                 </div>
 
                                 <div class="form-group mt-5">

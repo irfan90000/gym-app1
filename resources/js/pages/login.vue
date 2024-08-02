@@ -10,13 +10,12 @@
                         <div class="form-group input-group-sm">
                             <label>Email</label>
                             <input type="email" name="email" v-model="form.email" class="form-control"
-                                   placeholder="Email"
-                            >
+                                   placeholder="Email" style="text-transform: none !important;">
                         </div>
                         <div class="form-group input-group-sm mt-5">
                             <label>Password</label>
                             <input type="password" name="password" v-model="form.password" class="form-control"
-                                   placeholder="Password">
+                                   placeholder="Password" style="text-transform: none !important;">
                         </div>
                         <router-link to="/reset">Forgot Password</router-link>
                         <button class="btn btn-primary btn-sm btn-block mt-4 me-2"><h4>Submit</h4></button>

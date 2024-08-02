@@ -14,8 +14,8 @@
                                 </ul>
                                 <div class="form-group mt-5">
                                     <label for="exampleInputUsername1" style="font-size: 13px;">Name</label>
-                                    <input type="text" name="name" v-model="form.name" class="form-control"
-                                        id="exampleInputUsername1" placeholder="Name" style="height: 36px; color:white !important;">
+                                    <input type="text" name="name" v-model="form.name" class="form-control "
+                                        id="exampleInputUsername1" placeholder="Name" style="height: 36px; color:white !important; text-transform: none;">
                                 </div>
                                 <div class="form-check d-flex">
                                     <label class="label" style="margin-top: -6px;"> Status </label>

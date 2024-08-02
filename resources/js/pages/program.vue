@@ -7,11 +7,12 @@
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5" style="background: #36445d;">
                         <div class="card-body">
-                            <div class="row" >
-                                <h2 class="card-title col-11">Program</h2>
+                            <div class="row" style="margin:10px 0 40px 0">
+                                <h2 class="card-title col-9">Program</h2>
+                                <router-link to="add/user" class="nav-link btn btn-primary col-1 mt-3" style="font-size: 14px;">Add</router-link>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table">
+                            <div class="table-responsive mt-xl-5">
+                                <table class="table table-dark table-hover mb-0">
                                     <thead>
                                         <tr>
                                             <th style="text-align: inherit; font-size: 18px;">Id</th>
@@ -19,6 +20,7 @@
                                             <th style="text-align: inherit; font-size: 18px;">Price</th>
                                             <th style="text-align: inherit; font-size: 18px;">Status</th>
                                             <th style="text-align: inherit; font-size: 18px;">Description</th>
+                                            <th style="text-align: inherit; font-size: 18px;">Action</th>
 
                                         </tr>
                                     </thead>
@@ -32,6 +34,10 @@
                                             </td>
 
                                             <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ prod.description }}</td>
+
+                                            <td class="py-4" style="text-align: inherit; font-size: 18px;"><a @click="show(product.id)" class="btn btn-warning">Show</a>
+                                                <a @click="edit(product.id)" class="btn btn-success btn-prg">Edit</a>
+                                                <a @click="del(product.id)" class="btn btn-danger btn-prg">Delete</a></td>
 
                                         </tr>
                                     </tbody>
@@ -83,11 +89,18 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
 .table thead:before {
-    background-color: #191c24;
+    background-color: transparent;
 }
 th{
     font-size: 20px;
+    padding: 20px !important;
+}
+td{
+    padding-left: 20px !important;
+}
+.btn-prg{
+    margin-left: 10px !important;
 }
 </style>

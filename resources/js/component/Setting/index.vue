@@ -7,13 +7,13 @@
               <div class="col-12 grid-margin stretch-card mt-5">
                   <div class="card mt-5"  style="background: #36445d;">
                       <div class="card-body">
-                          <div class="row">
+                          <div class="row" style="margin:10px 0 40px 0">
                               <h2 class="card-title col-11">Settings</h2>
-                              <router-link to="add/setting" class="nav-link btn btn-primary col-1">Add</router-link>
+                              <router-link to="add/setting" class="nav-link btn btn-primary col-1 mt-3" style="font-size: 14px;">Add</router-link>
                           </div>
 
-                          <div class="table-responsive">
-                              <table class="table" style="margin:10px 0 40px 0">
+                          <div class="table">
+                              <table class="table table-dark table-hover mb-0">
                                   <thead>
                                       <tr>
                                           <th style="text-align: inherit; font-size: 18px;">Id</th>
@@ -31,8 +31,8 @@
                                           <td class="py-4" style="text-align: inherit; font-size: 18px;">
                                               <span class="badge badge-pill badge-success">Active</span>
                                           </td>
-                                          <td  class="py-4" style="text-align: inherit; font-size: 18px;"><a @click="edit(setting.id)" class="btn btn-success">Edit</a>
-                                          <a @click="del(setting.id)" class="btn btn-danger">Delete</a></td>
+                                          <td  class="py-4 " style="text-align: inherit; font-size: 18px;"><a @click="edit(setting.id)" class="btn btn-success">Edit</a>
+                                          <a @click="del(setting.id)" class="btn btn-danger btn-st">Delete</a></td>
                                       </tr>
                                   </tbody>
                               </table>
@@ -85,14 +85,21 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 .table thead:before {
-    background-color: #191c24;
+    background-color: transparent !important;
 }
 .table-responsive {
     overflow-x: 0 !important;
 }
 th{
-    font-size : 20px
+    font-size : 20px;
+    padding: 20px !important;
+}
+td{
+    padding-left: 20px !important;
+}
+.btn-st{
+    margin-left: 10px !important;
 }
 </style>

@@ -7,9 +7,9 @@
                 <div class="col-12 grid-margin stretch-card mt-5">
                     <div class="card mt-5" style="background: #191c24;">
                         <div class="card-body">
-                            <div class="row">
+                            <div class="row " style="margin:10px 0 40px 0">
                                 <h2 class="card-title col-11">Orders</h2>
-                                <!-- <router-link to="add/user" class="nav-link btn btn-primary col-1">Add</router-link> -->
+                                <router-link to="add/user" class="nav-link btn btn-primary col-1 mt-3" style="font-size: 14px;">Add</router-link>
                             </div>
 
                             <div class="table-responsive">

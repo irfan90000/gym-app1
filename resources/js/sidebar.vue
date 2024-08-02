@@ -9,6 +9,7 @@
                 <i class="mdi mdi-speedometer"></i>
               </span>
               <span class="menu-title" style="font-size: 13px;">Dashboard</span>
+
             </a>
           </li>
           <li class="nav-item menu-items">
@@ -18,6 +19,7 @@
               </span>
               <!-- <span class="menu-title">Product</span> -->
               <router-link to="/product" style="font-size: 13px;">Product</router-link>
+
             </a>
           </li>
           <li class="nav-item menu-items">

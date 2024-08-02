@@ -66,12 +66,12 @@
         </div>
         <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right" style="display: contents;">
           <li class="onepage active"><a href="#home">Home</a></li>
-          <li class="onepage"><a href="#galleries">Gallery</a></li>
-          <li class="onepage"><a href="#trainers">Trainers</a></li>
-          <li class="onepage"><a href="#callToAction">Call To Action</a></li>
-          <li class="onepage"><a href="#plan">Plans</a></li>
+            <li class="onepage"><a href="#galleries">Gallery</a></li>
+            <li class="onepage"><a href="#trainers">Trainers</a></li>
+            <li class="onepage"><a href="#callToAction">Call To Action</a></li>
+            <li class="onepage"><a href="#plan">Plans</a></li>
           <li class="onepage"><a href="#subscription">Monthly Subscription</a></li>
-
+            <li class="onepage"><router-link to="/UserProduct">Product</router-link></li>
           <li class="onepage">
             <router-link v-if="token == null" to="/login">Login</router-link>
             <a href="" @click="logout" v-if="token != null">Logout</a>

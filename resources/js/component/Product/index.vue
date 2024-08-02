@@ -9,11 +9,11 @@
                         <div class="card-body" style="background-color: #36445d;">
                             <div class="row" style="margin:10px 0 40px 0">
                                 <h2 class="card-title col-11">Product</h2>
-                                <router-link to="add/product" class="nav-link btn btn-primary col-1 text-center mt-3">Add</router-link>
+                                <router-link to="add/product" class="nav-link btn btn-primary col-1 text-center mt-3 " style="font-size: 14px;">Add</router-link>
                             </div>
 
-                            <div class="table-responsive">
-                                <table class="table" style="margin:10px 0 40px 0">
+                            <div class=" table">
+                                <table class="table table-dark table-hover mb-0">
                                     <thead>
                                         <tr>
                                             <th  style="text-align: inherit; font-size: 18px;">Id</th>
@@ -22,11 +22,11 @@
                                             <th  style="text-align: inherit; font-size: 18px;">Price</th>
                                             <th  style="text-align: inherit; font-size: 18px;">Status</th>
                                             <th  style="text-align: inherit; font-size: 18px;">Action</th>
-                                            <th  style="text-align: inherit; font-size: 18px;"></th>
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr v-for="product in Products" >
+                                        <tr v-for="product in Products">
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.id }}</td>
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.name }}</td>
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">{{ product.title }}</td>
@@ -34,9 +34,10 @@
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">
                                                 <span class="badge badge-pill badge-success">Active</span>
                                             </td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;"><a @click="show(product.id)" class="btn btn-warning">Show</a>
-                                            <a @click="edit(product.id)" class="btn btn-success">Edit</a>
-                                            <a @click="del(product.id)" class="btn btn-danger">Delete</a></td>
+                                            <td class="py-4 mt-3" style="text-align: inherit; font-size: 18px;">
+                                                <a @click="show(product.id)" class="btn  btn-warning ">Show</a>
+                                            <a @click="edit(product.id)" class="btn btn-success btunh">Edit</a>
+                                            <a @click="del(product.id)" class="btn btn-danger btunh">Delete</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -92,17 +93,22 @@ export default {
     }
 }
 </script>
-<style>
-.card-design{
-    background: #191c24 !important;
+<style scoped>
+.btunh{
+    margin-left: 10px !important;
 }
+
 .table thead:before {
-    background-color: #191c24;
+    background-color: transparent;
 }
 .table-responsive {
     overflow-x: 0 !important;
 }
 th{
-    font-size : 20px
+    font-size : 20px;
+    padding: 20px !important;
+}
+td{
+    padding-left: 20px !important;
 }
 </style>

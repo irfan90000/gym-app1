@@ -5,7 +5,9 @@
                 <div class="container">
                     <div class="navbar-block navbar-left">
                         <div>
-                            <img class="grayscale grayscale-fade" src="./../../public/assets/images/content/logo-footer-btm.jpeg" alt="" style="width: 85px; margin-right: 10px;">
+                            <img class="grayscale grayscale-fade"
+                                 src="./../../public/assets/images/content/logo-footer-btm.jpeg" alt=""
+                                 style="width: 85px; margin-right: 10px;">
                         </div>
                         <div class="navbar-block-inner">
                             <ul class="list-unstyled list-inline">
@@ -19,33 +21,38 @@
                         <div class="navbar-block-inner">
                             <ul class="socialicons">
                                 <li>
-                                    <a href="https://www.facebook.com/createITpl" data-toggle="tooltip" data-placement="bottom" title=""
+                                    <a href="https://www.facebook.com/createITpl" data-toggle="tooltip"
+                                       data-placement="bottom" title=""
                                        data-original-title="Facebook">
                                         <i class="fa fa-facebook"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="https://twitter.com/createitpl" data-toggle="tooltip" data-placement="bottom" title=""
+                                    <a href="https://twitter.com/createitpl" data-toggle="tooltip"
+                                       data-placement="bottom" title=""
                                        data-original-title="Twitter">
                                         <i class="fa fa-twitter"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="LinkedIn">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
+                                       data-original-title="LinkedIn">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="RSS">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
+                                       data-original-title="RSS">
                                         <i class="fa fa-rss"></i>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Vimeo">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
+                                       data-original-title="Vimeo">
                                         <i class="fa fa-vimeo-square"></i>
                                     </a>
                                 </li>
@@ -55,26 +62,26 @@
                 </div>
             </div>
         </div>
-    <nav class="navbar navbar-default navbar--type1 yamm navbar-logo--left" style="margin-left: -500px;">
-        <div class="container ct-navbar-container">
+        <nav class="navbar navbar-default navbar--type1 yamm navbar-logo--left" style="margin-left: -500px;">
+            <div class="container ct-navbar-container">
 
-            <div class="navbar-header navbar-left">
-                <a class="navbar-brand" href="index.html">
-                    <!-- <img alt="Brand" src="./../../public/assets/images/content/logo.png"> -->
-                </a>
+                <div class="navbar-header navbar-left">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img alt="Brand" src="./../../public/assets/images/content/logo.png"> -->
+                    </a>
+                </div>
+                <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right" style="display: contents;">
+
+                    <li class="onepage">
+                        <router-link to="/">Home</router-link>
+                    </li>
+
+
+                </ul>
             </div>
-            <ul class="nav navbar-nav ct-navbar--fadeIn navbar-right" style="display: contents;">
-
-                <li class="onepage"><router-link to="/">Home</router-link></li>
-
-
-
-
-            </ul>
-        </div>
-    </nav>
+        </nav>
     </header>
-    <div class="container-fluid  " style=" background-color: #380202; height: 75vh">
+    <div class="container-fluid  " style=" background-color: #380202; height: 175vh">
 
         <div class="row " style="margin-top: 125px !important; margin-left: 125px !important;
     margin-right: 100px;">
@@ -82,34 +89,51 @@
                    style="margin-top: 140px; ">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">Address</th>
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                <tr v-for="items in getTrainersData">
+                    <td>{{ items.username }}</td>
+                    <td>{{ items.email }}</td>
+                    <td>{{ items.phone }}</td>
+                    <td>{{ items.address }}</td>
                 </tr>
+
+                </tbody>
+            </table>
+
+
+            <table class=" table table-bordered  table-hover  px-5"
+                   style="margin-top: 140px; ">
+                <thead>
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">phone</th>
+                    <th scope="col">Address</th>
+                    <th scope="col"> <div>
+                        <button @click="downloadFile">Download PDF</button>
+                    </div></th>
                 </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
+                </thead>
+                <tbody>
+                <tr v-for="variable in trainers">
+                    <td>{{ variable.username }}</td>
+                    <td>{{ variable.email }}</td>
+                    <td>{{ variable.phone }}</td>
+                    <td>{{ variable.address }}</td>
                 </tr>
+
                 </tbody>
             </table>
         </div>
     </div>
+
+
     <footer>
 
         <section class="ct-prefooter ct-u-paddingTop80 ct-u-paddingBottom20 ct-u-backgroundDarkGray">
@@ -132,9 +156,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
 
 
                     <div class="col-md-4 col-sm-12 col-12">
@@ -222,12 +243,159 @@
     </footer>
 </template>
 
-<script>
 
+
+<script>
+import axios from "axios";
+
+export default {
+    name: 'FileDownloader',
+
+    data() {
+        return {
+            getTrainersData: [],
+            selectedFile: null,
+            pdfFiles: [],
+            trainers: [
+                {
+
+                    username: 'John Doewwww',
+                    email: 'john.doe@example.com',
+                    phone: '123-456-7890',
+                    address: '123 Main St'
+                },
+                {
+
+                    username: 'Jane Smith',
+                    email: 'jane.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'jhone smt',
+                    email: 'jhone.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'John Doe',
+                    email: 'john.doe@example.com',
+                    phone: '123-456-7890',
+                    address: '123 Main St'
+                },
+                {
+
+                    username: 'Jane Smith',
+                    email: 'jane.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'jhone smt',
+                    email: 'jhone.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+            ]
+        }
+
+    },
+
+
+
+    mounted() {
+
+        console.log(this.trainers, 'trainers');
+        this.getTrainers();
+
+        this.updatedData();
+    },
+
+    methods: {
+
+
+        updatedData(){
+            this.trainers = [
+                {
+
+                    username: 'Mubashir',
+                    email: 'john.doe@example.com',
+                    phone: '123-456-7890',
+                    address: '123 Main St'
+                },
+                {
+
+                    username: 'Jane Smith',
+                    email: 'jane.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'jhone smt',
+                    email: 'jhone.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'John Doe',
+                    email: 'john.doe@example.com',
+                    phone: '123-456-7890',
+                    address: '123 Main St'
+                },
+                {
+
+                    username: 'Jane Smith',
+                    email: 'jane.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+                {
+
+                    username: 'jhone smt',
+                    email: 'jhone.smith@example.com',
+                    phone: '987-654-3210',
+                    address: '456 Elm St'
+                },
+            ]
+        },
+
+        async getTrainers() {
+
+            const response = await axios.get('/get-trainers');
+            this.getTrainersData = response.data;
+            console.log(this.getTrainersData, 'getTrainersData')
+
+        },
+        downloadFile() {
+            // Specify the path to the file in the public directory
+            const fileUrl = '/example.pdf';
+
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = 'example.pdf'; // Optional: Specify a default file name
+
+            // Append the link to the body (required for Firefox)
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+
+            // Remove the link from the document
+            document.body.removeChild(link);
+        }
+    },
+
+};
 </script>
 
 <style scoped>
-.table thead:before{
+.table thead:before {
     background-color: transparent !important;
     content: none !important;
     position: absolute;
@@ -240,28 +408,35 @@
     background-color: #000;
 
 }
-tr{
+
+tr {
     text-align: left !important;
 }
-td{
+
+td {
     text-align: left !important;
 }
-th{
+
+th {
     text-align: left !important;
     color: white !important;
 
 }
-tbody{
+
+tbody {
     background-color: #1C1C1C !important;
 }
+
 thead, tbody, tfoot, tr, td, th {
 
-     font-size: 16px;
+    font-size: 16px;
 }
+
 .table td, .table th {
-    padding: 1.75rem !important ;
+    padding: 1.75rem !important;
 
 }
+
 .table tbody tr td {
     color: #515151;
     font-weight: 400;
@@ -269,6 +444,7 @@ thead, tbody, tfoot, tr, td, th {
     text-align: right;
 
 }
+
 .table-bordered th {
     border: 1px solid #454545;
 }

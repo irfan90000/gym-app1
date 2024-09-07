@@ -14,6 +14,14 @@ use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
+
+    public function getTrainers()
+    {
+        $trainers = User::where('role', 'team_member')->get();
+
+        return response()->json($trainers);
+    }
+
     /**
      * Display a listing of the resource.
      */
@@ -83,7 +91,6 @@ class UserController extends Controller
             'phone' => 'required',
         ]);
         $password = $this->generate_4_digit_otp_function();
-
 
 
 //        if ($request->has('image')) {
@@ -187,6 +194,7 @@ class UserController extends Controller
     {
         return str_pad(mt_rand(0, 99999999), 8, '0', STR_PAD_LEFT);
     }
+
     private function generate_4_digit_otp_function()
     {
         return str_pad(mt_rand(0, 9999), 4, '0', STR_PAD_LEFT);

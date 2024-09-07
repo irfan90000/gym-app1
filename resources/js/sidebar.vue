@@ -8,7 +8,8 @@
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
-              <span class="menu-title" style="font-size: 13px;">Dashboard</span>
+                <router-link to="/dashboard" style="font-size: 13px;">Dashboard</router-link>
+<!--              <span class="menu-title" style="font-size: 13px;">Dashboard</span>-->
 
             </a>
           </li>

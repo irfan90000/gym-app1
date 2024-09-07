@@ -88,5 +88,6 @@ Route::post('payment/initiate', [StripeController::class, 'initiatePayment']);
 Route::post('payment/complete', [StripeController::class, 'completePayment']);
 Route::post('payment/failure', [StripeController::class, 'failPayment']);
 Route::post('/stripe/payment/{id}', [StripeController::class, 'payment']);
+Route::get('get-trainers', [UserController::class, 'getTrainers']);
 
 

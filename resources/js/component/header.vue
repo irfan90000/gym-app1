@@ -72,7 +72,7 @@
             <li class="onepage"><a href="#plan">Plans</a></li>
 
           <li class="onepage"><a href="#subscription">Monthly Subscription</a></li>
-            
+
             <li class="onepage"><router-link to="/UserProduct">Product</router-link></li>
           <li class="onepage">
             <router-link v-if="token == null" to="/login">Login</router-link>

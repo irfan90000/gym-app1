@@ -757,6 +757,7 @@
                                 data-smitems="3" data-mditems="4" data-lgitems="5" data-height="355"
                                 data-snap-ignore="true"
                                 style="min-height: 355px; height: 355px;">
+
                                 <div class="slick-list draggable" tabindex="0">
                                     <div class="slick-track"
                                          style="opacity: 1; width: 1404px; transform: translate3d(-234px, 0px, 0px);">
@@ -776,7 +777,9 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="item active slick-slide slick-active" data-for="antohny"
+
+
+                                        <div v-for="train in getTrainersData" class="item active slick-slide slick-active" data-for="antohny"
                                              style="height: 355px; width: 234px;" data-slick-index="1">
                                             <div class="item-inner">
                                                 <figure>
@@ -787,12 +790,17 @@
 
                                                 <div class="ct-item-footer">
                                                     <div>
-                                                        <p><span data-content="ANTOHNY B.">Irfan Iqbal</span></p>
+                                                        <p><span data-content="ANTOHNY B.">{{train.username}}</span></p>
                                                     </div>
+
                                                 </div>
                                             </div>
+
                                         </div>
+
+
                                     </div>
+
                                 </div>
                                 <button type="button" class="slick-prev" style="display: block;"><i
                                     class="fa fa-angle-left"></i></button>
@@ -1091,6 +1099,7 @@ export default {
             Program_Products: [],
             Subs_Products: [],
             personal_program: [],
+            getTrainersData: [],
             token: null,
             user_id: null
         }
@@ -1112,11 +1121,19 @@ export default {
             this.$router.push('stripe');
         },
         async getProductSubs() {
-
             const response = await axios.get('/product/subscription/user');
             this.Subs_Products = response.data;
 
             console.log(this.Subs_Products);
+        },
+
+        async getTrainers() {
+            const response = await axios.get('/get-trainers');
+
+            this.getTrainersData = response.data;
+
+            console.log( this.getTrainersData, 'getTrainersData')
+
         },
         async firstroute() {
             var user_id = localStorage.getItem('user_id');
@@ -1169,6 +1186,7 @@ export default {
     },
     mounted() {
         this.getProductProgram();
+        this.getTrainers();
         this.getProductSubs();
         this.getProductpersonnalProgram();
         this.token = localStorage.getItem('token');

@@ -40,8 +40,9 @@ class ProductController extends Controller
     {
         $category = Category::where('name', 'program')->first();
         if (!empty($category)) {
-            $products = Product::with('files')->where('category_slug', $category->slug)->get();
+            $products = Product::with('files','media')->where('category_slug', $category->slug)->get();
             return response()->json($products);
+
         } else {
             $data['massege'] = "No Record Found";
             $data['status'] = 500;
@@ -53,7 +54,7 @@ class ProductController extends Controller
     {
         $category = Category::where('name', 'like', '%' . 'personal_program' . '%')->first();
         if (!empty($category)) {
-            $products = Product::with('files')->where('category_slug', $category->slug)->first();
+            $products = Product::with('files','media')->where('category_slug', $category->slug)->first();
             return response()->json($products);
         } else {
             $data['massege'] = "No Record Found";
@@ -66,7 +67,7 @@ class ProductController extends Controller
     {
         $category = Category::where('slug', 'monthly_subscription')->first();
         if (!empty($category)) {
-            $product = Product::where('category_slug', $category->slug)->get();
+            $product = Product::with('files','media')->where('category_slug', $category->slug)->get();
             return response()->json($product);
         } else {
             $data['massege'] = "No Record Found";
@@ -79,7 +80,7 @@ class ProductController extends Controller
     {
         $category = Category::where('slug', 'monthly_subscription')->first();
         if (!empty($category)) {
-            $product = Product::where('category_slug', $category->slug)->with('files')->get();
+            $product = Product::with('files','media')->where('category_slug', $category->slug)->with('files')->get();
             return response()->json($product);
         } else {
             $data['massege'] = "No Record Found";

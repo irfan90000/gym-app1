@@ -25,6 +25,9 @@ class Product extends Model
     public function file(){
         return $this->hasOne(Media::class,'product_id','id')->where('type','pdf');
     }
+    public function media(){
+        return $this->hasOne(Media::class,'product_id','id');
+    }
     public function category(){
        return $this->belongsTo(Category::class,'category_slug','slug');
     }

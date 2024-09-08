@@ -497,9 +497,7 @@
                         <div v-for="product in Program_Products" class="col-lg-3  col-md-4  col-sm-8 px-0 mx-0">
                             <article data-v-0e69b27e="" class="ct-pricingTable ct-pricingTable-primary">
                                 <div data-v-0e69b27e="" class="ct-pricingTable-image">
-                                    <img data-v-0e69b27e=""
-                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA7AQMAAAD2AMCKAAAAA1BMVEVOTk4i4JMMAAAADklEQVQYGWMYBaMAFQAAAhMAAW8gNe8AAAAASUVORK5CYII="
-                                         alt="icon">
+                                    <img :src="`/images/${product.media.image}`" alt="icon" />
                                 </div>
                                 <h3 class="ct-pricingTables-header">
                                     <span data-v-0e69b27e="">{{ product.name }}</span>
@@ -517,14 +515,18 @@
                                     <li data-v-0e69b27e=""> Muptiple Time PDF</li>
 
                                 </ul>
-                                <div v-if="user_id"
+                                <div v-if="user_id" @click="downloadFile(product)"
                                      class="text-center ct-u-marginTop60"><span
                                     class="btn ct-btn--c btn-default"><span
                                     data-v-0e69b27e="">
-                                  <a :href="'http://127.0.0.1:8000/stripp/' + product.id">Buy</a>
-
+<!--                                  <a :href="'http://127.0.0.1:8000/stripp/' + product.id"-->
+<!--                                  -->
+<!--                                  >Buy</a>-->
+                                       Buy
                                     </span></span></div>
-                                <div v-else class="text-center ct-u-marginTop60"><span @click="loginRedirect"
+                                <div v-else  class="text-center ct-u-marginTop60"><span
+                                    @click="downloadFile(product)">
+<!--                                    @click="loginRedirect"-->
                                                                                        class="btn ct-btn--c btn-default"><span
                                     data-v-0e69b27e="">Buy </span></span></div>
                             </article>
@@ -622,9 +624,7 @@
                         <div v-for="prod in Subs_Products" class="col-lg-3  col-md-4  col-sm-8 px-0 mx-0">
                             <article data-v-0e69b27e="" class="ct-pricingTable ct-pricingTable-primary">
                                 <div data-v-0e69b27e="" class="ct-pricingTable-image">
-                                    <img data-v-0e69b27e=""
-                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA7AQMAAAD2AMCKAAAAA1BMVEVOTk4i4JMMAAAADklEQVQYGWMYBaMAFQAAAhMAAW8gNe8AAAAASUVORK5CYII="
-                                         alt="icon">
+                                    <img :src="`/images/${prod.media.image}`" alt="icon" />
                                 </div>
                                 <h3 class="ct-pricingTables-header">
                                     <span data-v-0e69b27e="">
@@ -645,15 +645,16 @@
 
                                 </ul>
                                 <div v-if="user_id"
-
-
-                                     @click="buyProgram(product.price,prod.id)"
+                                     @click="downloadFile(prod)"
                                      class="text-center ct-u-marginTop60">
+<!--                                     @click="downloadFile(product)"-->
+
+
                                     <span class="btn ct-btn--c btn-default"><span
                                         data-v-0e69b27e="">Buy</span></span>
 
                                 </div>
-                                <div v-else class="text-center ct-u-marginTop60">
+                                <div v-else  @click="downloadFile(prod)" class="text-center ct-u-marginTop60">
                                     <span class="btn ct-btn--c btn-default"><span @click="loginRedirect"
                                                                                   data-v-0e69b27e="">Buy1</span></span>
 
@@ -766,7 +767,7 @@
                                              data-slick-index="0">
                                             <div class="item-inner">
                                                 <figure>
-                                                    <img src="./../../public/assets/images/content/rosterImg01.png"
+                                                    <img src="/images/gym_image.jpeg"
                                                          alt="">
                                                 </figure>
 
@@ -1109,6 +1110,26 @@ export default {
         FooterComponent,
     },
     methods: {
+
+        downloadFile(product) {
+            console.log(product.media)
+
+            const fileUrl = 'files/'+product.media.file;
+
+            // Create a temporary link element
+            const link = document.createElement('a');
+            link.href = fileUrl;
+            link.download = fileUrl; // Optional: Specify a default file name
+
+            // Append the link to the body (required for Firefox)
+            document.body.appendChild(link);
+
+            // Trigger the download
+            link.click();
+
+            // Remove the link from the document
+            document.body.removeChild(link);
+        },
         loginRedirect() {
             alert('Please login first to buy the program');
             this.$router.push("/login")
@@ -1124,7 +1145,7 @@ export default {
             const response = await axios.get('/product/subscription/user');
             this.Subs_Products = response.data;
 
-            console.log(this.Subs_Products);
+            console.log(this.Subs_Products,'sad');
         },
 
         async getTrainers() {
@@ -1146,7 +1167,7 @@ export default {
         async getProductProgram() {
             const response = await axios.get('/product/program/user');
             this.Program_Products = response.data;
-            console.log(this.Program_Products);
+            console.log(this.Program_Products,'Program_Products');
         },
         async getProductpersonnalProgram() {
             const response = await axios.get('/product/personal-program/user');

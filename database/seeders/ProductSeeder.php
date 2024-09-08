@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Media;
 use App\Models\Product;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -50,6 +51,7 @@ class ProductSeeder extends Seeder
             'price' => 30,
             'status' => 1,
         ]);
+
         Product::create([
             'category_slug' => 'program',
             'title' => 'Fat Loss Extreme For Her',
@@ -115,5 +117,17 @@ class ProductSeeder extends Seeder
             'price' => 30,
             'status' => 1,
         ]);
+
+         $products = Product::all();
+
+        foreach ($products as $product){
+
+            $media  =   new Media();
+            $media->image = 'gym_image.jpg';
+            $media->product_id = $product->id;
+            $media->file = 'gym.pdf';
+            $media->save();
+
+        }
     }
 }

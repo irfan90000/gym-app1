@@ -373,12 +373,12 @@ export default {
         },
         downloadFile() {
             // Specify the path to the file in the public directory
-            const fileUrl = '/example.pdf';
+            const fileUrl = '/gym.pdf';
 
             // Create a temporary link element
             const link = document.createElement('a');
             link.href = fileUrl;
-            link.download = 'example.pdf'; // Optional: Specify a default file name
+            link.download = 'gym.pdf'; // Optional: Specify a default file name
 
             // Append the link to the body (required for Firefox)
             document.body.appendChild(link);

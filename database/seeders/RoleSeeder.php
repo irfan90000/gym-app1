@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Category;
+use App\Models\Media;
 use App\Models\Product;
 use App\Models\Role;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -121,6 +122,17 @@ class RoleSeeder extends Seeder
             'price' => 30,
             'status' => 1,
         ]);
+
+        $products = Product::all();
+
+        foreach ($products as $product){
+
+            $media  =   new Media();
+            $media->image = 'gym_image.jpg';
+            $media->product_id = $product->id;
+            $media->file = 'gym.pdf';
+
+        }
 
     }
 }

@@ -66,15 +66,26 @@ class UserController extends Controller
             'phone' => 'required',
             'password' => 'required|min:8',
         ]);
+
+        $role = null;
+        if($request->type == 'User')
+        {
+            $role = 'User';
+        }
+        elseif ($request->type == 'Trainer')
+        {
+            $role =  'team_member';
+        }
         $user = User::create([
             'username' => $request->username,
             'email' => $request->email,
+            'role'=> $role,
             'phone' => $request->phone,
             'password' => Hash::make($request->password),
             'role' => 'user',
         ]);
         if ($user) {
-            $data['message'] = 'User Added Sucessfully';
+            $data['message'] = 'User Added Successfully';
             $data['status'] = 200;
             return response()->json($data);
         }

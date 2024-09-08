@@ -63,6 +63,12 @@ export default {
 }
 </script>
 <style>
+
+form .form-group .form-control, form .input-group .form-control {
+
+    color: #d7d3d3 !important;
+
+}
 form label {
     font-size: larger;
     margin-top: -28px;

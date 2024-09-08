@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('product_id')->nullable();
             $table->string('image')->nullable();
+            $table->string('file')->nullable();
             $table->string('type')->nullable();
             $table->timestamps();
         });

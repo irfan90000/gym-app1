@@ -25,6 +25,14 @@
                             </div>
                         </div>
                         <div class="form-group mt-5">
+                            <label>Type</label>
+                            <select class="form-select" aria-label="Default select example"
+                                    v-model="form.type" style="background: #36445d;">
+                                <option>User</option>
+                                <option> Trainer</option>
+                            </select>
+                        </div>
+                        <div class="form-group mt-5">
                             <label>Phone</label>
                             <input type="number" name="phone" required v-model="form.phone" class="form-control"
                                    placeholder="Phone"
@@ -41,6 +49,7 @@
                                 <p>{{ errors.Password[0] }}</p>
                             </div>
                         </div>
+                        <router-link to="/login">Go back to login</router-link>
                         <button class="btn btn-primary btn-block mt-5 me-2">Submit</button>
                     </form>
                 </div>
@@ -59,7 +68,8 @@ export default {
                 username: '',
                 email: '',
                 phone: '',
-                password: ''
+                password: '',
+                type: ''
             },
             errors: {}
         }
@@ -88,7 +98,12 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
+
+.form-select{
+    color: #d7d3d3 !important;
+    background: transparent !important;
+}
 .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
     url(../../public/assets/images/content/bg-gym-login.jpg);

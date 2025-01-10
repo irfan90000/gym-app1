@@ -71,8 +71,10 @@
                                     <input type="checkbox" v-model="form.status" class="" style="margin-left: 56px;margin-top: -30px;">
                                 </div>
                                 </div>
+
+                                <router-link class="btn btn-dark" to="/product">Cancel</router-link>
+
                                 <button type="submit" class="btn btn-primary ">Submit</button>
-                                <button class="btn btn-dark ">Cancel</button>
                             </form>
                         </div>
                     </div>

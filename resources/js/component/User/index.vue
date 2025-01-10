@@ -21,7 +21,7 @@
                                             <th style="text-align: inherit; font-size: 18px;">Email</th>
                                             <th style="text-align: inherit; font-size: 18px;">Phone</th>
                                             <th style="text-align: inherit; font-size: 18px;">Address</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Action</th>
+                                            <th style="text-align: center; font-size: 18px;">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -31,7 +31,7 @@
                                             <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.email }}</td>
                                             <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.phone }}</td>
                                             <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.address }}</td>
-                                            <td class="py-4" style="text-align: inherit; font-size: 18px;">
+                                            <td class="py-4" style="text-align: center; font-size: 18px;">
                                                 <a @click="show(user.id)" class="btn btn-warning">Show</a>
                                                 <a @click="edit(user.id)" class="btn btn-success btn-usr">Edit</a>
                                                 <a @click="del(user.id)" class="btn btn-danger btn-usr">Delete</a>

@@ -50,8 +50,9 @@
                                            data-max_length="2" class="form-control" id="exampleInputUsername1"
                                            placeholder="File">
                                 </div>
-                                <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                <button class="btn btn-dark">Cancel</button>
+                                <router-link to="/user"><button class="btn btn-dark" >Cancel</button></router-link>
+                                <button type="submit" class="btn btn-primary me-2" style="margin-left: 16px;">Submit</button>
+
                             </form>
                         </div>
                     </div>

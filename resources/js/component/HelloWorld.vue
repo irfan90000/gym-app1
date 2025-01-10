@@ -493,7 +493,7 @@
 
 
                 <div>
-                    <div class="row" style="padding-left: 100px !important; padding-right: 100px !important;">
+                    <div class="row" style="padding-left: 50px !important; padding-right: 50px !important;">
                         <div v-for="product in Program_Products" class="col-lg-3  col-md-4  col-sm-8 px-0 mx-0">
                             <article data-v-0e69b27e="" class="ct-pricingTable ct-pricingTable-primary">
                                 <div data-v-0e69b27e="" class="ct-pricingTable-image">
@@ -519,13 +519,21 @@
                                 </ul>
                                 <div v-if="user_id"
                                      class="text-center ct-u-marginTop60"><span
-                                    class="btn ct-btn--c btn-default"><span
+                                    class="btn ct-btn--c btn-default" style="
+                                   padding-left: 54px !important;
+                                   padding-right: 54px !important;
+                                    padding-bottom: 10px !important;
+                                    padding-top: 10px !important;
+                                    font-size: 16px !important;
+                                    "><span
                                     data-v-0e69b27e="">
                                   <a :href="'http://127.0.0.1:8000/stripp/' + product.id">Buy</a>
 
                                     </span></span></div>
-                                <div v-else class="text-center ct-u-marginTop60"><span @click="loginRedirect"
-                                                                                       class="btn ct-btn--c btn-default"><span
+                                <div v-else class="text-center ct-u-marginTop60">
+                                    <span @click="loginRedirect"
+                                          class="btn btn-theme ct-btn--c btn-default"
+                                    style=""><span
                                     data-v-0e69b27e="">Buy </span></span></div>
                             </article>
 
@@ -618,7 +626,7 @@
 
 
                 <div>
-                    <div class="row" style="padding-left: 100px !important; padding-right: 100px !important;">
+                    <div class="row" style="padding-left: 50px !important; padding-right: 50px !important;">
                         <div v-for="prod in Subs_Products" class="col-lg-3  col-md-4  col-sm-8 px-0 mx-0">
                             <article data-v-0e69b27e="" class="ct-pricingTable ct-pricingTable-primary">
                                 <div data-v-0e69b27e="" class="ct-pricingTable-image">
@@ -649,7 +657,14 @@
 
                                      @click="buyProgram(product.price,prod.id)"
                                      class="text-center ct-u-marginTop60">
-                                    <span class="btn ct-btn--c btn-default"><span
+                                    <span class="btn ct-btn--c btn-default"
+                                          style="
+                                   padding-left: 54px !important;
+                                   padding-right: 54px !important;
+                                    padding-bottom: 10px !important;
+                                    padding-top: 10px !important;
+                                    font-size: 16px !important;
+                                    "><span
                                         data-v-0e69b27e="">Buy</span></span>
 
                                 </div>
@@ -1218,4 +1233,5 @@ li {
 a {
     color: #42b983;
 }
+
 </style>

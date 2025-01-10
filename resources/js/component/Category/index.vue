@@ -18,7 +18,7 @@
                                             <th style="text-align: inherit;">Id</th>
                                             <th style="text-align: inherit;">Name</th>
                                             <th style="text-align: inherit; font-size: 18px;">Status</th>
-                                            <th style="text-align: inherit; font-size: 18px;">Action</th>
+                                            <th style="text-align: center; font-size: 18px;">Action</th>
                                             <th style="text-align: inherit; font-size: 18px;"></th>
                                         </tr>
                                     </thead>
@@ -29,7 +29,7 @@
                                             <td class="py-4"  style="text-align: inherit; font-size: 18px;">
                                                 <span class="badge badge-pill badge-success">Active</span>
                                             </td>
-                                            <td class="py-4 " style="text-align: inherit; font-size: 18px;"><a class="btn btn-success"
+                                            <td class="py-4 " style="text-align: center; font-size: 18px;"><a class="btn btn-success"
                                                     @click="edit(category.id)">Edit</a>
                                                 <a class="btn btn-danger btn-cat" @click="del(category.id)">Delete</a>
                                             </td>

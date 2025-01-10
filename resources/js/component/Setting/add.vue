@@ -26,8 +26,10 @@
                                     <label class="label" style="margin-top: -2px;"> Status </label>
                                     <input type="checkbox" v-model="form.status" class="" style="margin-left: 6px;margin-top: -12px;">
                                 </div>
-                                <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                <button class="btn btn-dark">Cancel</button>
+                                <router-link  to="/settings"><button class="btn btn-dark ">Cancel</button></router-link>
+
+                                <button type="submit" class="btn btn-primary me-2" style="margin-left: 16px;">Submit</button>
+
                             </form>
                         </div>
                     </div>

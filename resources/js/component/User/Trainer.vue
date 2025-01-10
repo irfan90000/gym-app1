@@ -23,7 +23,7 @@
                                         <th style="text-align: inherit; font-size: 18px;">Coupon Code</th>
                                         <th style="text-align: inherit; font-size: 18px;">Discount %</th>
                                         <th style="text-align: inherit; font-size: 18px;">Address</th>
-                                        <th style="text-align: inherit; font-size: 18px;">Action</th>
+                                        <th style="text-align: center; font-size: 18px;">Action</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -35,7 +35,7 @@
                                         <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.coupon_code }}</td>
                                         <td class="py-4" style="text-align: inherit; font-size: 18px;">10</td>
                                         <td class="py-4" style="text-align: inherit; font-size: 18px;">{{ user.address }}</td>
-                                        <td class="py-4" style="text-align: inherit; font-size: 18px;">
+                                        <td class="py-4" style="text-align: center; font-size: 18px;">
                                             <a @click="show(user.id)" class="btn btn-warning">Show</a>
                                             <a @click="edit(user.id)" class="btn btn-success btn-trn">Edit</a>
                                             <a @click="del(user.id)" class="btn btn-danger btn-trn">Delete</a>

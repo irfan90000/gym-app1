@@ -10533,7 +10533,7 @@ form.form-inline button.btn {
 .ct-pricingTable {
   color: #fff;
   border: 1px solid #fff;
-  padding: 40px 30px;
+  padding: 12px 12px;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -10542,7 +10542,7 @@ form.form-inline button.btn {
 }
 
 .ct-pricingTable .ct-pricingTable-image {
-  margin-bottom: 25px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -10553,7 +10553,7 @@ form.form-inline button.btn {
 .ct-pricingTable .ct-pricingTables-header {
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 2px;
 }
 
 .ct-pricingTable .ct-pricingTables-header>span {
@@ -10590,7 +10590,7 @@ form.form-inline button.btn {
   font-weight: 400;
   position: relative;
   padding-bottom: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .ct-pricingTable .ct-pricingTable-text:after {
@@ -10630,12 +10630,13 @@ form.form-inline button.btn {
 }
 
 .ct-pricingTable.ct-pricingTable-primary {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-top: 0;
   color: #000;
-  padding: 50px 60px;
-  background-color: #fff;
+    /* padding: 50px 60px; */
+
+    background-color: #fff;
 }
 
 .ct-pricingTable.ct-pricingTable-primary .ct-pricingTable-image {
@@ -10659,8 +10660,8 @@ form.form-inline button.btn {
 }
 
 .ct-pricingTable.ct-pricingTable-primary .ct-pricingTable-text {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .ct-pricingTable.ct-pricingTable-primary .ct-pricingTable-text:after {
@@ -15133,7 +15134,7 @@ form.ct-form--inverse .form-group.form-control--filled .form-control:-ms-input-p
 }
 
 .ct-u-marginTop60 {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .ct-u-marginBottom60 {
@@ -40562,6 +40563,7 @@ code {
   color: #ffffff;
   margin-bottom: 1.125rem;
   text-transform: capitalize;
+    text-align: left;
 }
 
 .card .card-subtitle {

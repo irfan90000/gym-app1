@@ -1,66 +1,190 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Gym App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A gym management and fitness e-commerce application built with **Laravel 10**, **PHP 8.1+**, and **Vue 3**. The application provides a public fitness storefront alongside authenticated administration features for managing users, trainers, products, categories, settings, and orders.
 
-## About Laravel
+## Features
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- User registration, login, OTP, and password reset flows
+- API authentication with Laravel Passport/Sanctum configuration
+- Role-based access and user management
+- Trainer listing and management
+- Product and category CRUD operations
+- Fitness programs, subscriptions, and personal programs
+- Order viewing and management
+- Stripe payment integration
+- Health-related data submission
+- File upload, download, and product media support
+- Vue dashboard and responsive gym-themed frontend
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Technology Stack
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Backend
 
-## Learning Laravel
+- PHP 8.1+
+- Laravel 10
+- Laravel Eloquent ORM
+- Laravel Passport and Sanctum
+- Stripe PHP SDK
+- PHPUnit
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Frontend
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- Vue 3
+- Vue Router 4
+- Vuex 4 with persisted state
+- Axios
+- Bootstrap 5
+- Sass
+- Font Awesome
+- Laravel Mix/Vite tooling
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Project Structure
 
-## Laravel Sponsors
+```text
+app/
+├── Http/Controllers/     API and web request handlers
+├── Models/               Eloquent models
+├── Mail/                 OTP and coupon email classes
+└── Providers/            Laravel service providers
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+database/
+├── migrations/           Database schema changes
+├── seeders/              Initial roles, users, products, and categories
+└── factories/            Test data factories
 
-### Premium Partners
+resources/js/
+├── component/            Vue feature components
+├── pages/                Login, signup, reset, subscription, and program pages
+├── Vuex/                 Centralized frontend state management
+├── router.js             Vue route definitions
+└── App.vue               Vue application entry point
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+resources/views/          Blade application shell and email templates
+routes/
+├── api.php               Authentication and application API endpoints
+└── web.php               SPA fallback and payment callback routes
+public/                   Public assets, uploaded files, compiled JavaScript, and styles
+```
 
-## Contributing
+## Main API Areas
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Most protected management endpoints are grouped behind the `auth:api` middleware. The API includes routes for:
 
-## Code of Conduct
+- Authentication and password recovery
+- Users and trainers
+- Categories
+- Products and product files
+- Settings
+- Orders
+- Health records
+- Stripe payment initiation, completion, and failure callbacks
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+The API is defined in [`routes/api.php`](routes/api.php), while SPA fallback and payment callback routes are defined in [`routes/web.php`](routes/web.php).
 
-## Security Vulnerabilities
+## Requirements
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Before installing the project, make sure the following are available:
+
+- PHP 8.1 or newer
+- Composer
+- Node.js and npm
+- A supported database configured for Laravel
+- Stripe test or live credentials, if payment features are enabled
+
+## Installation
+
+1. Clone the repository and enter the project directory:
+
+   ```bash
+   git clone https://github.com/irfan90000/gym-app1.git
+   cd gym-app1
+   ```
+
+2. Install PHP dependencies:
+
+   ```bash
+   composer install
+   ```
+
+3. Create the environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   On Windows, create a copy of `.env.example` named `.env` instead.
+
+4. Generate the application key:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. Configure the database, mail service, authentication settings, and Stripe keys in `.env`.
+
+6. Run migrations and seed the database when appropriate:
+
+   ```bash
+   php artisan migrate --seed
+   ```
+
+7. Install and build frontend dependencies:
+
+   ```bash
+   npm install
+   npm run dev
+   ```
+
+8. Start the Laravel development server in a separate terminal:
+
+   ```bash
+   php artisan serve
+   ```
+
+   The application is normally available at `http://127.0.0.1:8000`.
+
+## Useful Commands
+
+```bash
+# Start the Laravel server
+php artisan serve
+
+# Run database migrations
+php artisan migrate
+
+# Seed development data
+php artisan db:seed
+
+# Run frontend development build
+npm run dev
+
+# Build frontend assets for production
+npm run production
+
+# Run automated tests
+php artisan test
+```
+
+## Configuration Notes
+
+Do not commit `.env` or real credentials to the repository. Configure sensitive values locally, including:
+
+- Database connection values
+- Application URL and encryption key
+- Mail credentials for OTP and coupon emails
+- Passport/API authentication settings
+- Stripe secret and publishable keys
+
+For production, use Stripe webhooks and production credentials only after validating the complete payment flow in test mode.
+
+## Testing
+
+The project includes Laravel feature and unit test directories under `tests/`. Run the test suite with:
+
+```bash
+php artisan test
+```
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is based on the Laravel framework and is provided under the MIT license unless a separate project license is added.
